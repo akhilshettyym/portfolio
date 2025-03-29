@@ -6,13 +6,13 @@ import CanvasLoader from "../components/CanvasLoader"
 import { useMediaQuery } from "react-responsive"
 import HeroCamera from "../components/HeroCamera"
 import Button from "../components/Button"
-import Robo from "../components/Robo"
 import Cuby from "../components/Cuby"
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" })
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" })
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" })
 
   const sizes = {
     deskScale: isSmall ? 0.27 : isMobile ? 0.33 : isTablet ? 0.375 : 0.45,
@@ -23,7 +23,9 @@ const Hero = () => {
     <section className="min-h-screen w-full flex flex-col relative">
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
         {/* Left side - Text content */}
-        <div className="lg:w-1/2 w-full lg:h-screen flex flex-col justify-center lg:pl-16 px-5 pt-28 lg:pt-0 z-10">
+        <div
+          className={`${isDesktop ? "lg:w-1/2" : "w-full"} w-full lg:h-screen flex flex-col justify-center lg:pl-16 px-5 pt-28 lg:pt-0 z-10`}
+        >
           <h1 className="text-xs font-thin mb-1 text-gray-600">
             <span>Akhil Shetty M</span>
           </h1>
@@ -72,34 +74,35 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right side - 3D Model */}
-        <div className="lg:w-1/2 w-full h-[60vh] lg:h-screen relative">
-          <Canvas className="w-full h-full">
-            <Suspense fallback={<CanvasLoader />}>
-              <PerspectiveCamera makeDefault position={[0, -0.6, 4]} />
+        {/* Right side - 3D Model - Only show on desktop */}
+        {isDesktop && (
+          <div className="lg:w-1/2 w-full h-[60vh] lg:h-screen relative">
+            <Canvas className="w-full h-full">
+              <Suspense fallback={<CanvasLoader />}>
+                <PerspectiveCamera makeDefault position={[0, -0.6, 4]} />
 
-              <HeroCamera syncWithMouse={true}>
-                <HackerRoom position={[-0.3, 0.3, 0]} scale={sizes.deskScale} rotation={[0, Math.PI / 2, 0]} />
-              </HeroCamera>
+                <HeroCamera syncWithMouse={true}>
+                  <HackerRoom position={[-0.3, 0.3, 0]} scale={sizes.deskScale} rotation={[0, Math.PI / 2, 0]} />
+                </HeroCamera>
 
-              <group>
-                {/* <Robo position={[2.7, -2, 0]} scale={[0.1, 0.1, 0.1]} rotation={[0, 2.5, 0]} /> */}
-                <Cuby position={[-2, -2, 0]} scale={[0.3, 0.3, 0.3]} rotation={[0, 6, 0]} />
-              </group>
+                <group>
+                  {/* <Robo position={[2.7, -2, 0]} scale={[0.1, 0.1, 0.1]} rotation={[0, 2.5, 0]} /> */}
+                  <Cuby position={[-1.2, 0.2, 0]} scale={[0.2, 0.2, 0.2]} rotation={[0, 6, 0]} />
+                </group>
 
-              <ambientLight intensity={2.5} />
-              <directionalLight position={[10, 10, 10]} intensity={2} />
-              <directionalLight position={[-10, -10, -10]} intensity={1} />
-            </Suspense>
-          </Canvas>
-        </div>
+                <ambientLight intensity={2.5} />
+                <directionalLight position={[10, 10, 10]} intensity={2} />
+                <directionalLight position={[-10, -10, -10]} intensity={1} />
+              </Suspense>
+            </Canvas>
+          </div>
+        )}
       </div>
 
-      {/* Invisible overlay to capture mouse events across the entire screen */}
-      <div className="fixed inset-0 pointer-events-auto" style={{ zIndex: -1 }}></div>
+      {/* Invisible overlay to capture mouse events across the entire screen - only needed when 3D model is visible */}
+      {isDesktop && <div className="fixed inset-0 pointer-events-auto" style={{ zIndex: -1 }}></div>}
     </section>
   )
 }
 
 export default Hero
-
