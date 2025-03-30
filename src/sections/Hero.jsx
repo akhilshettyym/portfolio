@@ -81,7 +81,7 @@ const Hero = () => {
 
           {/* Centered & Lowered Button */}
           <div className="mt-12 flex justify-center">
-            <a href="#contact">
+            <a href="#about">
               <Button name="Let's work together" isBeam containerClass="w-fit transition-transform hover:scale-105" />
             </a>
           </div>
