@@ -25,28 +25,30 @@ const Hero = () => {
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
         {/* Left side - Text content */}
         <div
-          className={`${ isDesktop ? "lg:w-1/2" : "w-full"
-          } flex flex-col justify-center lg:pl-16 px-5 pt-20 md:pt-28 lg:pt-0 z-10`}
+          className={`${isDesktop ? "lg:w-1/2" : "w-full"
+            } flex flex-col justify-center lg:pl-16 px-5 pt-20 md:pt-28 lg:pt-0 z-10`}
         >
-          <h1 className="text-xs font-thin mb-1 text-gray-600">
+
+
+          <h1 className="text-xs font-thin mb-1 text-gray-600 pt-10">
             <span>Akhil Shetty M</span>
           </h1>
 
           <div className="changing-title-container mb-6">
-            <p className="changing-title text-lg md:text-3xl font-medium">
+            <p className="changing-title text-lg md:text-3xl font-medium pt-2">
               Tech Enthusiast | FullStack Developer | UI/UX Designer | Graphic Designer
             </p>
           </div>
 
-          <div className="space-y-6 mb-8">
-            <p className="text-white-600 text-base md:text-xl md:max-w-2xl leading-relaxed text-justify">
+          <div className="space-y-6 mb-6">
+            <p className="text-white-600 text-base md:text-xl md:max-w3xl leading-relaxed text-justify pt-8">
               Crafting seamless digital experiences—from
               <span className="font-semibold text-white"> real-time systems</span> to
               <span className="font-semibold text-white"> immersive web apps</span>.
               Passionate about <span className="font-semibold text-white">leadership, innovation</span>, and building impactful digital solutions.
             </p>
 
-            <p className="text-white-500 text-medium ">
+            <p className="text-white-500 text-medium pt-8">
               🚀 Always building, always learning.
               <a href="#projects" className="text-white text-medium hover:text-white-800 ml-2 inline-flex items-center group">
                 Check out what I'm working on
@@ -60,7 +62,7 @@ const Hero = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
-            </p>
+            </p> 
           </div>
 
           <div className="mt-4">
