@@ -29,35 +29,33 @@ const Hero = () => {
             } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
         >
           {/* Name Heading */}
-          <h1 className="text-xs font-light text-gray-500 mb-4">Akhil Shetty M</h1>
+          <h1 className="text-xs font-light text-gray-500 mb-4">Akhil</h1>
 
           {/* Changing Title */}
           <div className="changing-title-container mb-6">
             <p className="changing-title text-2xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-white">
               Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer
             </p>
-
-
           </div>
 
           {/* Description Section */}
           <div className="space-y-8">
-            <p className="text-gray-300 text-medium sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify">
-              I specialize in building <span className="font-medium text-white">efficient, scalable,</span>
-              and <span className="font-medium text-white">user-friendly applications</span>.
+            <p className="text-gray-300 text-medium sm:text-lg md:text-medium lg:text-medium leading-relaxed text-justify">
+              I specialize in crafting <span className="font-medium text-white">scalable, high-performance</span> applications that prioritize
+              <span className="font-medium text-white"> efficiency, usability,</span> and seamless user experiences.
               With expertise in <span className="font-medium text-white">React, Next.js, Three.js, Firebase, and Node.js</span>,
-              I create seamless digital experiences that merge design with functionality.
+              I blend design and functionality to build intuitive digital solutions.
             </p>
 
-            <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify">
-              Passionate about <span className="font-medium text-white">problem-solving, innovation,</span>
-              and <span className="font-medium text-white">continuous learning</span>,
-              I strive to develop solutions that are both <span className="font-medium text-white">intuitive and high-performing</span>.
+            <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
+              Driven by <span className="font-medium text-white">problem-solving, innovation,</span> and a passion for continuous learning,
+              I thrive on creating <span className="font-medium text-white">impactful, future-ready</span> applications that push the boundaries of technology.
             </p>
+
 
             {/* Dynamic Text & Link */}
             <p className="text-gray-400 text-xs sm:text-sm md:text-lg lg:text-lg flex items-center">
-              🚀 <span className="ml-2">Always building, always learning.</span>
+              🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
               <a href="#projects"
                 className="ml-3 text-white font-medium hover:text-gray-300 transition-all inline-flex items-center group">
                 Check out what I'm working on
@@ -81,10 +79,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-
-
-
-
 
         {/* Right side - 3D Model - Now visible on Tablets & Desktops */}
         {(isTablet || isDesktop) && (
