@@ -28,36 +28,42 @@ const Hero = () => {
           className={`${isDesktop ? "lg:w-1/2" : "w-full"
             } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
         >
-          <h1 className="text-xs font-light mb-2 text-gray-500">
-            <span>Akhil Shetty M</span>
-          </h1>
+          {/* Name Heading */}
+          <h1 className="text-xs font-light text-gray-500 mb-4">Akhil Shetty M</h1>
 
-          <div className="changing-title-container mb-4">
-            <p className="changing-title text-lg sm:text-3xl md:text-4xl lg:text-3xl font-semibold text-white">
-              Tech Enthusiast | Full-Stack Developer | UI/UX Designer | Graphic Designer
+          {/* Changing Title */}
+          <div className="changing-title-container mb-6">
+            <p className="changing-title text-2xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-white">
+              Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer
             </p>
+
+
           </div>
 
-
-          <div className="space-y-4">
-            <p className="text-gray-300 text-base sm:text-lg md:text-2xl lg:text-2xl leading-relaxed text-justify">
-              Crafting seamless digital experiences—from
-              <span className="font-medium text-white"> real-time systems</span> to
-              <span className="font-medium text-white"> immersive web apps</span>. Passionate about
-              <span className="font-medium text-white"> leadership, innovation</span>, and building impactful digital
-              solutions.
+          {/* Description Section */}
+          <div className="space-y-8">
+            <p className="text-gray-300 text-medium sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify">
+              I specialize in building <span className="font-medium text-white">efficient, scalable,</span>
+              and <span className="font-medium text-white">user-friendly applications</span>.
+              With expertise in <span className="font-medium text-white">React, Next.js, Three.js, Firebase, and Node.js</span>,
+              I create seamless digital experiences that merge design with functionality.
             </p>
 
-            <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl pt-4 flex items-center">
-              🚀 Always building, always learning.
-              <a
-                href="#projects"
-                className="ml-2 text-white font-medium hover:text-gray-300 transition-all inline-flex items-center group"
-              >
+            <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify">
+              Passionate about <span className="font-medium text-white">problem-solving, innovation,</span>
+              and <span className="font-medium text-white">continuous learning</span>,
+              I strive to develop solutions that are both <span className="font-medium text-white">intuitive and high-performing</span>.
+            </p>
+
+            {/* Dynamic Text & Link */}
+            <p className="text-gray-400 text-xs sm:text-sm md:text-lg lg:text-lg flex items-center">
+              🚀 <span className="ml-2">Always building, always learning.</span>
+              <a href="#projects"
+                className="ml-3 text-white font-medium hover:text-gray-300 transition-all inline-flex items-center group">
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1"
+                  className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -69,14 +75,16 @@ const Hero = () => {
           </div>
 
           {/* Centered & Lowered Button */}
-          <div className="mt-8 flex justify-center">
+          <div className="mt-12 flex justify-center">
             <a href="#contact">
               <Button name="Let's work together" isBeam containerClass="w-fit transition-transform hover:scale-105" />
             </a>
           </div>
-
-
         </div>
+
+
+
+
 
         {/* Right side - 3D Model - Now visible on Tablets & Desktops */}
         {(isTablet || isDesktop) && (
