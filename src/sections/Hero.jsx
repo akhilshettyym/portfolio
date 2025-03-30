@@ -8,51 +8,47 @@ import HeroCamera from "../components/HeroCamera"
 import Button from "../components/Button"
 import Cuby from "../components/Cuby"
 
+
 const Hero = () => {
-  const isSmall = useMediaQuery({ query: "(max-width: 440px)" })
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" })
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" })
+  const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
 
   const sizes = {
     deskScale: isSmall ? 0.27 : isMobile ? 0.33 : isTablet ? 0.375 : 0.45,
     deskPosition: [0, 0, 0],
-  }
+  };
 
   return (
-    <section className="min-h-screen w-full flex flex-col relative">
+    <section className="min-h-screen w-full flex flex-col relative px-4 md:px-8">
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
         {/* Left side - Text content */}
         <div
-          className={`${isDesktop ? "lg:w-1/2" : "w-full"} w-full lg:h-screen flex flex-col justify-center lg:pl-16 px-5 pt-28 lg:pt-0 z-10`}
+          className={`${ isDesktop ? "lg:w-1/2" : "w-full"
+          } flex flex-col justify-center lg:pl-16 px-5 pt-20 md:pt-28 lg:pt-0 z-10`}
         >
           <h1 className="text-xs font-thin mb-1 text-gray-600">
             <span>Akhil Shetty M</span>
           </h1>
 
           <div className="changing-title-container mb-6">
-            <p className="changing-title text-lg md:text-xl">
-              Tech Enthusiast | FullStack Developer | UI/UX Designer | Graphic designer
+            <p className="changing-title text-lg md:text-3xl font-medium">
+              Tech Enthusiast | FullStack Developer | UI/UX Designer | Graphic Designer
             </p>
           </div>
 
           <div className="space-y-6 mb-8">
-            <p className="text-white-600 text-base md:text-lg max-w-xl leading-relaxed text-justify">
-              Passionate about building seamless digital experiences. From developing{" "}
-              <span className="font-semibold text-white">real-time communication systems</span> to crafting{" "}
-              <span className="font-semibold text-white">immersive web applications</span>, I blend creativity with
-              technology. Former{" "}
-              <span className="font-semibold text-white">Stage & Venue Committee Head at TEDxSJEC</span>, I thrive in
-              leadership and innovation. Currently exploring{" "}
-              <span className="font-semibold text-white">
-                NextJs, React, ThreeJs, Firebase, and AI-driven applications
-              </span>{" "}
-              while working on my next big project.
+            <p className="text-white-600 text-base md:text-xl md:max-w-2xl leading-relaxed text-justify">
+              Crafting seamless digital experiences—from
+              <span className="font-semibold text-white"> real-time systems</span> to
+              <span className="font-semibold text-white"> immersive web apps</span>.
+              Passionate about <span className="font-semibold text-white">leadership, innovation</span>, and building impactful digital solutions.
             </p>
 
-            <p className="text-white-700 text-lg font-medium">
+            <p className="text-white-500 text-medium ">
               🚀 Always building, always learning.
-              <a href="#projects" className="text-white hover:text-white-800 ml-2 inline-flex items-center group">
+              <a href="#projects" className="text-white text-medium hover:text-white-800 ml-2 inline-flex items-center group">
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,9 +70,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right side - 3D Model - Only show on desktop */}
-        {isDesktop && (
-          <div className="lg:w-1/2 w-full h-[60vh] lg:h-screen relative">
+        {/* Right side - 3D Model - Now visible on Tablets & Desktops */}
+        {(isTablet || isDesktop) && (
+          <div className="lg:w-1/2 w-full h-[50vh] md:h-[60vh] lg:h-screen relative">
             <Canvas className="w-full h-full">
               <Suspense fallback={<CanvasLoader />}>
                 <PerspectiveCamera makeDefault position={[0, -0.6, 4]} />
@@ -86,7 +82,6 @@ const Hero = () => {
                 </HeroCamera>
 
                 <group>
-                  {/* <Robo position={[2.7, -2, 0]} scale={[0.1, 0.1, 0.1]} rotation={[0, 2.5, 0]} /> */}
                   <Cuby position={[-1.2, 0.2, 0]} scale={[0.2, 0.2, 0.2]} rotation={[0, 6, 0]} />
                 </group>
 
@@ -98,11 +93,8 @@ const Hero = () => {
           </div>
         )}
       </div>
-
-      {/* Invisible overlay to capture mouse events across the entire screen - only needed when 3D model is visible */}
-      {isDesktop && <div className="fixed inset-0 pointer-events-auto" style={{ zIndex: -1 }}></div>}
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
