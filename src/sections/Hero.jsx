@@ -22,40 +22,42 @@ const Hero = () => {
   return (
     <section className="min-h-screen w-full flex flex-col relative px-4 md:px-8">
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
-        {/* Left side - Text content */}
+
+        {/* Left Side - Text Content */}
         <div
           className={`${isDesktop ? "lg:w-1/2" : "w-full"
-            } flex flex-col justify-center lg:pl-0 px-5 pt-20 md:pt-28 lg:pt-0 z-10 bg-transparent`}
+            } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
         >
-          <h1 className="text-xs font-thin mb-1 text-gray-600 pt-10 pl-0">
+          <h1 className="text-xs font-light mb-2 text-gray-500">
             <span>Akhil Shetty M</span>
           </h1>
 
-          <div className="changing-title-container mb-6">
-            <p className="changing-title text-lg md:text-3xl font-medium pt-2">
-              Tech Enthusiast | FullStack Developer | UI/UX Designer | Graphic Designer
+          <div className="changing-title-container mb-4">
+            <p className="changing-title text-lg sm:text-3xl md:text-4xl lg:text-3xl font-semibold text-white">
+              Tech Enthusiast | Full-Stack Developer | UI/UX Designer | Graphic Designer
             </p>
           </div>
 
-          <div className="space-y-6 ml-2">
-            <p className="text-white-600 text-base md:text-xl md:max-w3xl leading-relaxed text-justify pt-8">
+
+          <div className="space-y-4">
+            <p className="text-gray-300 text-base sm:text-lg md:text-2xl lg:text-2xl leading-relaxed text-justify">
               Crafting seamless digital experiences—from
-              <span className="font-semibold text-white"> real-time systems</span> to
-              <span className="font-semibold text-white"> immersive web apps</span>. Passionate about{" "}
-              <span className="font-semibold text-white">leadership, innovation</span>, and building impactful digital
+              <span className="font-medium text-white"> real-time systems</span> to
+              <span className="font-medium text-white"> immersive web apps</span>. Passionate about
+              <span className="font-medium text-white"> leadership, innovation</span>, and building impactful digital
               solutions.
             </p>
 
-            <p className="text-white-500 text-medium pt-8">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl pt-4 flex items-center">
               🚀 Always building, always learning.
               <a
                 href="#projects"
-                className="text-white text-medium hover:text-white-800 ml-2 inline-flex items-center group"
+                className="ml-2 text-white font-medium hover:text-gray-300 transition-all inline-flex items-center group"
               >
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 ml-1 transition-transform group-hover:translate-x-1"
+                  className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -66,11 +68,14 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="mt-4">
+          {/* Centered & Lowered Button */}
+          <div className="mt-8 flex justify-center">
             <a href="#contact">
-              <Button name="Let's work together" isBeam containerClass="w-fit" />
+              <Button name="Let's work together" isBeam containerClass="w-fit transition-transform hover:scale-105" />
             </a>
           </div>
+
+
         </div>
 
         {/* Right side - 3D Model - Now visible on Tablets & Desktops */}
@@ -81,13 +86,11 @@ const Hero = () => {
                 <PerspectiveCamera makeDefault position={[0, -0.6, 4]} />
 
                 <HeroCamera syncWithMouse={true}>
-                <HackerRoom position={[-0.2, 0.3, 0]} scale={[0.4, 0.4, 0.4]} rotation={[0, Math.PI / 2, 0]} />
-
-
+                  <HackerRoom position={[-0.2, 0.3, 0]} scale={[0.4, 0.4, 0.4]} rotation={[0, Math.PI / 2, 0]} />
                 </HeroCamera>
 
                 <group>
-                  <Cuby position={[-1.2, 0.2, 0]} scale={[0.2, 0.2, 0.2]} rotation={[0, 6, 0]} />
+                  <Cuby position={[-1, 0.2, 0]} scale={[0.2, 0.2, 0.2]} rotation={[0, 6, 0]} />
                 </group>
 
                 <ambientLight intensity={2.5} />
