@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive"
 import HeroCamera from "../components/HeroCamera"
 import Button from "../components/Button"
 import Cuby from "../components/Cuby"
+import Stars from "../components/Stars"
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" })
@@ -22,11 +23,11 @@ const Hero = () => {
   return (
     <section className="min-h-screen w-full flex flex-col relative px-4 md:px-8">
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
-
         {/* Left Side - Text Content */}
         <div
-          className={`${isDesktop ? "lg:w-1/2" : "w-full"
-            } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
+          className={`${
+            isDesktop ? "lg:w-1/2" : "w-full"
+          } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
         >
           {/* Name Heading */}
           <h1 className="text-xs font-light text-gray-500 mb-4">Akhil</h1>
@@ -35,29 +36,35 @@ const Hero = () => {
           <div className="changing-title-container mb-6">
             <p className="changing-title text-2xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-white">
               Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer
+              {/* Intern @ Global Industrial Private Limited || Full Stack Developer || UI/UX Designer || Graphic designer */}
             </p>
           </div>
 
           {/* Description Section */}
           <div className="space-y-8">
             <p className="text-gray-300 text-medium sm:text-lg md:text-medium lg:text-medium leading-relaxed text-justify">
-              I specialize in crafting <span className="font-medium text-white">scalable, high-performance</span> applications that prioritize
+              I specialize in crafting <span className="font-medium text-white">scalable, high-performance</span>{" "}
+              applications that prioritize
               <span className="font-medium text-white"> efficiency, usability,</span> and seamless user experiences.
-              With expertise in <span className="font-medium text-white">React, Next.js, Three.js, Firebase, and Node.js</span>,
-              I blend design and functionality to build intuitive digital solutions.
+              With expertise in{" "}
+              <span className="font-medium text-white">React, Next.js, Three.js, Firebase, and Node.js</span>, I blend
+              design and functionality to build intuitive digital solutions.
             </p>
 
             <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
-              Driven by <span className="font-medium text-white">problem-solving, innovation,</span> and a passion for continuous learning,
-              I thrive on creating <span className="font-medium text-white">impactful, future-ready</span> applications that push the boundaries of technology.
+              Driven by <span className="font-medium text-white">problem-solving, innovation,</span> and a passion for
+              continuous learning, I thrive on creating{" "}
+              <span className="font-medium text-white">impactful, future-ready</span> applications that push the
+              boundaries of technology.
             </p>
-
 
             {/* Dynamic Text & Link */}
             <p className="text-gray-400 text-xs sm:text-sm md:text-lg lg:text-lg flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
-              <a href="#projects"
-                className="ml-3 text-white font-medium hover:text-gray-300 transition-all inline-flex items-center group">
+              <a
+                href="#projects"
+                className="ml-3 text-white font-medium hover:text-gray-300 transition-all inline-flex items-center group"
+              >
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +100,7 @@ const Hero = () => {
 
                 <group>
                   <Cuby position={[-1, 0.2, 0]} scale={[0.2, 0.2, 0.2]} rotation={[0, 6, 0]} />
+                  <Stars position={[1, 1, 0]} scale={[0.0015, 0.0015, 0.0015]} rotation={[0, 0, 0]} />
                 </group>
 
                 <ambientLight intensity={2.5} />
@@ -107,4 +115,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
