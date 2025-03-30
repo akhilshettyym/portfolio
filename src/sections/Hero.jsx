@@ -8,17 +8,16 @@ import HeroCamera from "../components/HeroCamera"
 import Button from "../components/Button"
 import Cuby from "../components/Cuby"
 
-
 const Hero = () => {
-  const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
+  const isSmall = useMediaQuery({ query: "(max-width: 440px)" })
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" })
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" })
 
   const sizes = {
     deskScale: isSmall ? 0.27 : isMobile ? 0.33 : isTablet ? 0.375 : 0.45,
     deskPosition: [0, 0, 0],
-  };
+  }
 
   return (
     <section className="min-h-screen w-full flex flex-col relative px-4 md:px-8">
@@ -26,11 +25,9 @@ const Hero = () => {
         {/* Left side - Text content */}
         <div
           className={`${isDesktop ? "lg:w-1/2" : "w-full"
-            } flex flex-col justify-center lg:pl-16 px-5 pt-20 md:pt-28 lg:pt-0 z-10`}
+            } flex flex-col justify-center lg:pl-0 px-5 pt-20 md:pt-28 lg:pt-0 z-10 bg-transparent`}
         >
-
-
-          <h1 className="text-xs font-thin mb-1 text-gray-600 pt-10">
+          <h1 className="text-xs font-thin mb-1 text-gray-600 pt-10 pl-0">
             <span>Akhil Shetty M</span>
           </h1>
 
@@ -40,17 +37,21 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="space-y-6 mb-6">
+          <div className="space-y-6 ml-2">
             <p className="text-white-600 text-base md:text-xl md:max-w3xl leading-relaxed text-justify pt-8">
               Crafting seamless digital experiences—from
               <span className="font-semibold text-white"> real-time systems</span> to
-              <span className="font-semibold text-white"> immersive web apps</span>.
-              Passionate about <span className="font-semibold text-white">leadership, innovation</span>, and building impactful digital solutions.
+              <span className="font-semibold text-white"> immersive web apps</span>. Passionate about{" "}
+              <span className="font-semibold text-white">leadership, innovation</span>, and building impactful digital
+              solutions.
             </p>
 
             <p className="text-white-500 text-medium pt-8">
               🚀 Always building, always learning.
-              <a href="#projects" className="text-white text-medium hover:text-white-800 ml-2 inline-flex items-center group">
+              <a
+                href="#projects"
+                className="text-white text-medium hover:text-white-800 ml-2 inline-flex items-center group"
+              >
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +63,7 @@ const Hero = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
-            </p> 
+            </p>
           </div>
 
           <div className="mt-4">
@@ -80,7 +81,9 @@ const Hero = () => {
                 <PerspectiveCamera makeDefault position={[0, -0.6, 4]} />
 
                 <HeroCamera syncWithMouse={true}>
-                  <HackerRoom position={[-0.3, 0.3, 0]} scale={sizes.deskScale} rotation={[0, Math.PI / 2, 0]} />
+                <HackerRoom position={[-0.2, 0.3, 0]} scale={[0.4, 0.4, 0.4]} rotation={[0, Math.PI / 2, 0]} />
+
+
                 </HeroCamera>
 
                 <group>
@@ -96,7 +99,7 @@ const Hero = () => {
         )}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
