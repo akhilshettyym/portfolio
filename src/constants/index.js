@@ -10,6 +10,11 @@ export const navLinks = [
     href: "#about",
   },
   {
+    id: 2,
+    name: "Education",
+    href: "#education",
+  },
+  {
     id: 3,
     name: "Work",
     href: "#work",
