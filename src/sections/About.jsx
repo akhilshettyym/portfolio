@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Globe from "react-globe.gl"
-
 import Button from "../components/Button.jsx"
 
 const About = () => {
@@ -20,11 +19,13 @@ const About = () => {
   return (
     <section className="c-space my-20" id="about">
       <p className="head-text pb-5">About Me</p>
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+
+      {/* About Me Section */}
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+        {/* Who I Am */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
-
             <div>
               <p className="grid-headtext">Hi, I’m Akhil</p>
               <p className="grid-subtext">
@@ -35,18 +36,14 @@ const About = () => {
           </div>
         </div>
 
-        {/* Tech stack */}
+        {/* Tech Stack */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
-
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                {" "}
-                I specialize in building robust and scalable applications usingReact, Next.js, Three.js, Tailwind CSS,
-                Firebase, and Node.js. With a focus on seamless user experiences and interactive 3D visuals, I create
-                efficient and dynamic solutions.{" "}
+                I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js.
               </p>
             </div>
           </div>
@@ -87,12 +84,13 @@ const About = () => {
               </p>
               <span className="font-medium text-white">Mangalore, Karnataka, India</span>.{/* Contact Button */}
               <div className="mt-8 flex justify-center">
-                <Button name="Contact Me" isBeam containerClass="w-fit transition-transform hover:scale-105" />
+                
               </div>
             </div>
           </div>
         </div>
 
+        
         {/* Passion for Coding */}
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
@@ -100,11 +98,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, enhancing my skills, and pushing
-                creative boundaries. Whether it's crafting seamless user experiences or building scalable solutions, I
-                thrive on challenges that blend logic and innovation. I believe in continuous learning and staying ahead
-                in the ever-evolving tech landscape.
+                I love solving problems and building things through code. Programming isn&apos;t just my profession—it&apos;s my passion.
+                Whether it's crafting seamless user experiences or building scalable solutions, I thrive on challenges that blend logic and innovation.
               </p>
             </div>
           </div>
@@ -113,16 +108,10 @@ const About = () => {
         {/* Contact Me */}
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
-            {/* Image */}
-            <img
-              src="assets/grid4.png"
-              alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top rounded-lg"
-            />
+            <img src="assets/grid4.png" alt="grid-4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top rounded-lg" />
 
             {/* Contact Info */}
             <div className="space-y-4 text-center mt-4">
-              {/* Section Title */}
               <p className="grid-subtext text-sm sm:text-base text-gray-300">Contact Me</p>
 
               {/* Social Links */}
@@ -159,9 +148,54 @@ const About = () => {
                   <img src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"} alt="Copy Icon" className="w-4 h-4" />
                 </div>
               </div>
+
+              {/* Contact Button */}
+              <div className="mt-8 flex justify-center">
+                <Button name="Contact Me" isBeam containerClass="w-fit transition-transform hover:scale-105" />
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Education Section */}
+        <div className="xl:col-span-3">
+          <p className="head-text pt-10 pb-5">Education</p>
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
+            {/* Bachelor's Degree */}
+            <div className="grid-container">
+              <div>
+                <p className="grid-headtext">Bachelor of Engineering</p>
+                <p className="grid-subtext">St. Joseph Engineering College, Mangaluru</p>
+                <p className="grid-subtext">Computer Science and Engineering</p>
+                <p className="grid-subtext">CGPA: 8.66/10</p>
+                <p className="grid-subtext">2021 - 2025</p>
+              </div>
+            </div>
+
+            {/* Higher Secondary */}
+            <div className="grid-container">
+              <div>
+                <p className="grid-headtext">Higher Secondary</p>
+                <p className="grid-subtext">Boscoss PU College, Mangaluru</p>
+                <p className="grid-subtext">PCMB</p>
+                <p className="grid-subtext">Percentage: 95.17%</p>
+                <p className="grid-subtext">2019 - 2021</p>
+              </div>
+            </div>
+
+            {/* High School */}
+            <div className="grid-container">
+              <div>
+                <p className="grid-headtext">High School</p>
+                <p className="grid-subtext">Canara High School, Urwa, Mangaluru</p>
+                <p className="grid-subtext">Percentage: 87.84%</p>
+                <p className="grid-subtext">2009 - 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </section>
   )
