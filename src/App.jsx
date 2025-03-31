@@ -3,6 +3,7 @@ import Hero from "./sections/Hero"
 import About from "./sections/About"
 import Projects from "./sections/Projects"
 import Education from "./sections/Education"
+import Clients from "./sections/Clients"
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <About key="about" />
       <Education key="education" />
       <Projects key="projects" />
+      <Clients key="clients" />
     </main>
   )
 }
