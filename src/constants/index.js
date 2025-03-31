@@ -123,32 +123,42 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "Global Industrial Pvt. Ltd.",
+    pos: "Full Stack Developer (Intern)",
+    duration: "2025 - Present",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
+      "Excited to join GIC Global Industrial Pvt. Ltd. as an IT Intern (Full Stack Developer)! Looking forward to contributing to impactful projects, collaborating with talented colleagues, and growing in a dynamic environment.",
+    icon: "/assets/gic.webp",
     animation: "victory",
   },
   {
     id: 2,
-    name: "Figma",
+    name: "IUCEE Annual Student Expo 2025",
     pos: "Web Developer",
-    duration: "2020 - 2022",
+    duration: "7th - 8th Jan 2025",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+      "Presented Cloud-Based Smart Monitor- ing System for Baby Health and Safety at VNRVJIET, Hyderabad. Represented SJEC at the event. Participated in the International Conference on Transformations in Engineering Education (ICTIEE 2025).",
+    icon: "/assets/iuceee.png",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    name: "TEDX SJEC",
+    pos: "Stage and Venue Committee Head",
+    duration: "Dec 14th - 2024",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+      "As the Stage and Venue Committee Head at TEDxSJEC, I led a team of 23 to design and set up a captivating stage from scratch. I conceptualized and executed an extraordinary design, highlighting my artistic skills, creativity, and attention to detail for an immersive event experience.",
+    icon: "/assets/tedxsjec.svg",
     animation: "salute",
+  },
+  {
+    id: 3,
+    name: "Karanji Infotech Pvt. Ltd.",
+    pos: "Junior Graphic Designer Intern",
+    duration: "6th Nov - 5th Dec 2023",
+    title:
+      "Completed my graphic design internship at Karanji Infotech, creating marketing visuals, social media content, and brochures. Collaborated with the team to meet client expectations and enhance visual storytelling",
+      icon: "/assets/karanji.png",
+      animation: "salute",
   },
 ]
