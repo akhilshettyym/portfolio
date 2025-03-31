@@ -4,6 +4,7 @@ import About from "./sections/About"
 import Projects from "./sections/Projects"
 import Education from "./sections/Education"
 import Clients from "./sections/Clients"
+import Contact from "./sections/Contact"
 
 const App = () => {
   return (
@@ -14,6 +15,9 @@ const App = () => {
       <Education key="education" />
       <Projects key="projects" />
       <Clients key="clients" />
+
+
+      <Contact />
     </main>
   )
 }
