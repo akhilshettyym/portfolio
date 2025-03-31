@@ -57,12 +57,14 @@ export const clientReviews = [
 ]
 
 export const myProjects = [
+
+  // NodeSurge Start
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
-    subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+    title: "NodeSurge : A Multi-Utility Platform",
+    desc: "Maximize productivity with NodeSurge — your all-in-one platform for advanced text tools, real-time currency conversion, smart to-do lists, live weather updates, secure password generation, and an intelligent chatbot. Seamlessly organize your tasks and enhance precision in every aspect of your day!",
+    subdesc: "Built as a powerful productivity platform with modern web technologies, NodeSurge is designed for efficiency and seamless user experience.",
+    spotlight: "/path/to/nodesurge-spotlight.jpg",
+    href: "https://akhilshettyym.github.io/NodeSurge/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/project-logo1.png",
     logoStyle: {
@@ -84,16 +86,21 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "JavaScript",
+        path: "/assets/javascript.png",
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "FireBase",
+        path: "/assets/firebase.png",
       },
     ],
   },
+
+  // NodeSurge end
+
+
+
   {
     title: "LiveDoc - Real-Time Google Docs Clone",
     desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
