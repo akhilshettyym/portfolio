@@ -8,6 +8,7 @@ import HeroCamera from "../components/HeroCamera"
 import Button from "../components/Button"
 import Cuby from "../components/Cuby"
 import Stars from "../components/Stars"
+import Robo from "../components/Robo"
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" })
@@ -101,6 +102,7 @@ const Hero = () => {
                 <group>
                   <Cuby position={[-1, 0.2, 0]} scale={[0.2, 0.2, 0.2]} rotation={[0, 6, 0]} />
                   <Stars position={[1, 1, 0]} scale={[0.0015, 0.0015, 0.0015]} rotation={[0, 0, 0]} />
+                  <Robo position={[0.02, -2.2, 0]} scale={[0.055, 0.055, 0.055]} rotation={[0, 2.8, 0]} />
                 </group>
 
                 <ambientLight intensity={2.5} />

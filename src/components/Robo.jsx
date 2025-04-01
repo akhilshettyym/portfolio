@@ -8,13 +8,15 @@ const Robo = (props) => {
   const roboRef = useRef(); 
 
   useGSAP(() => {
-    gsap.to(roboRef.current.position, {
-      y: "+=0.5", 
-      duration: 1.5,
+    gsap.to(roboRef.current.rotation, {
+      y: "+=6.283",
+      duration: 3,
       repeat: -1,
-      yoyo: true,
+      ease: "linear",
     });
   });
+  
+  
 
   return (
     <group ref={roboRef} {...props} dispose={null}>
