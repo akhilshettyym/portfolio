@@ -1,46 +1,169 @@
-import React, { useEffect, useRef } from 'react';
-import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
+// import React, { useEffect, useRef } from 'react';
+// import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
 
-const Developer = ({ animationName = 'idle', ...props }) => {
-  const group = useRef();
-  const { nodes, materials } = useGLTF('/models/animations/developer.glb');
+// const Developer = ({ animationName = 'idle', ...props }) => {
+//   const group = useRef();
+//   const { nodes, materials } = useGLTF('/models/animations/developer.glb');
+
+//   // Load animations safely
+//   const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
+//   const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
+//   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
+//   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
+//   const { animations: surprisedAnimation } = useFBX('/models/animations/surprised.fbx');
+
+//   // Ensure animations are loaded before modifying them
+//   if (idleAnimation?.length) idleAnimation[0].name = 'idle';
+//   if (saluteAnimation?.length) saluteAnimation[0].name = 'salute';
+//   if (victoryAnimation?.length) victoryAnimation[0].name = 'victory';
+//   if (clappingAnimation?.length) clappingAnimation[0].name = 'clapping';
+//   if (surprisedAnimation?.length) surprisedAnimation[0].name = 'surprised';
+
+//   // Collect all available animations
+//   const allAnimations = [
+//     idleAnimation?.[0],
+//     saluteAnimation?.[0],
+//     victoryAnimation?.[0],
+//     clappingAnimation?.[0],
+//     surprisedAnimation?.[0],
+//   ].filter(Boolean); // Filter out undefined values
+
+//   const { actions } = useAnimations(allAnimations, group);
+
+//   useEffect(() => {
+//     if (!actions || !actions[animationName]) return; // Ensure the action exists
+
+//     actions[animationName].reset().fadeIn(1).play();
+
+//     return () => {
+//       if (actions[animationName]) actions[animationName].fadeOut(1);
+//     };
+//   }, [animationName, actions]);
+
+//   console.log('Available actions:', actions);
+
+//   return (
+//     <group {...props} dispose={null} ref={group}>
+//       <primitive object={nodes.Hips} />
+//       <skinnedMesh
+//         name="EyeLeft"
+//         geometry={nodes.EyeLeft.geometry}
+//         material={materials.Wolf3D_Eye}
+//         skeleton={nodes.EyeLeft.skeleton}
+//         morphTargetDictionary={nodes.EyeLeft.morphTargetDictionary}
+//         morphTargetInfluences={nodes.EyeLeft.morphTargetInfluences}
+//       />
+//       <skinnedMesh
+//         name="EyeRight"
+//         geometry={nodes.EyeRight.geometry}
+//         material={materials.Wolf3D_Eye}
+//         skeleton={nodes.EyeRight.skeleton}
+//         morphTargetDictionary={nodes.EyeRight.morphTargetDictionary}
+//         morphTargetInfluences={nodes.EyeRight.morphTargetInfluences}
+//       />
+//       <skinnedMesh
+//         name="Wolf3D_Head"
+//         geometry={nodes.Wolf3D_Head.geometry}
+//         material={materials.Wolf3D_Skin}
+//         skeleton={nodes.Wolf3D_Head.skeleton}
+//         morphTargetDictionary={nodes.Wolf3D_Head.morphTargetDictionary}
+//         morphTargetInfluences={nodes.Wolf3D_Head.morphTargetInfluences}
+//       />
+//       <skinnedMesh
+//         name="Wolf3D_Teeth"
+//         geometry={nodes.Wolf3D_Teeth.geometry}
+//         material={materials.Wolf3D_Teeth}
+//         skeleton={nodes.Wolf3D_Teeth.skeleton}
+//         morphTargetDictionary={nodes.Wolf3D_Teeth.morphTargetDictionary}
+//         morphTargetInfluences={nodes.Wolf3D_Teeth.morphTargetInfluences}
+//       />
+//       <skinnedMesh
+//         geometry={nodes.Wolf3D_Hair.geometry}
+//         material={materials.Wolf3D_Hair}
+//         skeleton={nodes.Wolf3D_Hair.skeleton}
+//       />
+//       <skinnedMesh
+//         geometry={nodes.Wolf3D_Body.geometry}
+//         material={materials.Wolf3D_Body}
+//         skeleton={nodes.Wolf3D_Body.skeleton}
+//       />
+//       <skinnedMesh
+//         geometry={nodes.Wolf3D_Outfit_Bottom.geometry}
+//         material={materials.Wolf3D_Outfit_Bottom}
+//         skeleton={nodes.Wolf3D_Outfit_Bottom.skeleton}
+//       />
+//       <skinnedMesh
+//         geometry={nodes.Wolf3D_Outfit_Footwear.geometry}
+//         material={materials.Wolf3D_Outfit_Footwear}
+//         skeleton={nodes.Wolf3D_Outfit_Footwear.skeleton}
+//       />
+//       <skinnedMesh
+//         geometry={nodes.Wolf3D_Outfit_Top.geometry}
+//         material={materials.Wolf3D_Outfit_Top}
+//         skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
+//       />
+//     </group>
+//   );
+// };
+
+// useGLTF.preload('/models/animations/developer.glb');
+
+// export default Developer;
+
+
+
+"use client"
+
+import { useEffect, useRef } from "react"
+import { useAnimations, useFBX, useGLTF } from "@react-three/drei"
+
+const Developer = ({ animationName = "idle", ...props }) => {
+  const group = useRef()
+  const { nodes, materials } = useGLTF("/models/animations/developer.glb")
 
   // Load animations safely
-  const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
-  const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
-  const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
-  const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
-  const { animations: surprisedAnimation } = useFBX('/models/animations/surprised.fbx');
+  const { animations: idleAnimation } = useFBX("/models/animations/idle.fbx")
+  const { animations: saluteAnimation } = useFBX("/models/animations/salute.fbx")
+  const { animations: victoryAnimation } = useFBX("/models/animations/victory.fbx")
+  const { animations: clappingAnimation } = useFBX("/models/animations/clapping.fbx")
+  const { animations: surprisedAnimation } = useFBX("/models/animations/surprised.fbx")
 
   // Ensure animations are loaded before modifying them
-  if (idleAnimation?.length) idleAnimation[0].name = 'idle';
-  if (saluteAnimation?.length) saluteAnimation[0].name = 'salute';
-  if (victoryAnimation?.length) victoryAnimation[0].name = 'victory';
-  if (clappingAnimation?.length) clappingAnimation[0].name = 'clapping';
-  if (surprisedAnimation?.length) surprisedAnimation[0].name = 'surprised';
+  if (idleAnimation?.length) idleAnimation[0].name = "idle"
+  if (saluteAnimation?.length) saluteAnimation[0].name = "salute"
+  if (victoryAnimation?.length) victoryAnimation[0].name = "victory"
+  if (clappingAnimation?.length) clappingAnimation[0].name = "clapping"
+  if (surprisedAnimation?.length) surprisedAnimation[0].name = "surprised"
 
   // Collect all available animations
   const allAnimations = [
-    idleAnimation?.[0],
-    saluteAnimation?.[0],
-    victoryAnimation?.[0],
-    clappingAnimation?.[0],
-    surprisedAnimation?.[0],
-  ].filter(Boolean); // Filter out undefined values
+    ...(idleAnimation || []),
+    ...(saluteAnimation || []),
+    ...(victoryAnimation || []),
+    ...(clappingAnimation || []),
+    ...(surprisedAnimation || []),
+  ]
 
-  const { actions } = useAnimations(allAnimations, group);
+  const { actions } = useAnimations(allAnimations, group)
+
+  // Log available animations for debugging
+  useEffect(() => {
+    console.log("Available animations:", Object.keys(actions || {}))
+    console.log("Requested animation:", animationName)
+  }, [actions, animationName])
 
   useEffect(() => {
-    if (!actions || !actions[animationName]) return; // Ensure the action exists
+    if (!actions || !actions[animationName]) {
+      console.warn(`Animation "${animationName}" not found in available actions`)
+      return
+    }
 
-    actions[animationName].reset().fadeIn(1).play();
+    actions[animationName].reset().fadeIn(0.5).play()
 
     return () => {
-      if (actions[animationName]) actions[animationName].fadeOut(1);
-    };
-  }, [animationName, actions]);
-
-  console.log('Available actions:', actions);
+      if (actions[animationName]) actions[animationName].fadeOut(0.5)
+    }
+  }, [animationName, actions])
 
   return (
     <group {...props} dispose={null} ref={group}>
@@ -58,7 +181,7 @@ const Developer = ({ animationName = 'idle', ...props }) => {
         geometry={nodes.EyeRight.geometry}
         material={materials.Wolf3D_Eye}
         skeleton={nodes.EyeRight.skeleton}
-        morphTargetDictionary={nodes.EyeRight.morphTargetDictionary}
+        morphTargetDictionary={nodes.EyeRight.morphTargetInfluences}
         morphTargetInfluences={nodes.EyeRight.morphTargetInfluences}
       />
       <skinnedMesh
@@ -103,9 +226,10 @@ const Developer = ({ animationName = 'idle', ...props }) => {
         skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
       />
     </group>
-  );
-};
+  )
+}
 
-useGLTF.preload('/models/animations/developer.glb');
+useGLTF.preload("/models/animations/developer.glb")
 
-export default Developer;
+export default Developer
+
