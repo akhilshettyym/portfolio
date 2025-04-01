@@ -1,29 +1,3 @@
-// import React, { useEffect, useRef } from 'react';
-// import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
-
-// const Developer = ({ animationName = 'idle', ...props }) => {
-//   const group = useRef();
-//   const { nodes, materials } = useGLTF('/models/animations/developer.glb');
-
-//   // Load animation safely
-//   const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
-//   const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
-//   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
-//   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
-
-//   // if (idleAnimation.length > 0) {
-//     idleAnimation[0].name = 'idle';
-//     saluteAnimation[0].name = 'salute';
-//     victoryAnimation[0].name = 'victory';
-//     clappingAnimation[0].name = 'clapping';
-//   // }
-
-//   const { actions } = useAnimations(idleAnimation.length > 0 ? [idleAnimation[0]] : [], group);
-
-//   useEffect(() => {
-//     if (!actions || !actions[animationName]) return; // Ensure action exists
-
-//     actions[animationName].reset().fadeIn(1).play();
 import React, { useEffect, useRef } from 'react';
 import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
 
@@ -36,12 +10,14 @@ const Developer = ({ animationName = 'idle', ...props }) => {
   const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
+  const { animations: surprisedAnimation } = useFBX('/models/animations/surprised.fbx');
 
   // Ensure animations are loaded before modifying them
   if (idleAnimation?.length) idleAnimation[0].name = 'idle';
   if (saluteAnimation?.length) saluteAnimation[0].name = 'salute';
   if (victoryAnimation?.length) victoryAnimation[0].name = 'victory';
   if (clappingAnimation?.length) clappingAnimation[0].name = 'clapping';
+  if (surprisedAnimation?.length) surprisedAnimation[0].name = 'surprised';
 
   // Collect all available animations
   const allAnimations = [
@@ -49,6 +25,7 @@ const Developer = ({ animationName = 'idle', ...props }) => {
     saluteAnimation?.[0],
     victoryAnimation?.[0],
     clappingAnimation?.[0],
+    surprisedAnimation?.[0],
   ].filter(Boolean); // Filter out undefined values
 
   const { actions } = useAnimations(allAnimations, group);

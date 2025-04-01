@@ -139,7 +139,7 @@ export const workExperiences = [
     title:
       "Presented Cloud-Based Smart Monitor- ing System for Baby Health and Safety at VNRVJIET, Hyderabad. Represented SJEC at the event. Participated in the International Conference on Transformations in Engineering Education (ICTIEE 2025).",
     icon: "/assets/iuceee.png",
-    animation: "clapping",
+    animation: "salute",
   },
   {
     id: 3,
@@ -149,7 +149,7 @@ export const workExperiences = [
     title:
       "As the Stage and Venue Committee Head at TEDxSJEC, I led a team of 23 to design and set up a captivating stage from scratch. I conceptualized and executed an extraordinary design, highlighting my artistic skills, creativity, and attention to detail for an immersive event experience.",
     icon: "/assets/tedxsjec.svg",
-    animation: "salute",
+    animation: "header",
   },
   {
     id: 4,
@@ -159,6 +159,6 @@ export const workExperiences = [
     title:
       "Completed my graphic design internship at Karanji Infotech, creating marketing visuals, social media content, and brochures. Collaborated with the team to meet client expectations and enhance visual storytelling",
       icon: "/assets/karanji.png",
-      animation: "salute",
+      animation: "clapping", 
   },
 ]
