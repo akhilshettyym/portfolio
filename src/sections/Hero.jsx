@@ -21,7 +21,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="min-h-screen w-full flex flex-col relative px-4 md:px-8">
+    <section className="min-h-screen w-full flex flex-col relative px-4 md:px-8" id="home">
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
         {/* Left Side - Text Content */}
         <div

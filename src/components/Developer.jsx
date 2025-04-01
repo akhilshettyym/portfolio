@@ -5,30 +5,30 @@ const Developer = ({ animationName = 'idle', ...props }) => {
   const group = useRef();
   const { nodes, materials } = useGLTF('/models/animations/developer.glb');
 
-  // Load animations safely
+  
   const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
   const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
 
-  // Ensure animations are loaded before modifying them
+  
   if (idleAnimation?.length) idleAnimation[0].name = 'idle';
   if (saluteAnimation?.length) saluteAnimation[0].name = 'salute';
   if (victoryAnimation?.length) victoryAnimation[0].name = 'victory';
   if (clappingAnimation?.length) clappingAnimation[0].name = 'clapping';
 
-  // Collect all available animations
+  
   const allAnimations = [
     idleAnimation?.[0],
     saluteAnimation?.[0],
     victoryAnimation?.[0],
     clappingAnimation?.[0],
-  ].filter(Boolean); // Filter out undefined values
+  ].filter(Boolean);
 
   const { actions } = useAnimations(allAnimations, group);
 
   useEffect(() => {
-    if (!actions || !actions[animationName]) return; // Ensure the action exists
+    if (!actions || !actions[animationName]) return;
 
     actions[animationName].reset().fadeIn(1).play();
 

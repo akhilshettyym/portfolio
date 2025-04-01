@@ -5,11 +5,11 @@ import { useGSAP } from '@gsap/react';
 
 const Robo = (props) => {
   const { nodes, materials } = useGLTF('/models/robo.glb');
-  const roboRef = useRef(); // Ref for animation
+  const roboRef = useRef(); 
 
   useGSAP(() => {
     gsap.to(roboRef.current.position, {
-      y: "+=0.5", // Moves up by 0.5 units
+      y: "+=0.5", 
       duration: 1.5,
       repeat: -1,
       yoyo: true,
