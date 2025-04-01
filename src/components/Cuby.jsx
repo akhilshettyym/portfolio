@@ -1,7 +1,4 @@
-import React, { useRef, useState } from 'react';
-import { useGLTF } from '@react-three/drei';
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
+import { React, useRef, useState, useGLTF, useGSAP, gsap} from "../Imports"
 
 const Cuby = (props) => {
   const { nodes, materials } = useGLTF('/models/cuby.glb');
