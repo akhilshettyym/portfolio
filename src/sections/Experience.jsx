@@ -23,7 +23,7 @@ const WorkExperience = () => {
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
 
               <Suspense fallback={<CanvasLoader />}>
-                <Developer position={[-0.5, -2, 0]} scale={[2, 2, 2]} animationName={animationName} />
+                <Developer position={[0, -1.8, 0]} scale={[2.2, 2.2, 2.4]} animationName={animationName} />
               </Suspense>
             </Canvas>
           </div>

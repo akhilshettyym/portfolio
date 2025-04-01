@@ -1,154 +1,134 @@
-// import React, { useRef } from 'react'
-// import { useGLTF } from '@react-three/drei'
+// import React, { useEffect, useRef } from 'react';
+// import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
 
-// const Developer = (props) => {
-//   const { nodes, materials } = useGLTF('/models/developer.glb')
-//   return (
-//     <group {...props} dispose={null}>
-//       <group rotation={[-Math.PI / 2, 0, 0]}>
-//         <lineSegments geometry={nodes.Object_2.geometry} material={materials.Hand} />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_3.geometry}
-//           material={materials['Material.008']}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_4.geometry}
-//           material={materials['Material.008']}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_5.geometry}
-//           material={materials['Tors.003']}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_6.geometry}
-//           material={materials.Hand}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_7.geometry}
-//           material={materials.Hand}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_8.geometry}
-//           material={materials.Hand}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_9.geometry}
-//           material={materials.Legs}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_10.geometry}
-//           material={materials.Legs}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_11.geometry}
-//           material={materials.Legs}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_12.geometry}
-//           material={materials.Tors}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_13.geometry}
-//           material={materials.Tors}
-//         />
-//         <mesh
-//           castShadow
-//           receiveShadow
-//           geometry={nodes.Object_14.geometry}
-//           material={materials['Tors.002']}
-//         />
-//       </group>
-//     </group>
-//   )
-// }
+// const Developer = ({ animationName = 'idle', ...props }) => {
+//   const group = useRef();
+//   const { nodes, materials } = useGLTF('/models/animations/developer.glb');
 
-// useGLTF.preload('/models/developer.glb')
+//   // Load animation safely
+//   const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
+//   const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
+//   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
+//   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
 
-// export default Developer;
+//   // if (idleAnimation.length > 0) {
+//     idleAnimation[0].name = 'idle';
+//     saluteAnimation[0].name = 'salute';
+//     victoryAnimation[0].name = 'victory';
+//     clappingAnimation[0].name = 'clapping';
+//   // }
 
-import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+//   const { actions } = useAnimations(idleAnimation.length > 0 ? [idleAnimation[0]] : [], group);
 
-const Developer = (props) => {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/developer.glb')
-  const { actions } = useAnimations(animations, group)
+//   useEffect(() => {
+//     if (!actions || !actions[animationName]) return; // Ensure action exists
+
+//     actions[animationName].reset().fadeIn(1).play();
+import React, { useEffect, useRef } from 'react';
+import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
+
+const Developer = ({ animationName = 'idle', ...props }) => {
+  const group = useRef();
+  const { nodes, materials } = useGLTF('/models/animations/developer.glb');
+
+  // Load animations safely
+  const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
+  const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
+  const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
+  const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
+
+  // Ensure animations are loaded before modifying them
+  if (idleAnimation?.length) idleAnimation[0].name = 'idle';
+  if (saluteAnimation?.length) saluteAnimation[0].name = 'salute';
+  if (victoryAnimation?.length) victoryAnimation[0].name = 'victory';
+  if (clappingAnimation?.length) clappingAnimation[0].name = 'clapping';
+
+  // Collect all available animations
+  const allAnimations = [
+    idleAnimation?.[0],
+    saluteAnimation?.[0],
+    victoryAnimation?.[0],
+    clappingAnimation?.[0],
+  ].filter(Boolean); // Filter out undefined values
+
+  const { actions } = useAnimations(allAnimations, group);
+
+  useEffect(() => {
+    if (!actions || !actions[animationName]) return; // Ensure the action exists
+
+    actions[animationName].reset().fadeIn(1).play();
+
+    return () => {
+      if (actions[animationName]) actions[animationName].fadeOut(1);
+    };
+  }, [animationName, actions]);
+
+  console.log('Available actions:', actions);
+
   return (
-    <group ref={group} {...props} dispose={null}>
-      <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
-          <group
-            name="e2e044d7214743d2900b767fd67712c1fbx"
-            rotation={[Math.PI / 2, 0, 0]}
-            scale={0.01}>
-            <group name="Object_2">
-              <group name="RootNode">
-                <group name="boss5_gunR_controlgun001" position={[-42.795, 75.887, -0.066]} />
-                <group name="boss5_gunL_controlgun001" position={[42.795, 75.887, -0.066]} />
-                <group name="boss5_body001" />
-                <group name="boss5" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
-                  <group name="Object_8">
-                    <group name="Object_9" position={[-42.795, 75.887, -0.066]} />
-                    <group name="Object_11" position={[42.795, 75.887, -0.066]} />
-                    <group name="Object_13" />
-                    <primitive object={nodes.spine1_00} />
-                  </group>
-                </group>
-              </group>
-            </group>
-          </group>
-          <skinnedMesh
-            name="Object_10"
-            geometry={nodes.Object_10.geometry}
-            material={materials.boss5}
-            skeleton={nodes.Object_10.skeleton}
-          />
-          <skinnedMesh
-            name="Object_12"
-            geometry={nodes.Object_12.geometry}
-            material={materials.boss5}
-            skeleton={nodes.Object_12.skeleton}
-          />
-          <skinnedMesh
-            name="Object_14"
-            geometry={nodes.Object_14.geometry}
-            material={materials.boss5}
-            skeleton={nodes.Object_14.skeleton}
-          />
-          <skinnedMesh
-            name="Object_15"
-            geometry={nodes.Object_15.geometry}
-            material={materials.screen}
-            skeleton={nodes.Object_15.skeleton}
-          />
-        </group>
-      </group>
+    <group {...props} dispose={null} ref={group}>
+      <primitive object={nodes.Hips} />
+      <skinnedMesh
+        name="EyeLeft"
+        geometry={nodes.EyeLeft.geometry}
+        material={materials.Wolf3D_Eye}
+        skeleton={nodes.EyeLeft.skeleton}
+        morphTargetDictionary={nodes.EyeLeft.morphTargetDictionary}
+        morphTargetInfluences={nodes.EyeLeft.morphTargetInfluences}
+      />
+      <skinnedMesh
+        name="EyeRight"
+        geometry={nodes.EyeRight.geometry}
+        material={materials.Wolf3D_Eye}
+        skeleton={nodes.EyeRight.skeleton}
+        morphTargetDictionary={nodes.EyeRight.morphTargetDictionary}
+        morphTargetInfluences={nodes.EyeRight.morphTargetInfluences}
+      />
+      <skinnedMesh
+        name="Wolf3D_Head"
+        geometry={nodes.Wolf3D_Head.geometry}
+        material={materials.Wolf3D_Skin}
+        skeleton={nodes.Wolf3D_Head.skeleton}
+        morphTargetDictionary={nodes.Wolf3D_Head.morphTargetDictionary}
+        morphTargetInfluences={nodes.Wolf3D_Head.morphTargetInfluences}
+      />
+      <skinnedMesh
+        name="Wolf3D_Teeth"
+        geometry={nodes.Wolf3D_Teeth.geometry}
+        material={materials.Wolf3D_Teeth}
+        skeleton={nodes.Wolf3D_Teeth.skeleton}
+        morphTargetDictionary={nodes.Wolf3D_Teeth.morphTargetDictionary}
+        morphTargetInfluences={nodes.Wolf3D_Teeth.morphTargetInfluences}
+      />
+      <skinnedMesh
+        geometry={nodes.Wolf3D_Hair.geometry}
+        material={materials.Wolf3D_Hair}
+        skeleton={nodes.Wolf3D_Hair.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Wolf3D_Body.geometry}
+        material={materials.Wolf3D_Body}
+        skeleton={nodes.Wolf3D_Body.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Wolf3D_Outfit_Bottom.geometry}
+        material={materials.Wolf3D_Outfit_Bottom}
+        skeleton={nodes.Wolf3D_Outfit_Bottom.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Wolf3D_Outfit_Footwear.geometry}
+        material={materials.Wolf3D_Outfit_Footwear}
+        skeleton={nodes.Wolf3D_Outfit_Footwear.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Wolf3D_Outfit_Top.geometry}
+        material={materials.Wolf3D_Outfit_Top}
+        skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
+      />
     </group>
-  )
-}
+  );
+};
 
-useGLTF.preload('/models/developer.glb')
+useGLTF.preload('/models/animations/developer.glb');
 
 export default Developer;

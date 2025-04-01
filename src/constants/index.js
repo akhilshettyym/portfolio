@@ -152,7 +152,7 @@ export const workExperiences = [
     animation: "salute",
   },
   {
-    id: 3,
+    id: 4,
     name: "Karanji Infotech Pvt. Ltd.",
     pos: "Junior Graphic Designer Intern",
     duration: "6th Nov - 5th Dec 2023",
