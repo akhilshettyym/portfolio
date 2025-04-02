@@ -40,26 +40,26 @@ const About = () => {
           <div className="grid-container flex flex-col items-center">
             {/* Tech Logos git */}
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 p-4">
-              <img src="/assets/react.svg" alt="React" className="w-10 h-10 object-contain" />
-              <img src="/assets/figma.svg" alt="Figma" className="w-10 h-10 object-contain" />
-              <img src="/assets/firebase.svg" alt="Firebase" className="w-10 h-10 object-contain" />
-              <img src="/assets/javascript.svg" alt="JavaScript" className="w-10 h-10 object-contain" />
-              <img src="/assets/salesforce.svg" alt="Salesforce" className="w-10 h-10 object-contain" />
-              <img src="/assets/tailwind.svg" alt="Tailwind CSS" className="w-10 h-10 object-contain" />
-              <img src="/assets/typescript.svg" alt="TypeScript" className="w-10 h-10 object-contain" />
-              <img src="/assets/next.svg" alt="Next.js" className="w-10 h-10 object-contain" />
-              <img src="/assets/solidity.svg" alt="Solidity" className="w-10 h-10 object-contain" />
-              <img src="/assets/blender.svg" alt="Blender" className="w-10 h-10 object-contain" />
-              <img src="/assets/node.svg" alt="Node.js" className="w-10 h-10 object-contain" />
-              <img src="/assets/git.svg" alt="Git" className="w-10 h-10 object-contain" />
-              <img src="/assets/python.svg" alt="Python" className="w-10 h-10 object-contain" />
-              <img src="/assets/java.svg" alt="Java" className="w-10 h-10 object-contain" />
-              <img src="/assets/html.svg" alt="HTML" className="w-10 h-10 object-contain" />
-              <img src="/assets/css.svg" alt="CSS" className="w-10 h-10 object-contain" />
-              <img src="/assets/threejs.svg" alt="Three.js" className="w-10 h-10 object-contain" />
-              <img src="/assets/mysql.svg" alt="MySQL" className="w-10 h-10 object-contain" />
-              <img src="/assets/animate.svg" alt="Adobe Animate" className="w-10 h-10 object-contain" />
-              <img src="/assets/maximo.png" alt="IBM Maximo" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/react.svg" alt="React" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/figma.svg" alt="Figma" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/firebase.svg" alt="Firebase" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/javascript.svg" alt="JavaScript" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/salesforce.svg" alt="Salesforce" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/tailwind.svg" alt="Tailwind CSS" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/typescript.svg" alt="TypeScript" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/next.svg" alt="Next.js" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/solidity.svg" alt="Solidity" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/blender.svg" alt="Blender" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/node.svg" alt="Node.js" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/git.svg" alt="Git" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/python.svg" alt="Python" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/java.svg" alt="Java" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/html.svg" alt="HTML" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/css.svg" alt="CSS" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/threejs.svg" alt="Three.js" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/mysql.svg" alt="MySQL" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/animate.svg" alt="Adobe Animate" className="w-10 h-10 object-contain" />
+              <img src="/assets/techstack/maximo.png" alt="IBM Maximo" className="w-10 h-10 object-contain" />
             </div>
 
             {/* Tech Stack Description */}
