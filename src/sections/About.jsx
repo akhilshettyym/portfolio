@@ -36,19 +36,6 @@ const About = () => {
           </div>
         </div>
 
-
-        {/* Tech Stack
-        <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
-            <div>
-              <p className="grid-headtext">Tech Stack </p>
-              <p className="grid-subtext">
-                I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js.
-              </p>
-            </div>
-          </div>
-        </div> */}
         {/* Tech Stack */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container flex flex-col items-center">
@@ -129,8 +116,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-
 
         {/* Passion for Coding */}
         <div className="xl:col-span-2 xl:row-span-3">
