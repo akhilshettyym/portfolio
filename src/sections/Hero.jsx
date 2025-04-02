@@ -26,9 +26,8 @@ const Hero = () => {
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
         {/* Left Side - Text Content */}
         <div
-          className={`${
-            isDesktop ? "lg:w-1/2" : "w-full"
-          } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
+          className={`${isDesktop ? "lg:w-1/2" : "w-full"
+            } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
         >
           {/* Name Heading */}
           <h1 className="text-xs font-light text-gray-500 mb-4">Akhil</h1>
@@ -59,13 +58,12 @@ const Hero = () => {
               boundaries of technology.
             </p>
 
-            {/* Dynamic Text & Link */}
-            <p className="text-gray-400 text-xs sm:text-sm md:text-lg lg:text-lg flex items-center">
+            
+            <p className="text-gray-400 text-xs sm:text-sm md:text-medium lg:text-medium flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
               <a
                 href="#projects"
-                className="ml-3 text-white font-medium hover:text-gray-300 transition-all inline-flex items-center group"
-              >
+                className="ml-3 text-white text-sm hover:text-gray-300 transition-all inline-flex items-center group">
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,11 +76,12 @@ const Hero = () => {
                 </svg>
               </a>
             </p>
+
           </div>
 
           {/* Centered & Lowered Button */}
           <div className="mt-12 flex justify-center">
-            <a href="#about">
+            <a href="#contact">
               <Button name="Let's work together" isBeam containerClass="w-fit transition-transform hover:scale-105" />
             </a>
           </div>
