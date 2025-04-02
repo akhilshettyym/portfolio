@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Globe from "react-globe.gl"
-// import Button from "../components/Button.jsx"
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false)
@@ -75,7 +74,6 @@ const About = () => {
         </div>
 
 
-
         {/* Globe Visualization */}
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container space-y-6">
@@ -102,6 +100,7 @@ const About = () => {
               />
             </div>
 
+
             {/* Globe Text Content */}
             <div>
               <p className="grid-headtext ">Locate me here</p>
@@ -116,6 +115,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
 
         {/* Passion for Coding */}
         <div className="xl:col-span-2 xl:row-span-3">
@@ -175,13 +175,6 @@ const About = () => {
                   <img src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"} alt="Copy Icon" className="w-4 h-4" />
                 </div>
               </div>
-
-              {/* Contact Button */}
-              {/* <div className="mt-8 flex justify-center">
-                <Button name="Contact Me" isBeam containerClass="w-fit transition-transform hover:scale-105" className="id=home" />
-              </div> */}
-
-
             </div>
           </div>
         </div>
@@ -223,8 +216,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   )
