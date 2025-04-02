@@ -28,7 +28,7 @@ const About = () => {
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">Hi, I’m Akhil</p>
-              <p className="grid-subtext justify-center items-center">
+              <p className="grid-subtext text-justify">
                 I'm a Computer Science undergraduate with a strong technical background. With 3 years of experience, I
                 specialize in frontend & backend development, bringing innovative ideas to life.
               </p>
@@ -74,17 +74,15 @@ const About = () => {
               <img src="/assets/mysql.svg" alt="MySQL" className="w-10 h-10 object-contain" />
               <img src="/assets/animate.svg" alt="Adobe Animate" className="w-10 h-10 object-contain" />
               <img src="/assets/maximo.png" alt="IBM Maximo" className="w-10 h-10 object-contain" />
-
-
-
             </div>
 
             {/* Tech Stack Description */}
-            <div className="justify-center items-center mt-4">
+            <div className="mt-4">
               <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
-                I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js.
+              <p className="grid-subtext text-justify">
+                I specialize in developing robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js, ensuring seamless performance and modern user experiences.
               </p>
+
             </div>
           </div>
         </div>
@@ -119,8 +117,8 @@ const About = () => {
 
             {/* Globe Text Content */}
             <div>
-              <p className="grid-headtext justify-center items-center">Locate me here</p>
-              <p className="grid-subtext">
+              <p className="grid-headtext ">Locate me here</p>
+              <p className="grid-subtext text-justify">
                 I work remotely across time zones, ensuring seamless digital solutions through adaptability and strong
                 communication. Always ready to connect, contribute, and deliver quality results.
               </p>
@@ -140,8 +138,8 @@ const About = () => {
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I love solving problems and building through code—it's my passion. I'm the creator of <strong>BabySphere</strong>, a smart baby monitoring system using **Firebase** for real-time communication and data tracking. I thrive on challenges that blend logic with innovation.
+              <p className="grid-subtext text-justify">
+                I love solving problems and building through code—it's my passion. I'm the creator of <strong>BabySphere</strong>, a smart baby monitoring system using Firebase for real-time communication and data tracking. I thrive on challenges that blend logic with innovation.
               </p>
             </div>
           </div>
