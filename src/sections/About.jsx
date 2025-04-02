@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Globe from "react-globe.gl"
-import Button from "../components/Button.jsx"
+// import Button from "../components/Button.jsx"
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false)
@@ -28,7 +28,7 @@ const About = () => {
             <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">Hi, I’m Akhil</p>
-              <p className="grid-subtext">
+              <p className="grid-subtext justify-center items-center">
                 I'm a Computer Science undergraduate with a strong technical background. With 3 years of experience, I
                 specialize in frontend & backend development, bringing innovative ideas to life.
               </p>
@@ -36,11 +36,51 @@ const About = () => {
           </div>
         </div>
 
-        {/* Tech Stack */}
+
+        {/* Tech Stack
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
             <div>
+              <p className="grid-headtext">Tech Stack </p>
+              <p className="grid-subtext">
+                I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js.
+              </p>
+            </div>
+          </div>
+        </div> */}
+        {/* Tech Stack */}
+        <div className="col-span-1 xl:row-span-3">
+          <div className="grid-container flex flex-col items-center">
+            {/* Tech Logos git */}
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 p-4">
+              <img src="/assets/react.svg" alt="React" className="w-10 h-10 object-contain" />
+              <img src="/assets/figma.svg" alt="Figma" className="w-10 h-10 object-contain" />
+              <img src="/assets/firebase.svg" alt="Firebase" className="w-10 h-10 object-contain" />
+              <img src="/assets/javascript.svg" alt="JavaScript" className="w-10 h-10 object-contain" />
+              <img src="/assets/salesforce.svg" alt="Salesforce" className="w-10 h-10 object-contain" />
+              <img src="/assets/tailwind.svg" alt="Tailwind CSS" className="w-10 h-10 object-contain" />
+              <img src="/assets/typescript.svg" alt="TypeScript" className="w-10 h-10 object-contain" />
+              <img src="/assets/next.svg" alt="Next.js" className="w-10 h-10 object-contain" />
+              <img src="/assets/solidity.svg" alt="Solidity" className="w-10 h-10 object-contain" />
+              <img src="/assets/blender.svg" alt="Blender" className="w-10 h-10 object-contain" />
+              <img src="/assets/node.svg" alt="Node.js" className="w-10 h-10 object-contain" />
+              <img src="/assets/git.svg" alt="Git" className="w-10 h-10 object-contain" />
+              <img src="/assets/python.svg" alt="Python" className="w-10 h-10 object-contain" />
+              <img src="/assets/java.svg" alt="Java" className="w-10 h-10 object-contain" />
+              <img src="/assets/html.svg" alt="HTML" className="w-10 h-10 object-contain" />
+              <img src="/assets/css.svg" alt="CSS" className="w-10 h-10 object-contain" />
+              <img src="/assets/threejs.svg" alt="Three.js" className="w-10 h-10 object-contain" />
+              <img src="/assets/mysql.svg" alt="MySQL" className="w-10 h-10 object-contain" />
+              <img src="/assets/animate.svg" alt="Adobe Animate" className="w-10 h-10 object-contain" />
+              <img src="/assets/maximo.png" alt="IBM Maximo" className="w-10 h-10 object-contain" />
+
+
+
+            </div>
+
+            {/* Tech Stack Description */}
+            <div className="justify-center items-center mt-4">
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
                 I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js.
@@ -48,6 +88,8 @@ const About = () => {
             </div>
           </div>
         </div>
+
+
 
         {/* Globe Visualization */}
         <div className="col-span-1 xl:row-span-4">
@@ -77,20 +119,21 @@ const About = () => {
 
             {/* Globe Text Content */}
             <div>
-              <p className="grid-headtext">Locate me here</p>
+              <p className="grid-headtext justify-center items-center">Locate me here</p>
               <p className="grid-subtext">
                 I work remotely across time zones, ensuring seamless digital solutions through adaptability and strong
                 communication. Always ready to connect, contribute, and deliver quality results.
               </p>
               <span className="font-medium text-white">Mangalore, Karnataka, India</span>.{/* Contact Button */}
               <div className="mt-8 flex justify-center">
-                
+
               </div>
             </div>
           </div>
         </div>
 
-        
+
+
         {/* Passion for Coding */}
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
@@ -98,12 +141,13 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my profession—it&apos;s my passion.
-                Whether it's crafting seamless user experiences or building scalable solutions, I thrive on challenges that blend logic and innovation.
+                I love solving problems and building through code—it's my passion. I'm the creator of <strong>BabySphere</strong>, a smart baby monitoring system using **Firebase** for real-time communication and data tracking. I thrive on challenges that blend logic with innovation.
               </p>
             </div>
           </div>
         </div>
+
+
 
         {/* Contact Me */}
         <div className="xl:col-span-1 xl:row-span-2">
@@ -150,9 +194,11 @@ const About = () => {
               </div>
 
               {/* Contact Button */}
-              <div className="mt-8 flex justify-center">
-                <Button name="Contact Me" isBeam containerClass="w-fit transition-transform hover:scale-105" />
-              </div>
+              {/* <div className="mt-8 flex justify-center">
+                <Button name="Contact Me" isBeam containerClass="w-fit transition-transform hover:scale-105" className="id=home" />
+              </div> */}
+
+
             </div>
           </div>
         </div>
