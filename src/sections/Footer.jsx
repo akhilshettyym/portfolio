@@ -49,7 +49,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-white transition">
-          <img src="/assets/github.svg" alt="Github" className="w-4 h-4 hover:scale-110 transition-transform" />
+          <img src="/assets/github.svg" alt="GITHUB" className="w-4 h-4 hover:scale-110 transition-transform" />
           GITHUB </a>
 
           {/* RESUME */}
@@ -58,7 +58,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-white transition border-gray-400 rounded-lg p-2"
           download="Akhil_Shetty_M.pdf">
-          <img src="/assets/resume.png" alt="Resume" className="w-4 h-4 hover:scale-110 transition-transform" />
+          <img src="/assets/resume.png" alt="RESUME" className="w-4 h-4 hover:scale-110 transition-transform" />
           <span className="text-sm font-medium">RESUME</span>
         </a>
 
@@ -67,15 +67,23 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-white transition">
-          <img src="/assets/linkedin.png" alt="LinkedIn" className="w-4 h-4 hover:scale-110 transition-transform" />
+          <img src="/assets/linkedin.png" alt="LINKEDIN" className="w-4 h-4 hover:scale-110 transition-transform" />
           LINKEDIN </a>
+
+        {/* SALESFORCE */}
+        <a href="https://www.salesforce.com/trailblazer/akhilshettym"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:text-white transition">
+          <img src="/assets/salesforce.png" alt="SALESFORCE" className="w-4.3 h-4 hover:scale-110 transition-transform" />
+          SALESFORCE </a>
 
         {/* INSTAGRAM */}
         <a href="https://www.instagram.com/akhil_shetty_m"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-white transition">
-          <img src="/assets/instagram.svg" alt="Instagram" className="w-4 h-4 hover:scale-110 transition-transform" />
+          <img src="/assets/instagram.svg" alt="INSTAGRAM" className="w-4 h-4 hover:scale-110 transition-transform" />
           INSTAGRAM </a>
 
         
