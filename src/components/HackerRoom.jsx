@@ -8,7 +8,6 @@ const HackerRoom = (props) => {
   const modelRef = useRef()
 
   const monitortxt = useTexture("textures/desk/monitor.png")
-  const screenTxt = useTexture("textures/desk/screen.png")
 
   return (
     <group {...props} ref={modelRef} dispose={null}>
