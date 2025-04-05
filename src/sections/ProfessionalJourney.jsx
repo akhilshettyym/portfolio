@@ -22,7 +22,10 @@ const ProfessionalJourney = () => {
                   <img src={item.img} alt="reviewer" className="w-12 h-12 rounded-full" />
                   <div className="flex flex-col">
                     <p className="font-semibold text-white-800">{item.name}</p>
-                    <p className="text-white-500 md:text-base text-sm font-light">{item.position}</p>
+                    <p className="text-white-500 md:text-base text-sm font-light">{item.positionLine1}
+                      <br />
+                      <span className="">{item.positionLine2}</span>
+                    </p>
                   </div>
                 </div>
 

@@ -32,7 +32,8 @@ export const MyProfessionalJourney = [
   {
     id: 1,
     name: "Impact Highlights",
-    position: "Projects & Leadership",
+    positionLine1: "Projects & Leadership",
+    positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Impact-Highlights.png",
     review:
       "A curated collection of key accomplishments, including contributions to impactful projects, recognition in technical competitions, and leadership roles that reflect initiative, collaboration, and effective execution.",
@@ -41,7 +42,8 @@ export const MyProfessionalJourney = [
   {
     id: 2,
     name: "Technical Certifications",
-    position: "Academic Upskilling",
+    positionLine1: "Academic Upskilling",
+    positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Technical-Certifications.png",
     review:
       "A comprehensive overview of certifications earned through academic and professional development programs...",
@@ -50,7 +52,8 @@ export const MyProfessionalJourney = [
   {
     id: 3,
     name: "Co-Curricular Recognition",
-    position: "Beyond Academics extracurricular excellence",
+    positionLine1: `Beyond Academics extracurricular excellence`,
+    positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Co-Curricular-Recognition.png",
     review:
       "Certificates and recognitions awarded for active participation in co-curricular initiatives...",
@@ -59,7 +62,8 @@ export const MyProfessionalJourney = [
   {
     id: 4,
     name: "Academic Records",
-    position: "Official Academic Records",
+    positionLine1: "Official Academic Records",
+    positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Academic-Records.png",
     review:
       "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs...",
