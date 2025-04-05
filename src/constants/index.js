@@ -108,10 +108,10 @@ export const myProjects = [
 
  // Promptlytic Start
  {
-  title: "NodeSurge : A Multi-Utility Platform",
-  desc: "Maximize productivity with NodeSurge — your all-in-one platform for advanced text tools, real-time currency conversion, smart to-do lists, live weather updates, secure password generation, and an intelligent chatbot. Seamlessly organize your tasks and enhance precision in every aspect of your day!",
+  title: "Promptlytic : An open-source AI prompting platform",
+  desc: "Promptlytic is an open-source platform to discover, create, and share AI prompts with ease. Whether you're crafting content, coding, or exploring creativity, Promptlytic connects you to a growing community of AI enthusiasts — helping you find inspiration, build ideas, and share your own.",
   subdesc:
-    "Built as a powerful productivity platform with modern web technologies, NodeSurge is designed for efficiency and seamless user experience.",
+    "Fuel your imagination with curated prompts, real-time sharing, and a vibrant AI-driven community — all in one place.",
   spotlight: "/path/to/nodesurge-spotlight.jpg",
   href: "https://akhilshettyym.github.io/NodeSurge/",
   texture: "/textures/project/project1.mp4",
