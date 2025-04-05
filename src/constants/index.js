@@ -83,27 +83,74 @@ export const myProjects = [
       {
         id: 1,
         name: "React.js",
-        path: "/assets/react.svg",
+        path: "/assets/projects/react.svg",
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        path: "assets/projects/tailwind.svg",
       },
       {
         id: 3,
         name: "JavaScript",
-        path: "/assets/javascript.png",
+        path: "/assets/projects/javascript.svg",
       },
       {
         id: 4,
         name: "FireBase",
-        path: "/assets/firebase.png",
+        path: "/assets/projects/firebase.svg",
       },
     ],
   },
 
   // NodeSurge end
+
+
+ // Promptlytic Start
+ {
+  title: "NodeSurge : A Multi-Utility Platform",
+  desc: "Maximize productivity with NodeSurge — your all-in-one platform for advanced text tools, real-time currency conversion, smart to-do lists, live weather updates, secure password generation, and an intelligent chatbot. Seamlessly organize your tasks and enhance precision in every aspect of your day!",
+  subdesc:
+    "Built as a powerful productivity platform with modern web technologies, NodeSurge is designed for efficiency and seamless user experience.",
+  spotlight: "/path/to/nodesurge-spotlight.jpg",
+  href: "https://akhilshettyym.github.io/NodeSurge/",
+  texture: "/textures/project/project1.mp4",
+  logo: "/assets/project-logo1.png",
+  logoStyle: {
+    backgroundColor: "#2A1816",
+    border: "0.2px solid #36201D",
+    boxShadow: "0px 0px 60px 0px #AA3C304D",
+  },
+  spotlight: "/assets/spotlight1.png",
+  tags: [
+    {
+      id: 1,
+      name: "React.js",
+      path: "/assets/projects/react.svg",
+    },
+    {
+      id: 2,
+      name: "TailwindCSS",
+      path: "assets/projects/tailwind.svg",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      path: "/assets/projects/javascript.svg",
+    },
+    {
+      id: 4,
+      name: "FireBase",
+      path: "/assets/projects/firebase.svg",
+    },
+  ],
+},
+
+// Promptlytic end
+
+
+
+
 ]
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
