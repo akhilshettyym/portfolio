@@ -63,6 +63,7 @@ export const clientReviews = [
 ]
 
 export const myProjects = [
+
   // NodeSurge Start
   {
     title: "NodeSurge : A Multi-Utility Platform",
@@ -72,7 +73,7 @@ export const myProjects = [
     spotlight: "/path/to/nodesurge-spotlight.jpg",
     href: "https://akhilshettyym.github.io/NodeSurge/",
     texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+    logo: "/assets/projects/project-logo/project-logo1.png",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -83,22 +84,22 @@ export const myProjects = [
       {
         id: 1,
         name: "React.js",
-        path: "/assets/projects/react.svg",
+        path: "/assets/projects/project-stack/react.svg",
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/projects/tailwind.svg",
+        path: "/assets/projects/project-stack/tailwind.svg",
       },
       {
         id: 3,
         name: "JavaScript",
-        path: "/assets/projects/javascript.svg",
+        path: "/assets/projects/project-stack/javascript.svg",
       },
       {
         id: 4,
         name: "FireBase",
-        path: "/assets/projects/firebase.svg",
+        path: "/assets/projects/project-stack/firebase.svg",
       },
     ],
   },
@@ -106,47 +107,52 @@ export const myProjects = [
   // NodeSurge end
 
 
- // Promptlytic Start
- {
-  title: "Promptlytic : An open-source AI prompting platform",
-  desc: "Promptlytic is an open-source platform to discover, create, and share AI prompts with ease. Whether you're crafting content, coding, or exploring creativity, Promptlytic connects you to a growing community of AI enthusiasts — helping you find inspiration, build ideas, and share your own.",
-  subdesc:
-    "Fuel your imagination with curated prompts, real-time sharing, and a vibrant AI-driven community — all in one place.",
-  spotlight: "/path/to/nodesurge-spotlight.jpg",
-  href: "https://akhilshettyym.github.io/NodeSurge/",
-  texture: "/textures/project/project1.mp4",
-  logo: "/assets/project-logo1.png",
-  logoStyle: {
-    backgroundColor: "#2A1816",
-    border: "0.2px solid #36201D",
-    boxShadow: "0px 0px 60px 0px #AA3C304D",
+  // Promptlytic Start
+  {
+    title: "Promptlytic : An open-source AI prompting platform",
+    desc: "Promptlytic is an open-source platform to discover, create, and share AI prompts with ease. Whether you're crafting content, coding, or exploring creativity, Promptlytic connects you to a growing community of AI enthusiasts — helping you find inspiration, build ideas, and share your own.",
+    subdesc:
+      "Fuel your imagination with curated prompts, real-time sharing, and a vibrant AI-driven community — all in one place.",
+    spotlight: "/path/to/nodesurge-spotlight.jpg",
+    href: "https://promptlytic.vercel.app/",
+    texture: "/textures/project/project1.mp4",
+    logo: "/assets/projects/project-logo/project-logo2.svg",
+    logoStyle: {
+      backgroundColor: "#f5faff",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C302D",
+    },
+    spotlight: "/assets/spotlight2.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/projects/project-stack/next.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/projects/project-stack/tailwind.svg",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "/assets/projects/project-stack/javascript.svg",
+      },
+      {
+        id: 4,
+        name: "FireBase",
+        path: "/assets/projects/project-stack/MongoDB.svg",
+      },
+      {
+        id: 4,
+        name: "FireBase",
+        path: "/assets/projects/project-stack/vercel.svg",
+      },
+    ],
   },
-  spotlight: "/assets/spotlight1.png",
-  tags: [
-    {
-      id: 1,
-      name: "React.js",
-      path: "/assets/projects/react.svg",
-    },
-    {
-      id: 2,
-      name: "TailwindCSS",
-      path: "assets/projects/tailwind.svg",
-    },
-    {
-      id: 3,
-      name: "JavaScript",
-      path: "/assets/projects/javascript.svg",
-    },
-    {
-      id: 4,
-      name: "FireBase",
-      path: "/assets/projects/firebase.svg",
-    },
-  ],
-},
 
-// Promptlytic end
+  // Promptlytic end  mongodb 
 
 
 
