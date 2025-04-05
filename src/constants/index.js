@@ -73,7 +73,7 @@ export const myProjects = [
     spotlight: "/path/to/nodesurge-spotlight.jpg",
     href: "https://akhilshettyym.github.io/NodeSurge/",
     texture: "/textures/project/project1.mp4",
-    logo: "/assets/projects/project-logo/project-logo1.png",
+    logo: "/assets/projects/project-logo/project-logo1.svg",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -152,9 +152,7 @@ export const myProjects = [
     ],
   },
 
-  // Promptlytic end  mongodb 
-
-
+  // Promptlytic end
 
 
 ]
@@ -179,7 +177,7 @@ export const workExperiences = [
     duration: "2025 - Present",
     title:
       "Excited to join GIC Global Industrial Pvt. Ltd. as an IT Intern (Full Stack Developer)! Looking forward to contributing to impactful projects, collaborating with talented colleagues, and growing in a dynamic environment.",
-    icon: "/assets/experience/gic.webp",
+    icon: "/assets/experience/gic.svg",
     animation: "victory",
   },
   {
@@ -189,7 +187,7 @@ export const workExperiences = [
     duration: "7th - 8th Jan 2025",
     title:
       "Presented Cloud-Based Smart Monitor- ing System for Baby Health and Safety at VNRVJIET, Hyderabad. Represented SJEC at the event. Participated in the International Conference on Transformations in Engineering Education (ICTIEE 2025).",
-    icon: "/assets/experience/iuceee.png",
+    icon: "/assets/experience/iuceee.svg",
     animation: "clapping",
   },
   {
@@ -209,7 +207,7 @@ export const workExperiences = [
     duration: "6th Nov - 5th Dec 2023",
     title:
       "Completed my graphic design internship at Karanji Infotech, creating marketing visuals, social media content, and brochures. Collaborated with the team to meet client expectations and enhance visual storytelling",
-    icon: "/assets/experience/karanji.png",
+    icon: "/assets/experience/karanji.svg",
     animation: "idle",
   },
 ]
