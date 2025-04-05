@@ -32,7 +32,7 @@ export const clientReviews = [
     id: 1,
     name: "Impact Highlights",
     position: "Projects & Leadership",
-    img: "assets/review1.png",
+    img: "assets/My-Professional-Journey/Impact-Highlights.png",
     review:
       "A curated collection of key accomplishments, including contributions to impactful projects, recognition in technical competitions, and leadership roles that reflect initiative, collaboration, and effective execution.",
   },
@@ -40,7 +40,7 @@ export const clientReviews = [
     id: 2,
     name: "Technical Certifications",
     position: "Academic Upskilling",
-    img: "assets/review2.png",
+    img: "assets/My-Professional-Journey/Technical-Certifications.png",
     review:
       "A comprehensive overview of certifications earned through academic and professional development programs—demonstrating a strong commitment to continuous learning and staying updated with evolving industry trends.",
   },
@@ -48,7 +48,7 @@ export const clientReviews = [
     id: 3,
     name: "Co-Curricular Recognition",
     position: "Beyond Academics extracurricular excellence",
-    img: "assets/review3.png",
+    img: "assets/My-Professional-Journey/Co-Curricular-Recognition.png",
     review:
       "Certificates and recognitions awarded for active participation in co-curricular initiatives, highlighting my versatility, collaborative spirit, and engagement beyond the classroom environment.",
   },
@@ -56,7 +56,7 @@ export const clientReviews = [
     id: 4,
     name: "Academic Records",
     position: "Official Academic Records",
-    img: "assets/review4.png",
+    img: "assets/My-Professional-Journey/Academic-Records.png",
     review:
       "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs—demonstrating academic rigor, consistency, and dedication across all levels of formal education.",
   },
