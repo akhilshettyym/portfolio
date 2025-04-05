@@ -1,6 +1,6 @@
 import { clientReviews } from '../constants/index.js';
 
-const Clients = () => {
+const ProfessionalJourney = () => {
   return (
     <section className="c-space my-20">
       <h3 className="head-text">My Professional Journey</h3>
@@ -9,7 +9,7 @@ const Clients = () => {
         {clientReviews.map((item) => (
           <div key={`review-${item.id}`} className="client-review">
             <div>
-              <p className="text-white-800 font-light">{item.review}</p>
+              <p className="text-white-800 font-light text-justify">{item.review}</p>
 
               <div className="client-content">
                 <div className="flex gap-3">
@@ -34,4 +34,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default ProfessionalJourney;
