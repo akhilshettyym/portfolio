@@ -32,7 +32,7 @@ export const MyProfessionalJourney = [
   {
     id: 1,
     name: "Impact Highlights",
-    positionLine1: "Projects & Leadership",
+    positionLine1: "Trailblazing Through Initiative",
     positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Impact-Highlights.png",
     review:
@@ -42,31 +42,31 @@ export const MyProfessionalJourney = [
   {
     id: 2,
     name: "Technical Certifications",
-    positionLine1: "Academic Upskilling",
+    positionLine1: "Certified Academic Progress",
     positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Technical-Certifications.png",
     review:
-      "A comprehensive overview of certifications earned through academic and professional development programs...",
+      "Certifications earned through academic and professional development, reflecting a commitment to continuous learning and staying updated with industry trends.",
     link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/02_TechnicalCertifications",
   },
   {
     id: 3,
     name: "Co-Curricular Recognition",
-    positionLine1: `Beyond Academics extracurricular excellence`,
+    positionLine1: `Co-Curricular Engagement Highlights`,
     positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Co-Curricular-Recognition.png",
     review:
-      "Certificates and recognitions awarded for active participation in co-curricular initiatives...",
+      "Certificates and recognitions awarded for active participation in co-curricular initiatives, showcasing leadership, teamwork, and a well-rounded skillset beyond academics.",
     link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/03_Co-CurricularRecognition",
   },
   {
     id: 4,
     name: "Academic Records",
-    positionLine1: "Official Academic Records",
+    positionLine1: "Authenticated Academic History",
     positionLine2: "(👁️  click to view)",
     img: "assets/My-Professional-Journey/Academic-Records.png",
     review:
-      "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs...",
+      "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs—highlighting academic consistency, performance, and growth across formal education.",
     link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/04_AcademicRecords",
   },
   
