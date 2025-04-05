@@ -30,35 +30,35 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
+    name: "Impact Highlights",
+    position: "Projects & Leadership",
     img: "assets/review1.png",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "A curated collection of key accomplishments, including contributions to impactful projects, recognition in technical competitions, and leadership roles that reflect initiative, collaboration, and effective execution.",
   },
   {
     id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
+    name: "Technical Certifications",
+    position: "Academic Upskilling",
     img: "assets/review2.png",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "A comprehensive overview of certifications earned through academic and professional development programs—demonstrating a strong commitment to continuous learning and staying updated with evolving industry trends.",
   },
   {
     id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
+    name: "Co-Curricular Recognition",
+    position: "Beyond Academics extracurricular excellence",
     img: "assets/review3.png",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Certificates and recognitions awarded for active participation in co-curricular initiatives, highlighting my versatility, collaborative spirit, and engagement beyond the classroom environment.",
   },
   {
     id: 4,
-    name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
+    name: "Academic Records",
+    position: "Official Academic Records",
     img: "assets/review4.png",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+      "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs—demonstrating academic rigor, consistency, and dedication across all levels of formal education.",
   },
 ]
 
