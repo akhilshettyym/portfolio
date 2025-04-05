@@ -1,4 +1,4 @@
-import { clientReviews } from '../constants/index.js';
+import { MyProfessionalJourney } from '../constants/index.js';
 
 const ProfessionalJourney = () => {
   return (
@@ -6,8 +6,14 @@ const ProfessionalJourney = () => {
       <h3 className="head-text">My Professional Journey</h3>
 
       <div className="client-container">
-        {clientReviews.map((item) => (
-          <div key={`review-${item.id}`} className="client-review">
+        {MyProfessionalJourney.map((item) => (
+          <a
+            key={`review-${item.id}`}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="client-review block transform transition-all duration-300 hover:scale-[1.02] hover:bg-[#29292a] hover:shadow-md rounded-xl p-4"
+          >
             <div>
               <p className="text-white-800 font-light text-justify">{item.review}</p>
 
@@ -27,9 +33,10 @@ const ProfessionalJourney = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
+
     </section>
   );
 };

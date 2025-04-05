@@ -27,7 +27,8 @@ export const navLinks = [
   },
 ]
 
-export const clientReviews = [
+export const MyProfessionalJourney = [
+
   {
     id: 1,
     name: "Impact Highlights",
@@ -35,6 +36,7 @@ export const clientReviews = [
     img: "assets/My-Professional-Journey/Impact-Highlights.png",
     review:
       "A curated collection of key accomplishments, including contributions to impactful projects, recognition in technical competitions, and leadership roles that reflect initiative, collaboration, and effective execution.",
+    link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/01_ImpactHighlights",
   },
   {
     id: 2,
@@ -42,7 +44,8 @@ export const clientReviews = [
     position: "Academic Upskilling",
     img: "assets/My-Professional-Journey/Technical-Certifications.png",
     review:
-      "A comprehensive overview of certifications earned through academic and professional development programs—demonstrating a strong commitment to continuous learning and staying updated with evolving industry trends.",
+      "A comprehensive overview of certifications earned through academic and professional development programs...",
+    link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/02_TechnicalCertifications",
   },
   {
     id: 3,
@@ -50,7 +53,8 @@ export const clientReviews = [
     position: "Beyond Academics extracurricular excellence",
     img: "assets/My-Professional-Journey/Co-Curricular-Recognition.png",
     review:
-      "Certificates and recognitions awarded for active participation in co-curricular initiatives, highlighting my versatility, collaborative spirit, and engagement beyond the classroom environment.",
+      "Certificates and recognitions awarded for active participation in co-curricular initiatives...",
+    link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/03_Co-CurricularRecognition",
   },
   {
     id: 4,
@@ -58,8 +62,10 @@ export const clientReviews = [
     position: "Official Academic Records",
     img: "assets/My-Professional-Journey/Academic-Records.png",
     review:
-      "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs—demonstrating academic rigor, consistency, and dedication across all levels of formal education.",
+      "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs...",
+    link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/04_AcademicRecords",
   },
+  
 ]
 
 export const myProjects = [
