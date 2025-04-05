@@ -75,7 +75,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-white transition">
-          <img src="/assets/salesforce.png" alt="SALESFORCE" className="w-4.3 h-4 hover:scale-110 transition-transform" />
+          <img src="/assets/techstack/salesforce.svg" alt="SALESFORCE" className="w-4.3 h-4 hover:scale-110 transition-transform" />
           SALESFORCE </a>
 
         {/* INSTAGRAM */}
@@ -85,9 +85,6 @@ const Footer = () => {
           className="flex items-center gap-2 hover:text-white transition">
           <img src="/assets/instagram.svg" alt="INSTAGRAM" className="w-4 h-4 hover:scale-110 transition-transform" />
           INSTAGRAM </a>
-
-        
-
 
       </div>
 

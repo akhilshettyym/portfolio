@@ -115,7 +115,7 @@ export const myProjects = [
       "Fuel your imagination with curated prompts, real-time sharing, and a vibrant AI-driven community — all in one place.",
     spotlight: "/path/to/nodesurge-spotlight.jpg",
     href: "https://promptlytic.vercel.app/",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo2.svg",
     logoStyle: {
       backgroundColor: "#f5faff",
@@ -179,7 +179,7 @@ export const workExperiences = [
     duration: "2025 - Present",
     title:
       "Excited to join GIC Global Industrial Pvt. Ltd. as an IT Intern (Full Stack Developer)! Looking forward to contributing to impactful projects, collaborating with talented colleagues, and growing in a dynamic environment.",
-    icon: "/assets/gic.webp",
+    icon: "/assets/experience/gic.webp",
     animation: "victory",
   },
   {
@@ -189,7 +189,7 @@ export const workExperiences = [
     duration: "7th - 8th Jan 2025",
     title:
       "Presented Cloud-Based Smart Monitor- ing System for Baby Health and Safety at VNRVJIET, Hyderabad. Represented SJEC at the event. Participated in the International Conference on Transformations in Engineering Education (ICTIEE 2025).",
-    icon: "/assets/iuceee.png",
+    icon: "/assets/experience/iuceee.png",
     animation: "clapping",
   },
   {
@@ -199,7 +199,7 @@ export const workExperiences = [
     duration: "Dec 14th - 2024",
     title:
       "As the Stage and Venue Committee Head at TEDxSJEC, I led a team of 23 to design and set up a captivating stage from scratch. I conceptualized and executed an extraordinary design, highlighting my artistic skills, creativity, and attention to detail for an immersive event experience.",
-    icon: "/assets/tedxsjec.svg",
+    icon: "/assets/experience/tedxsjec.svg",
     animation: "salute",
   },
   {
@@ -209,7 +209,7 @@ export const workExperiences = [
     duration: "6th Nov - 5th Dec 2023",
     title:
       "Completed my graphic design internship at Karanji Infotech, creating marketing visuals, social media content, and brochures. Collaborated with the team to meet client expectations and enhance visual storytelling",
-    icon: "/assets/karanji.png",
+    icon: "/assets/experience/karanji.png",
     animation: "idle",
   },
 ]
