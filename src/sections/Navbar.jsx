@@ -37,7 +37,7 @@ const Navbar = () => {
             <img
               src="/assets/logo.png"
               alt="Akhil Shetty M Logo"
-              className="h-6 w-auto"
+              className="h-6 w-auto transition-all duration-500 ease-in-out filter hover:brightness-150 hover:contrast-125 hover:saturate-200"
             />
 
           </a>
