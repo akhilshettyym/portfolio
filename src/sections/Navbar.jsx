@@ -11,8 +11,7 @@ const NavItems = ({ closeMenu }) => {
           <a
             href={href}
             className="text-neutral-400 hover:text-white transition-colors"
-            onClick={closeMenu} // Close menu on click
-          >
+            onClick={closeMenu}>
             {name}
           </a>
         </li>
