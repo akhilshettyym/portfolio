@@ -24,7 +24,11 @@ const About = () => {
         {/* Who I Am */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img
+              src="assets/grid1.png"
+              alt="grid-1"
+              className="w-full sm:h-[276px] h-fit object-contain transition-all duration-500 filter grayscale hover:grayscale-0"
+            />
             <div>
               <p className="grid-headtext">Hi, I’m Akhil</p>
               <p className="grid-subtext text-justify">
