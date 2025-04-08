@@ -17,8 +17,7 @@ const NavItems = ({ closeMenu }) => {
         </li>
       ))}
     </ul>
-  )
-}
+  )}
 
 const Navbar = () => {
   // Toggling between the menu and close
@@ -33,13 +32,14 @@ const Navbar = () => {
           {/* <a href="/" className="text-neutral-400 font-bold text-ul hover:text-white transition-colors">
             Akhil Shetty M
           </a> */}
-          <a href="/" className="hover:opacity-80 transition-opacity">
+          <a
+            href="/assets/AkhilShettyM.pdf"
+            download
+            className="hover:opacity-80 transition-opacity">
             <img
               src="/assets/logo.png"
               alt="Akhil Shetty M Logo"
-              className="h-6 w-auto transition-all duration-500 ease-in-out filter hover:brightness-150 hover:contrast-125 hover:saturate-200"
-            />
-
+              className="h-6 w-auto transition-all duration-500 ease-in-out filter hover:brightness-150 hover:contrast-125 hover:saturate-200"/>
           </a>
 
           {/* Button for responsive hamburger menu */}
