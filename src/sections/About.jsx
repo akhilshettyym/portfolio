@@ -134,8 +134,6 @@ const About = () => {
           </div>
         </div>
 
-
-
         {/* Contact Me */}
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
