@@ -53,7 +53,7 @@ const Footer = () => {
           GITHUB </a>
 
           {/* RESUME */}
-        <a href="/assets/Resume.pdf"
+        <a href="/assets/AkhilShettyM.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-white transition border-gray-400 rounded-lg p-2"

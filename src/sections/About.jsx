@@ -16,7 +16,7 @@ const About = () => {
   }
 
   return (
-    <section className="c-space my-20" id="about">
+    <section className="c-space my-20" id="about"      >
       <p className="head-text pb-5">About Me</p>
 
       {/* About Me Section */}
