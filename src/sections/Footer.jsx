@@ -36,74 +36,81 @@
 
 const Footer = () => {
   return (
-    <footer className="c-space py-10 border-t border-gray-700 flex flex-col items-center gap-5 text-gray-400 text-center">
+    <footer className="c-space py-10 border-t border-gray-700 flex flex-col items-center gap-6 text-gray-400 text-center">
 
-      {/* Social Icons */}
-
-
-      <div className="flex gap-6 text-sm">
-
-
+      {/* Social Icons - Now wrapped on small screens */}
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
         {/* GITHUB */}
-        <a href="https://github.com/akhilshettyym"
+        <a
+          href="https://github.com/akhilshettyym"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition">
+          className="flex items-center gap-2 hover:text-white transition"
+        >
           <img src="/assets/github.svg" alt="GITHUB" className="w-4 h-4 hover:scale-110 transition-transform" />
-          GITHUB </a>
+          GITHUB
+        </a>
 
-          {/* RESUME */}
-        <a href="/assets/AkhilShettyM.pdf"
+        {/* RESUME */}
+        <a
+          href="/assets/AkhilShettyM.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition border-gray-400 rounded-lg p-2"
-          download="Akhil_Shetty_M.pdf">
+          download="Akhil_Shetty_M.pdf"
+          className="flex items-center gap-2 hover:text-white transition border-gray-400 rounded-lg px-3 py-1"
+        >
           <img src="/assets/resume.png" alt="RESUME" className="w-4 h-4 hover:scale-110 transition-transform" />
           <span className="text-sm font-medium">RESUME</span>
         </a>
 
         {/* LINKEDIN */}
-        <a href="https://linkedin.com/in/akhilshettym"
+        <a
+          href="https://linkedin.com/in/akhilshettym"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition">
+          className="flex items-center gap-2 hover:text-white transition"
+        >
           <img src="/assets/linkedin.png" alt="LINKEDIN" className="w-4 h-4 hover:scale-110 transition-transform" />
-          LINKEDIN </a>
+          LINKEDIN
+        </a>
 
         {/* SALESFORCE */}
-        <a href="https://www.salesforce.com/trailblazer/akhilshettym"
+        <a
+          href="https://www.salesforce.com/trailblazer/akhilshettym"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition">
-          <img src="/assets/techstack/salesforce.svg" alt="SALESFORCE" className="w-4.3 h-4 hover:scale-110 transition-transform" />
-          SALESFORCE </a>
+          className="flex items-center gap-2 hover:text-white transition"
+        >
+          <img src="/assets/techstack/salesforce.svg" alt="SALESFORCE" className="w-4 h-4 hover:scale-110 transition-transform" />
+          SALESFORCE
+        </a>
 
         {/* INSTAGRAM */}
-        <a href="https://www.instagram.com/akhil_shetty_m"
+        <a
+          href="https://www.instagram.com/akhil_shetty_m"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition">
+          className="flex items-center gap-2 hover:text-white transition"
+        >
           <img src="/assets/instagram.svg" alt="INSTAGRAM" className="w-4 h-4 hover:scale-110 transition-transform" />
-          INSTAGRAM </a>
-
+          INSTAGRAM
+        </a>
       </div>
 
       {/* Acknowledgment */}
-      <p className="text-s text-gray-500 max-w-2xl leading-relaxed">
+      <p className="text-sm text-gray-500 max-w-xl leading-relaxed">
         Crafting experiences, one line of code at a time.
       </p>
-      <p className="text-xs text-gray-500 max-w-2xl leading-relaxed">
+      <p className="text-xs text-gray-500 max-w-xl leading-relaxed">
         Passionate about clean, efficient, and scalable development, I turn ideas into intuitive, high-impact solutions. Every line of code enhances user experience, boosts performance, and pushes technological boundaries.
       </p>
 
       {/* Copyright */}
-      {/* Creator Note */}
       <p className="text-sm mt-2">
-        © {new Date().getFullYear()} <span className="font-semibold">Akhil Shetty M</span>. All rights reserved.</p>
-
+        © {new Date().getFullYear()} <span className="font-semibold">Akhil Shetty M</span>. All rights reserved.
+      </p>
     </footer>
   );
 };
 
 export default Footer;
-
