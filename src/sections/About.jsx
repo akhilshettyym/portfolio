@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Globe from "react-globe.gl"
+import * as THREE from "three" // Import THREE directly
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false)
@@ -25,12 +26,12 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="assets/grid1.png"
+              src="./assets/grid1.png"
               alt="grid-1"
               className="w-full sm:h-[276px] h-fit object-contain transition-all duration-500 filter grayscale hover:grayscale-0"
             />
             <div>
-              <p className="grid-headtext">Hi, I’m Akhil</p>
+              <p className="grid-headtext">Hi, I'm Akhil</p>
               <p className="grid-subtext text-justify">
                 I'm a Computer Science undergraduate with a strong technical background. With 3 years of experience, I
                 specialize in frontend & backend development, bringing innovative ideas to life.
@@ -44,26 +45,26 @@ const About = () => {
           <div className="grid-container flex flex-col items-center">
             {/* Tech Logos git */}
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 p-4">
-              <img src="/assets/techstack/react.svg" alt="React" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/figma.svg" alt="Figma" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/firebase.svg" alt="Firebase" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/javascript.svg" alt="JavaScript" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/salesforce.svg" alt="Salesforce" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/tailwind.svg" alt="Tailwind CSS" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/typescript.svg" alt="TypeScript" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/next.svg" alt="Next.js" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/solidity.svg" alt="Solidity" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/blender.svg" alt="Blender" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/node.svg" alt="Node.js" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/git.svg" alt="Git" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/python.svg" alt="Python" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/java.svg" alt="Java" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/html.svg" alt="HTML" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/css.svg" alt="CSS" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/threejs.svg" alt="Three.js" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/mysql.svg" alt="MySQL" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/animate.svg" alt="Adobe Animate" className="w-10 h-10 object-contain" />
-              <img src="/assets/techstack/maximo.png" alt="IBM Maximo" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/react.svg" alt="React" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/figma.svg" alt="Figma" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/firebase.svg" alt="Firebase" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/javascript.svg" alt="JavaScript" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/salesforce.svg" alt="Salesforce" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/tailwind.svg" alt="Tailwind CSS" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/typescript.svg" alt="TypeScript" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/next.svg" alt="Next.js" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/solidity.svg" alt="Solidity" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/blender.svg" alt="Blender" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/node.svg" alt="Node.js" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/git.svg" alt="Git" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/python.svg" alt="Python" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/java.svg" alt="Java" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/html.svg" alt="HTML" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/css.svg" alt="CSS" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/threejs.svg" alt="Three.js" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/mysql.svg" alt="MySQL" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/animate.svg" alt="Adobe Animate" className="w-10 h-10 object-contain" />
+              <img src="./assets/techstack/maximo.png" alt="IBM Maximo" className="w-10 h-10 object-contain" />
             </div>
 
             {/* Tech Stack Description */}
@@ -93,9 +94,11 @@ const About = () => {
                 objectsData={[{ lat: 12.9141, lng: 74.856, size: 10, color: "red" }]}
                 objectLabel={() => "Location: Mangalore, India"}
                 objectThreeObject={(d) => {
-                  // Import THREE from the react-globe.gl library
-                  const { Mesh, SphereGeometry, MeshBasicMaterial } = require("three")
-                  const marker = new Mesh(new SphereGeometry(0.5, 10, 10), new MeshBasicMaterial({ color: d.color }))
+                  // Use imported THREE directly
+                  const marker = new THREE.Mesh(
+                    new THREE.SphereGeometry(0.5, 10, 10),
+                    new THREE.MeshBasicMaterial({ color: d.color }),
+                  )
                   return marker
                 }}
               />
