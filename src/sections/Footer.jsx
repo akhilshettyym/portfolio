@@ -1,39 +1,3 @@
-// const Footer = () => {
-//     return (
-//       <footer className="c-space py-6 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-5 text-gray-400">
-
-//         {/* Terms & Privacy */}
-//         <div className="flex gap-3 text-sm">
-//           <a href="/terms" className="hover:text-white transition">Terms & Conditions</a>
-//           <span>|</span>
-//           <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
-//         </div>
-
-//         {/* Social Icons */}
-//         <div className="flex gap-4">
-//           <a href="https://github.com/akhilshettyym" target="_blank" rel="noopener noreferrer">
-//             <img src="/assets/github.svg" alt="GitHub" className="w-6 h-6 hover:scale-110 transition-transform" />
-//           </a>
-//           <a href="https://www.linkedin.com/in/akhilshettym/" target="_blank" rel="noopener noreferrer">
-//             <img src="/assets/linkedin.png" alt="LinkedIn" className="w-6 h-6 hover:scale-110 transition-transform" />
-//           </a>
-//           <a href="https://www.instagram.com/akhil_shetty_m/" target="_blank" rel="noopener noreferrer">
-//             <img src="/assets/instagram.svg" alt="Instagram" className="w-6 h-6 hover:scale-110 transition-transform" />
-//           </a>
-//         </div>
-
-//         {/* Copyright */}
-//         <p className="text-sm text-center md:text-left">
-//           © 2025 <span className="font-semibold">Akhil Shetty M</span>. All rights reserved.
-//         </p>
-
-//       </footer>
-//     );
-//   };
-
-//   export default Footer;
-
-
 const Footer = () => {
   return (
     <footer className="c-space py-10 border-t border-gray-700 flex flex-col items-center gap-6 text-gray-400 text-center">
@@ -45,8 +9,7 @@ const Footer = () => {
           href="https://github.com/akhilshettyym"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition"
-        >
+          className="flex items-center gap-2 hover:text-white transition">
           <img src="/assets/github.svg" alt="GITHUB" className="w-4 h-4 hover:scale-110 transition-transform" />
           GITHUB
         </a>
@@ -57,8 +20,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           download="Akhil_Shetty_M.pdf"
-          className="flex items-center gap-2 hover:text-white transition border-gray-400 rounded-lg px-3 py-1"
-        >
+          className="flex items-center gap-2 hover:text-white transition border-gray-400 rounded-lg px-3 py-1">
           <img src="/assets/resume.png" alt="RESUME" className="w-4 h-4 hover:scale-110 transition-transform" />
           <span className="text-sm font-medium">RESUME</span>
         </a>
@@ -68,8 +30,7 @@ const Footer = () => {
           href="https://linkedin.com/in/akhilshettym"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition"
-        >
+          className="flex items-center gap-2 hover:text-white transition">
           <img src="/assets/linkedin.png" alt="LINKEDIN" className="w-4 h-4 hover:scale-110 transition-transform" />
           LINKEDIN
         </a>
@@ -79,8 +40,7 @@ const Footer = () => {
           href="https://www.salesforce.com/trailblazer/akhilshettym"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition"
-        >
+          className="flex items-center gap-2 hover:text-white transition">
           <img src="/assets/techstack/salesforce.svg" alt="SALESFORCE" className="w-4 h-4 hover:scale-110 transition-transform" />
           SALESFORCE
         </a>
@@ -90,8 +50,7 @@ const Footer = () => {
           href="https://www.instagram.com/akhil_shetty_m"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-white transition"
-        >
+          className="flex items-center gap-2 hover:text-white transition">
           <img src="/assets/instagram.svg" alt="INSTAGRAM" className="w-4 h-4 hover:scale-110 transition-transform" />
           INSTAGRAM
         </a>
