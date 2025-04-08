@@ -1,43 +1,50 @@
-import React, { useEffect, useRef } from 'react';
-import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
+"use client"
 
-const Developer = ({ animationName = 'idle', ...props }) => {
-  const group = useRef();
-  const { nodes, materials } = useGLTF('/models/animations/developer.glb');
+import { useEffect, useRef } from "react"
+import { useAnimations, useFBX, useGLTF } from "@react-three/drei"
 
-  
-  const { animations: idleAnimation } = useFBX('/models/animations/idle.fbx');
-  const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
-  const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
-  const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
+const Developer = ({ animationName = "idle", ...props }) => {
+  const group = useRef()
+  const { nodes, materials } = useGLTF("/models/animations/developer.glb")
 
-  
-  if (idleAnimation?.length) idleAnimation[0].name = 'idle';
-  if (saluteAnimation?.length) saluteAnimation[0].name = 'salute';
-  if (victoryAnimation?.length) victoryAnimation[0].name = 'victory';
-  if (clappingAnimation?.length) clappingAnimation[0].name = 'clapping';
+  const { animations: idleAnimation } = useFBX("/models/animations/idle.fbx")
+  const { animations: saluteAnimation } = useFBX("/models/animations/salute.fbx")
+  const { animations: victoryAnimation } = useFBX("/models/animations/victory.fbx")
+  const { animations: clappingAnimation } = useFBX("/models/animations/clapping.fbx")
 
-  
+  if (idleAnimation?.length) idleAnimation[0].name = "idle"
+  if (saluteAnimation?.length) saluteAnimation[0].name = "salute"
+  if (victoryAnimation?.length) victoryAnimation[0].name = "victory"
+  if (clappingAnimation?.length) clappingAnimation[0].name = "clapping"
+
   const allAnimations = [
     idleAnimation?.[0],
     saluteAnimation?.[0],
     victoryAnimation?.[0],
     clappingAnimation?.[0],
-  ].filter(Boolean);
+  ].filter(Boolean)
 
-  const { actions } = useAnimations(allAnimations, group);
+  const { actions } = useAnimations(allAnimations, group)
 
   useEffect(() => {
-    if (!actions || !actions[animationName]) return;
+    if (!actions || !actions[animationName]) return
 
-    actions[animationName].reset().fadeIn(1).play();
+    // Reset all animations first
+    Object.values(actions).forEach((action) => {
+      if (action) action.stop()
+    })
+
+    // Then play the requested animation
+    if (actions[animationName]) {
+      actions[animationName].reset().fadeIn(0.5).play()
+    }
 
     return () => {
-      if (actions[animationName]) actions[animationName].fadeOut(1);
-    };
-  }, [animationName, actions]);
+      if (actions[animationName]) actions[animationName].fadeOut(0.5)
+    }
+  }, [animationName, actions])
 
-  console.log('Available actions:', actions);
+  // console.log("Available actions:", actions)
 
   return (
     <group {...props} dispose={null} ref={group}>
@@ -100,9 +107,9 @@ const Developer = ({ animationName = 'idle', ...props }) => {
         skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
       />
     </group>
-  );
-};
+  )
+}
 
-useGLTF.preload('/models/animations/developer.glb');
+useGLTF.preload("/models/animations/developer.glb")
 
-export default Developer;
+export default Developer

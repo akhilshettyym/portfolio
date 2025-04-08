@@ -16,7 +16,7 @@ const About = () => {
   }
 
   return (
-    <section className="c-space my-20" id="about"      >
+    <section className="c-space my-20" id="about">
       <p className="head-text pb-5">About Me</p>
 
       {/* About Me Section */}
@@ -70,13 +70,12 @@ const About = () => {
             <div className="mt-4">
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext text-justify">
-                I specialize in developing robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js, ensuring seamless performance and modern user experiences.
+                I specialize in developing robust and scalable applications using React, Next.js, Three.js, Tailwind
+                CSS, Firebase, and Node.js, ensuring seamless performance and modern user experiences.
               </p>
-
             </div>
           </div>
         </div>
-
 
         {/* Globe Visualization */}
         <div className="col-span-1 xl:row-span-4">
@@ -94,16 +93,13 @@ const About = () => {
                 objectsData={[{ lat: 12.9141, lng: 74.856, size: 10, color: "red" }]}
                 objectLabel={() => "Location: Mangalore, India"}
                 objectThreeObject={(d) => {
-                  const THREE = window.THREE || {}
-                  const marker = new THREE.Mesh(
-                    new THREE.SphereGeometry(0.5, 10, 10),
-                    new THREE.MeshBasicMaterial({ color: d.color }),
-                  )
+                  // Import THREE from the react-globe.gl library
+                  const { Mesh, SphereGeometry, MeshBasicMaterial } = require("three")
+                  const marker = new Mesh(new SphereGeometry(0.5, 10, 10), new MeshBasicMaterial({ color: d.color }))
                   return marker
                 }}
               />
             </div>
-
 
             {/* Globe Text Content */}
             <div>
@@ -113,13 +109,10 @@ const About = () => {
                 communication. Always ready to connect, contribute, and deliver quality results.
               </p>
               <span className="font-medium text-white">Mangalore, Karnataka, India</span>.{/* Contact Button */}
-              <div className="mt-8 flex justify-center">
-
-              </div>
+              <div className="mt-8 flex justify-center"></div>
             </div>
           </div>
         </div>
-
 
         {/* Passion for Coding */}
         <div className="xl:col-span-2 xl:row-span-3">
@@ -128,7 +121,12 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext text-justify">
-              I love solving real-world problems and building innovative solutions through code—it's more than a skill, it's my passion. One of my most impactful projects, <strong>BabySphere</strong>, reflects this drive. It's a smart baby monitoring system that uses Firebase for real-time communication and health data tracking, providing parents peace of mind through intelligent automation. This project challenged me to combine hardware with software, logic with creativity, and ultimately strengthened my love for building systems that make life easier and safer.
+                I love solving real-world problems and building innovative solutions through code—it's more than a
+                skill, it's my passion. One of my most impactful projects, <strong>BabySphere</strong>, reflects this
+                drive. It's a smart baby monitoring system that uses Firebase for real-time communication and health
+                data tracking, providing parents peace of mind through intelligent automation. This project challenged
+                me to combine hardware with software, logic with creativity, and ultimately strengthened my love for
+                building systems that make life easier and safer.
               </p>
             </div>
           </div>
@@ -137,7 +135,11 @@ const About = () => {
         {/* Contact Me */}
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
-            <img src="assets/grid4.png" alt="grid-4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top rounded-lg" />
+            <img
+              src="assets/grid4.png"
+              alt="grid-4"
+              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top rounded-lg"
+            />
 
             {/* Contact Info */}
             <div className="space-y-4 text-center mt-4">
@@ -223,4 +225,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default About
