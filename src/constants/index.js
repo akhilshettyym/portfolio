@@ -261,19 +261,25 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/FeatureCards/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Adaptability",
+    desc: "Quick to adjust to changing environments and new challenges with ease and confidence.",
   },
   {
     imgPath: "/images/FeatureCards/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Effective Communication",
+    desc: "Clear and respectful communicator, enabling smooth collaboration.",
   },
   {
     imgPath: "/images/FeatureCards/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Punctual & Organized",
+    desc: "Consistently meets deadlines and manages time efficiently to ensure timely results.",
+  },
+  {
+    imgPath: "/images/FeatureCards/chat.png",
+    title: "Team Building",
+    desc: "Encourages collaboration and fosters positive group dynamics for a stronger team culture.",
   },
 ];
+
 
 export { logoIconsList, abilities };
