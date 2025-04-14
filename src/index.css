@@ -215,3 +215,42 @@ body {
     transform: rotate(0deg);
   }
 }
+
+
+/* Logo Section */
+/* marquee */
+.marquee {
+  width: 100dvw;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-box {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 60s linear infinite;
+}
+.marquee-item {
+  float: left;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.marquee-item {
+  @apply md:w-40 w-32;
+}
+
+.gradient-edge {
+  @apply w-36 h-full absolute bottom-0 z-20;
+}
+
+/* marquee end */

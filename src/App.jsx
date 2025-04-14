@@ -6,6 +6,7 @@ import ProfessionalJourney from "./sections/ProfessionalJourney"
 import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
 import Experience from "./sections/Experience"
+import LogoSection from "./components/LogoSection"
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Navbar key="navbar" />
       <Hero key="hero" />
       <About key="about" />
+      <LogoSection key="logosection" />
       <Projects key="projects" />
       <Experience key="experience"/>
       <ProfessionalJourney key="ProfessionalJourney" />
