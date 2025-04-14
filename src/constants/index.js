@@ -239,6 +239,9 @@ const logoIconsList = [
     imgPath: "/images/logos/mongodb.png",
   },
   {
+    imgPath: "/images/logos/three.png",
+  },
+  {
     imgPath: "/images/logos/git.png",
   },
   {
