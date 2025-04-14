@@ -218,40 +218,38 @@ body {
 
 
 /* Logo Section */
-/* marquee */
+/* Smooth infinite marquee */
+
+@keyframes smooth-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .marquee {
-  width: 100dvw;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
-.marquee-box {
+
+.marquee-inner {
   display: flex;
-  align-items: center;
-  width: 200%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  animation: marquee 60s linear infinite;
-}
-.marquee-item {
-  float: left;
-}
-@keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
+  width: max-content;
+  animation: smooth-marquee 60s linear infinite;
 }
 
+/* Optional: Adjust logo item widths per screen */
 .marquee-item {
-  @apply md:w-40 w-32;
+  @apply w-24 md:w-40 flex justify-center items-center;
 }
 
 .gradient-edge {
-  @apply w-36 h-full absolute bottom-0 z-20;
+  @apply w-20 h-full absolute top-0 z-20;
 }
+
 /* marquee end */
 
 

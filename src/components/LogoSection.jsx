@@ -2,24 +2,24 @@ import { logoIconsList } from "../constants/index.js";
 
 const LogoIcon = ({ icon }) => {
   return (
-    <div className="flex-none flex-center marquee-item">
-      <img src={icon.imgPath} alt={icon.name} />
+    <div className="flex-none marquee-item">
+      <img
+        src={icon.imgPath}
+        alt={icon.name}
+        className="w-20 h-20 md:w-28 md:h-28 object-contain"
+      />
     </div>
   );
 };
 
 const LogoSection = () => (
-  <div className="md:my-5 my-5 relative">
-    <div className="gradient-edge" />
-    <div className="gradient-edge" />
+  <div className="relative my-5 overflow-hidden">
+    <div className="gradient-edge left-0 bg-gradient-to-r from-black/90 to-transparent" />
+    <div className="gradient-edge right-0 bg-gradient-to-l from-black/90 to-transparent" />
 
     <div className="marquee h-52">
-      <div className="marquee-box md:gap-12 gap-2">
-        {logoIconsList.map((icon, index) => (
-          <LogoIcon key={index} icon={icon} />
-        ))}
-
-        {logoIconsList.map((icon, index) => (
+      <div className="marquee-inner flex gap-6 md:gap-12">
+        {[...logoIconsList, ...logoIconsList].map((icon, index) => (
           <LogoIcon key={index} icon={icon} />
         ))}
       </div>

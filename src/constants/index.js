@@ -242,6 +242,9 @@ const logoIconsList = [
     imgPath: "/images/logos/three.png",
   },
   {
+    imgPath: "/images/logos/tailwind.png",
+  },
+  {
     imgPath: "/images/logos/git.png",
   },
   {
