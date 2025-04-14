@@ -224,37 +224,40 @@ export const workExperiences = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/akhilshettym.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/next.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/react.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/node.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/mongodb.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/git.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/firebase.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/vercel.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/figma.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/blender.png",
+  },  
+  {
+    imgPath: "/images/logos/tedx.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/animate.png",
   },
 ];
 
