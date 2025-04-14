@@ -260,22 +260,22 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/FeatureCards/seo.png",
+    imgPath: "/images/FeatureCards/1.png",
     title: "Adaptability",
     desc: "Quick to adjust to changing environments and new challenges with ease and confidence.",
   },
   {
-    imgPath: "/images/FeatureCards/chat.png",
+    imgPath: "/images/FeatureCards/2.png",
     title: "Effective Communication",
     desc: "Clear and respectful communicator, enabling smooth collaboration.",
   },
   {
-    imgPath: "/images/FeatureCards/time.png",
+    imgPath: "/images/FeatureCards/3.png",
     title: "Punctual & Organized",
     desc: "Consistently meets deadlines and manages time efficiently to ensure timely results.",
   },
   {
-    imgPath: "/images/FeatureCards/chat.png",
+    imgPath: "/images/FeatureCards/4.png",
     title: "Team Building",
     desc: "Encourages collaboration and fosters positive group dynamics for a stronger team culture.",
   },
