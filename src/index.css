@@ -252,9 +252,10 @@ body {
 .gradient-edge {
   @apply w-36 h-full absolute bottom-0 z-20;
 }
-
 /* marquee end */
 
+
+/* Feature card */
 .padding-x-lg {
   @apply px-5 md:px-20;
 }
@@ -264,5 +265,6 @@ body {
 }
 
 .card-border {
-  @apply border border-black-50 bg-black-100 text-white;
+  @apply border border-black-50 bg-black-100 text-white transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl;
 }
+/* Feature card end */
