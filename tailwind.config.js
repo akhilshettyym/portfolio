@@ -9,6 +9,8 @@ export default {
       colors: {
         black: {
           DEFAULT: '#000',
+          50: '#1a1a1a',      
+          100: '#2a2a2a',
           100: '#010103',
           200: '#0E0E10',
           300: '#1C1C21',

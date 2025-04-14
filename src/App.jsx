@@ -7,6 +7,7 @@ import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
 import Experience from "./sections/Experience"
 import LogoSection from "./components/LogoSection"
+import FeatureCards from "./components/FeatureCards"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Hero key="hero" />
       <About key="about" />
       <LogoSection key="logosection" />
+      <FeatureCards key="FeatureCards" />
       <Projects key="projects" />
       <Experience key="experience"/>
       <ProfessionalJourney key="ProfessionalJourney" />

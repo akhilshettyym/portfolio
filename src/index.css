@@ -254,3 +254,15 @@ body {
 }
 
 /* marquee end */
+
+.padding-x-lg {
+  @apply px-5 md:px-20;
+}
+
+.grid-3-cols {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+}
+
+.card-border {
+  @apply border border-black-50 bg-black-100 text-white;
+}
