@@ -1,12 +1,14 @@
-import { Suspense, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import Developer from '../components/Developer.jsx';
-import CanvasLoader from '../components/Loading.jsx';
-import { workExperiences } from '../constants/index.js';
+"use client"
+
+import { Suspense, useState } from "react"
+import { Canvas } from "@react-three/fiber"
+import { OrbitControls } from "@react-three/drei"
+import Developer from "../components/Developer.jsx"
+import CanvasLoader from "../components/CanvasLoader.jsx" // Fix import
+import { workExperiences } from "../constants/index.js"
 
 const WorkExperience = () => {
-  const [animationName, setAnimationName] = useState('idle');
+  const [animationName, setAnimationName] = useState("idle")
 
   return (
     <section className="c-space my-20" id="experience">
@@ -34,11 +36,12 @@ const WorkExperience = () => {
                   key={index}
                   onClick={() => setAnimationName(item.animation.toLowerCase())}
                   onPointerOver={() => setAnimationName(item.animation.toLowerCase())}
-                  onPointerOut={() => setAnimationName('idle')}
-                  className="work-content_container group text-justify">
+                  onPointerOut={() => setAnimationName("idle")}
+                  className="work-content_container group text-justify"
+                >
                   <div className="flex flex-col h-full justify-start items-center py-2">
                     <div className="work-content_logo">
-                      <img className="w-full h-full" src={item.icon} alt="" />
+                      <img className="w-full h-full" src={item.icon || "/placeholder.svg"} alt="" />
                     </div>
 
                     <div className="work-content_bar" />
@@ -58,7 +61,7 @@ const WorkExperience = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 export default WorkExperience;

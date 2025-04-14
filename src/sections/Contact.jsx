@@ -1,25 +1,28 @@
-import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+"use client"
 
-import useAlert from '../hooks/useAlert.js';
-import Alert from '../components/Alert.jsx';
+import emailjs from "@emailjs/browser"
+import { useRef, useState } from "react"
 
+import useAlert from "../hooks/useAlert"
+import Alert from "../components/Alert"
+import TitleHeader from "../components/TitleHeader"
+import ContactExperience from "../components/ContactExperience" // Fix path
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef()
 
-  const { alert, showAlert, hideAlert } = useAlert();
-  const [loading, setLoading] = useState(false);
+  const { alert, showAlert, hideAlert } = useAlert()
+  const [loading, setLoading] = useState(false)
 
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: "", email: "", message: "" })
 
   const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value });
-  };
+    setForm({ ...form, [name]: value })
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+    e.preventDefault()
+    setLoading(true)
 
     emailjs
       .send(
@@ -27,113 +30,112 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: 'Akhil Shetty M',
+          to_name: "Akhil Shetty M",
           from_email: form.email,
-          to_email: 'akhilshettym2003@gmail.com',
+          to_email: "akhilshettym2003@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
-          setLoading(false);
+          setLoading(false)
           showAlert({
             show: true,
-            text: 'Thank you for your message 😃',
-            type: 'success',
-          });
+            text: "Thank you for your message 😃",
+            type: "success",
+          })
 
           setTimeout(() => {
-            hideAlert(false);
+            hideAlert(false)
             setForm({
-              name: '',
-              email: '',
-              message: '',
-            });
-          }, [3000]);
+              name: "",
+              email: "",
+              message: "",
+            })
+          }, [3000])
         },
         (error) => {
-          setLoading(false);
-          console.error(error);
+          setLoading(false)
+          console.error(error)
 
           showAlert({
             show: true,
             text: "I didn't receive your message 😢",
-            type: 'danger',
-          });
+            type: "danger",
+          })
         },
-      );
-  };
+      )
+  }
 
   return (
     <section className="c-space my-20" id="contact">
-        <h3 className="head-text p-5">Forge a Connection</h3>
+      <TitleHeader
+        title="Forge a Connection"
+        sub="Have questions or ideas? Let's talk! I'm here to help with your projects."
+      />
       {alert.show && <Alert {...alert} />}
 
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
-      <img
-  src="/assets/terminal.png"
-  alt="terminal-bg"
-  className="absolute inset-0 w-full h-full object-cover"
-/>
+      <div className="mt-12 grid lg:grid-cols-12 gap-8">
+        <div className="lg:col-span-5">
+          <div className="relative p-8 bg-black-200 border border-black-300 rounded-lg">
+            <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col space-y-7">
+              <label className="space-y-3">
+                <span className="field-label">Full Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  required
+                  className="field-input"
+                  placeholder="ex., Akhil Shetty M"
+                />
+              </label>
 
-        <div className="contact-container p-10">
-          
-          <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
-          </p>
+              <label className="space-y-3">
+                <span className="field-label">Email address</span>
+                <input
+                  type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  required
+                  className="field-input"
+                  placeholder="ex., akhilshettym2003@gmail.com"
+                />
+              </label>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
-            <label className="space-y-3">
-              <span className="field-label">Full Name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                required
-                className="field-input"
-                placeholder="ex., Akhil Shetty M"
-              />
-            </label>
+              <label className="space-y-3">
+                <span className="field-label">Your message</span>
+                <textarea
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  required
+                  rows={5}
+                  className="field-input"
+                  placeholder="Share your thoughts or inquiries..."
+                />
+              </label>
 
-            <label className="space-y-3">
-              <span className="field-label">Email address</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                required
-                className="field-input"
-                placeholder="ex., akhilshettym2003@gmail.com"
-              />
-            </label>
+              <button className="field-btn" type="submit" disabled={loading}>
+                {loading ? "Sending..." : "Send Message"}
 
-            <label className="space-y-3">
-              <span className="field-label">Your message</span>
-              <textarea
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="field-input"
-                placeholder="Share your thoughts or inquiries..."
-              />
-            </label>
+                <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+              </button>
+            </form>
+          </div>
+        </div>
 
-            <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? 'Sending...' : 'Send Message'}
-
-              <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
-            </button>
-          </form>
+        <div className="lg:col-span-7 min-h-[500px]">
+          <div className="w-full h-full bg-[#1c1c21] rounded-lg overflow-hidden hover:cursor-grab">
+            <ContactExperience />
+          </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 export default Contact;

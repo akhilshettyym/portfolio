@@ -28,13 +28,12 @@ export const navLinks = [
 ]
 
 export const MyProfessionalJourney = [
-
   {
     id: 1,
     name: "Impact Highlights",
     positionLine1: "Trailblazing Through Initiative",
     positionLine2: "(👁️  click to view)",
-    img: "assets/My-Professional-Journey/Impact-Highlights.png",
+    img: "/assets/My-Professional-Journey/Impact-Highlights.png",
     review:
       "A curated collection of key accomplishments, including contributions to impactful projects, recognition in technical competitions, and leadership roles that reflect initiative, collaboration, and effective execution.",
     link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/01_ImpactHighlights",
@@ -44,7 +43,7 @@ export const MyProfessionalJourney = [
     name: "Technical Certifications",
     positionLine1: "Certified Academic Progress",
     positionLine2: "(👁️  click to view)",
-    img: "assets/My-Professional-Journey/Technical-Certifications.png",
+    img: "/assets/My-Professional-Journey/Technical-Certifications.png",
     review:
       "Certifications earned through academic and professional development, reflecting a commitment to continuous learning and staying updated with industry trends.",
     link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/02_TechnicalCertifications",
@@ -54,7 +53,7 @@ export const MyProfessionalJourney = [
     name: "Co-Curricular Recognition",
     positionLine1: `Co-Curricular Engagement Highlights`,
     positionLine2: "(👁️  click to view)",
-    img: "assets/My-Professional-Journey/Co-Curricular-Recognition.png",
+    img: "/assets/My-Professional-Journey/Co-Curricular-Recognition.png",
     review:
       "Certificates and recognitions awarded for active participation in co-curricular initiatives, showcasing leadership, teamwork, and a well-rounded skillset beyond academics.",
     link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/03_Co-CurricularRecognition",
@@ -64,23 +63,20 @@ export const MyProfessionalJourney = [
     name: "Academic Records",
     positionLine1: "Authenticated Academic History",
     positionLine2: "(👁️  click to view)",
-    img: "assets/My-Professional-Journey/Academic-Records.png",
+    img: "/assets/My-Professional-Journey/Academic-Records.png",
     review:
       "Authenticated academic transcripts and mark cards from SSLC, Pre-University, and Undergraduate programs—highlighting academic consistency, performance, and growth across formal education.",
     link: "https://github.com/akhilshettyym/My-Professional-Journey/tree/main/04_AcademicRecords",
   },
-  
 ]
 
 export const myProjects = [
-
   // NodeSurge Start
   {
     title: "NodeSurge : A Multi-Utility Platform",
     desc: "Maximize productivity with NodeSurge — your all-in-one platform for advanced text tools, real-time currency conversion, smart to-do lists, live weather updates, secure password generation, and an intelligent chatbot. Seamlessly organize your tasks and enhance precision in every aspect of your day!",
     subdesc:
       "Built as a powerful productivity platform with modern web technologies, NodeSurge is designed for efficiency and seamless user experience.",
-    spotlight: "/path/to/nodesurge-spotlight.jpg",
     href: "https://akhilshettyym.github.io/NodeSurge/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/projects/project-logo/project-logo1.svg",
@@ -116,14 +112,12 @@ export const myProjects = [
 
   // NodeSurge end
 
-
   // Promptlytic Start
   {
     title: "Promptlytic : An open-source AI prompting platform",
     desc: "Promptlytic is an open-source platform to discover, create, and share AI prompts with ease. Whether you're crafting content, coding, or exploring creativity, Promptlytic connects you to a growing community of AI enthusiasts — helping you find inspiration, build ideas, and share your own.",
     subdesc:
       "Fuel your imagination with curated prompts, real-time sharing, and a vibrant AI-driven community — all in one place.",
-    spotlight: "/path/to/nodesurge-spotlight.jpg",
     href: "https://promptlytic.vercel.app/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo2.svg",
@@ -151,20 +145,17 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "FireBase",
+        name: "MongoDB",
         path: "/assets/projects/project-stack/MongoDB.svg",
       },
       {
-        id: 4,
-        name: "FireBase",
+        id: 5,
+        name: "Vercel",
         path: "/assets/projects/project-stack/vercel.svg",
       },
     ],
   },
-
   // Promptlytic end
-
-
 ]
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -258,14 +249,14 @@ const logoIconsList = [
   },
   {
     imgPath: "/images/logos/blender.png",
-  },  
+  },
   {
     imgPath: "/images/logos/tedx.png",
   },
   {
     imgPath: "/images/logos/animate.png",
   },
-];
+]
 
 const abilities = [
   {
@@ -288,7 +279,6 @@ const abilities = [
     title: "Team Building",
     desc: "Encourages collaboration and fosters positive group dynamics for a stronger team culture.",
   },
-];
+]
 
-
-export { logoIconsList, abilities };
+export { logoIconsList, abilities }

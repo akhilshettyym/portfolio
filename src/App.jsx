@@ -16,11 +16,11 @@ const App = () => {
       <Hero key="hero" />
       <About key="about" />
       <LogoSection key="logosection" />
-      <FeatureCards key="FeatureCards" />
+      <FeatureCards key="featurecards" />
       <Projects key="projects" />
-      <Experience key="experience"/>
-      <ProfessionalJourney key="ProfessionalJourney" />
-      <Contact key="contact"/>
+      <Experience key="experience" />
+      <ProfessionalJourney key="professionaljourney" />
+      <Contact key="contact" />
       <Footer />
     </main>
   )

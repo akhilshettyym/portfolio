@@ -216,7 +216,6 @@ body {
   }
 }
 
-
 /* Logo Section */
 /* Smooth infinite marquee */
 
@@ -252,7 +251,6 @@ body {
 
 /* marquee end */
 
-
 /* Feature card */
 .padding-x-lg {
   @apply px-5 md:px-20;
@@ -266,3 +264,7 @@ body {
   @apply border border-black-50 bg-black-100 text-white transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl;
 }
 /* Feature card end */
+
+.grid-12-cols {
+  @apply grid grid-cols-1 lg:grid-cols-12 gap-6;
+}
