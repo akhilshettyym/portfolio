@@ -6,7 +6,8 @@ import { useRef, useState } from "react"
 import useAlert from "../hooks/useAlert"
 import Alert from "../components/Alert"
 import TitleHeader from "../components/TitleHeader"
-import ContactExperience from "../components/ContactExperience" // Fix path
+import ContactExperience from "../components/ContactExperience"
+import Button from "../components/Button"
 
 const Contact = () => {
   const formRef = useRef()
@@ -119,19 +120,23 @@ const Contact = () => {
                 />
               </label>
 
-              <button
+              {/* <button
                 className="relative group inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-black-200 to-black-300 text-white text-lg font-semibold rounded-lg transition-all duration-300 hover:from-black-300 hover:to-black-500 disabled:opacity-60 disabled:cursor-not-allowed"
                 type="submit"
-                disabled={loading}
-              >
+                disabled={loading}>
                 {loading ? "Sending..." : "Send Message"}
 
                 <img
                   src="/assets/arrow-up.png"
                   alt="arrow-up"
-                  className="field-btn_arrow ml-3 w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                />
-              </button>
+                  className="field-btn_arrow ml-3 w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </button> */}
+
+              <Button name="Let's work together" isBeam containerClass="w-fit transition-transform hover:scale-105"
+              type="submit"
+              disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
+              </Button>               
 
 
             </form>
