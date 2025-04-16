@@ -42,18 +42,25 @@ body {
     @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
   }
 
-  /* button component */
-  .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+  /* Main button */
+  .btn-modern {
+    @apply inline-flex items-center gap-3 px-6 py-3 text-white font-semibold rounded-lg transition-transform duration-300 bg-gradient-to-r from-black-200 to-black-300 hover:from-black-300 hover:to-black-500 hover:scale-105 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed shadow-md;
   }
 
+  /* Beam ping effect */
   .btn-ping {
     @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
   }
 
-  .btn-ping_dot {
+  .btn-ping-dot {
     @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
   }
+
+  /* In your Tailwind config or global CSS */
+  .btn-glow {
+    @apply bg-gradient-to-br from-[#1f1f1f] to-[#3c3c3c] text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl transition-all duration-300;
+  }
+
 
   /* hero section */
   .hero_tag {
@@ -117,7 +124,7 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5 transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
@@ -164,13 +171,11 @@ body {
 }
 
 .arrow-gradient {
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.1) 10%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.025) 100%
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 255, 255, 0.1) 10%,
+      rgba(255, 255, 255, 0.000025) 50%,
+      rgba(255, 255, 255, 0.000025) 50%,
+      rgba(255, 255, 255, 0.025) 100%);
 }
 
 /* Color changing animation for the title */
@@ -193,24 +198,31 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   15% {
     transform: rotate(14deg);
   }
+
   30% {
     transform: rotate(-8deg);
   }
+
   40% {
     transform: rotate(14deg);
   }
+
   50% {
     transform: rotate(-4deg);
   }
+
   60% {
     transform: rotate(10deg);
   }
+
   70% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -223,6 +235,7 @@ body {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -263,4 +276,5 @@ body {
 .card-border {
   @apply border border-black-50 bg-black-100 text-white transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl;
 }
+
 /* Feature card end */

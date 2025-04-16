@@ -132,12 +132,11 @@ const Contact = () => {
                   className="field-btn_arrow ml-3 w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
               </button> */}
 
-              <Button name="Let's work together" isBeam containerClass="w-fit transition-transform hover:scale-105"
+              <Button name="Start Conversation" isBeam containerClass="w-fit transition-transform hover:scale-105"
               type="submit"
               disabled={loading}>
               {loading ? "Sending..." : "Send Message"}
               </Button>               
-
 
             </form>
           </div>
