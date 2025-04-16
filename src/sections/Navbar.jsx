@@ -43,7 +43,7 @@ const Navbar = () => {
               className="h-4 md:h-5 w-auto transition-all duration-500 ease-in-out filter hover:brightness-150 hover:contrast-125 hover:saturate-200"
             />
           </a>
-
+ 
 
 
           {/* Button for responsive hamburger menu */}
@@ -70,8 +70,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(false)}
             className="text-neutral-400 hover:text-white focus:outline-none"
-            aria-label="Close menu"
-          >
+            aria-label="Close menu" >
             <img src="assets/close.svg" alt="close menu" className="w-6 h-6" />
           </button>
         </div>

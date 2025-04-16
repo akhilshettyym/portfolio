@@ -32,7 +32,7 @@ const Hero = () => {
             } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
         >
           {/* Name Heading */}
-          <h1 className="text-xs font-light text-gray-500 mb-4">Akhil</h1>
+          <h1 className="text-[0.55rem] font-light text-gray-500 mb-4">Akhil Shetty M</h1>
 
           {/* Changing Title */}
           <div className="changing-title-container mb-6">
