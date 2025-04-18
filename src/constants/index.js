@@ -281,4 +281,5 @@ const abilities = [
   },
 ]
 
+
 export { logoIconsList, abilities }

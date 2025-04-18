@@ -61,7 +61,6 @@ body {
     @apply bg-gradient-to-br from-[#1f1f1f] to-[#3c3c3c] text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl transition-all duration-300;
   }
 
-
   /* hero section */
   .hero_tag {
     @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
@@ -95,6 +94,31 @@ body {
 
   .tech-icon-container {
     @apply w-12 h-12 rounded-md flex items-center justify-center bg-black-300 border border-black-500 transition-all hover:scale-110;
+  }
+
+  /* Add these CSS classes for the TechStack component */
+  .tech-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-10;
+  }
+
+  .tech-card-animated-bg {
+    @apply absolute inset-0 bg-gradient-to-br from-black-300 to-black-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+
+  .tech-card-content {
+    @apply relative z-10 flex flex-col items-center justify-center gap-4 p-6 text-center;
+  }
+
+  .tech-icon-wrapper {
+    @apply w-24 h-24 mb-2 relative;
+  }
+
+  .section-padding {
+    @apply py-16;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 
   /* clients section */
@@ -171,11 +195,13 @@ body {
 }
 
 .arrow-gradient {
-  background-image: linear-gradient(to right,
-      rgba(255, 255, 255, 0.1) 10%,
-      rgba(255, 255, 255, 0.000025) 50%,
-      rgba(255, 255, 255, 0.000025) 50%,
-      rgba(255, 255, 255, 0.025) 100%);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
 }
 
 /* Color changing animation for the title */

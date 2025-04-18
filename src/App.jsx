@@ -6,7 +6,6 @@ import ProfessionalJourney from "./sections/ProfessionalJourney"
 import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
 import Experience from "./sections/Experience"
-// import TechStack from "./sections/TechStack"
 import LogoSection from "./components/LogoSection"
 import FeatureCards from "./components/FeatureCards"
 
@@ -20,7 +19,6 @@ const App = () => {
       <FeatureCards key="featurecards" />
       <Projects key="projects" />
       <Experience key="experience" />
-      {/* <TechStack key="techstack" /> */}
       <ProfessionalJourney key="professionaljourney" />
       <Contact key="contact" />
       <Footer />
