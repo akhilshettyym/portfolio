@@ -26,14 +26,21 @@ const Hero = () => {
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
         {/* Left Side - Text Content */}
 
-        
+
         <div
           className={`${isDesktop ? "lg:w-1/2" : "w-full"
             } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}
         >
           {/* Name Heading */}
-          <h1 className="text-[0.55rem] font-light text-gray-500 mb-4">Akhil Shetty M</h1>
-
+          <a
+            href="/assets/AkhilShettyM.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="text-[0.55rem] font-light text-gray-500 mb-4 hover:underline cursor-pointer">
+              Akhil Shetty M
+            </h1>
+          </a>
           {/* Changing Title */}
           <div className="changing-title-container mb-6">
             <p className="changing-title text-2xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-white">
@@ -60,7 +67,7 @@ const Hero = () => {
               boundaries of technology.
             </p>
 
-            
+
             <p className="text-gray-400 text-xs sm:text-sm md:text-medium lg:text-medium flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
               <a
