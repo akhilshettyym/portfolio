@@ -33,8 +33,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I'm Akhil</p>
               <p className="grid-subtext text-justify">
-                I'm a Computer Science undergraduate with a strong technical background. With 3 years of experience, I
-                specialize in frontend & backend development, bringing innovative ideas to life.
+              I'm a Computer Science undergraduate with a solid technical foundation and 3 years of hands-on experience in both frontend and backend development. I specialize in building efficient, user-centric solutions and enjoy transforming innovative ideas into impactful digital experiences.
               </p>
             </div>
           </div>
