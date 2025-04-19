@@ -44,29 +44,26 @@ const Hero = () => {
           {/* Changing Title */}
           <div className="changing-title-container mb-6">
             <p className="changing-title text-2xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-white">
-              Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer
+              {/* Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer */}
+              FULL-STACK DEVELOPER | UI/UX DESIGNER | TECH ENTHUSIAST | GRAPHIC DESIGNER
               {/* Intern @ Global Industrial Private Limited || Full Stack Developer || UI/UX Designer || Graphic designer */}
             </p>
           </div>
 
           {/* Description Section */}
           <div className="space-y-8">
-            <p className="text-gray-300 text-medium sm:text-lg md:text-medium lg:text-medium leading-relaxed text-justify">
-              I specialize in crafting <span className="font-medium text-white">scalable, high-performance</span>{" "}
-              applications that prioritize
-              <span className="font-medium text-white"> efficiency, usability,</span> and seamless user experiences.
-              With expertise in{" "}
-              <span className="font-medium text-white">React, Next.js, Three.js, Firebase, and Node.js</span>, I blend
-              design and functionality to build intuitive digital solutions.
+
+
+            <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
+              I specialize in building <span className="font-semibold text-white">scalable, high-performance</span> web applications using
+              <span className="font-semibold text-white">React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>. My focus is on delivering seamless user experiences and solving complex problems through clean, maintainable code.
             </p>
 
             <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
-              Driven by <span className="font-medium text-white">problem-solving, innovation,</span> and a passion for
-              continuous learning, I thrive on creating{" "}
-              <span className="font-medium text-white">impactful, future-ready</span> applications that push the
-              boundaries of technology.
+              Driven by a passion for <span className="font-semibold text-white">innovation</span> and <span className="font-semibold text-white">technical excellence</span>, I aim to create <span className="font-semibold text-white">future-proof applications</span> that elevate user experience and drive tangible results.
             </p>
 
+            
 
             <p className="text-gray-400 text-xs sm:text-sm md:text-medium lg:text-medium flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
