@@ -70,8 +70,7 @@ const About = () => {
             <div className="mt-4">
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext text-justify">
-                I specialize in developing robust and scalable applications using React, Next.js, Three.js, Tailwind
-                CSS, Firebase, and Node.js, ensuring seamless performance and modern user experiences.
+              I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js—delivering seamless performance and cutting-edge user experiences.
               </p>
             </div>
           </div>
