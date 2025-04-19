@@ -120,12 +120,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext text-justify">
-                I love solving real-world problems and building innovative solutions through code—it's more than a
-                skill, it's my passion. One of my most impactful projects, <strong>BabySphere</strong>, reflects this
-                drive. It's a smart baby monitoring system that uses Firebase for real-time communication and health
-                data tracking, providing parents peace of mind through intelligent automation. This project challenged
-                me to combine hardware with software, logic with creativity, and ultimately strengthened my love for
-                building systems that make life easier and safer.
+              I’m passionate about solving real-world problems and turning ideas into impactful solutions through code. One project that truly reflects this drive is <strong>BabySphere</strong> — A smart baby monitoring system I developed to assist parents with real-time insights into their child’s well-being. Leveraging Firebase for real-time communication, health data tracking, and intelligent alerts, BabySphere offers peace of mind through seamless automation. This project pushed me to blend hardware integration with software logic, combining creativity with technical precision. It not only enhanced my skills in system design and real-time tech but also deepened my commitment to building solutions that improve everyday lives.
               </p>
             </div>
           </div>
