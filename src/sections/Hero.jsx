@@ -38,7 +38,7 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <h1 className="text-[0.55rem] font-light text-gray-500 mb-4 hover:underline cursor-pointer">
-              Akhil Shetty M - Resume
+              AKHIL SHETTY M - RESUME
             </h1>
           </a>
           {/* Changing Title */}

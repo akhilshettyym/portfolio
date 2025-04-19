@@ -44,8 +44,6 @@ const Navbar = () => {
             />
           </a>
  
-
-
           {/* Button for responsive hamburger menu */}
           <button
             onClick={toggleMenu}

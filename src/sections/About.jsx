@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <section className="c-space my-20" id="about">
-      <p className="head-text pb-5">About Me</p>
+      <p className="head-text pb-5">ABOUT ME</p>
 
       {/* About Me Section */}
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -179,7 +179,7 @@ const About = () => {
 
         {/* Education Section */}
         <div className="xl:col-span-3">
-          <p className="head-text pt-10 pb-5">Education</p>
+          <p className="head-text pt-10 pb-5">EDUCATION</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
             {/* Bachelor's Degree */}
             <div className="grid-container">
