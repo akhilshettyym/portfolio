@@ -33,7 +33,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I'm Akhil</p>
               <p className="grid-subtext text-justify">
-              I'm a Computer Science undergraduate with a solid technical foundation and 3 years of hands-on experience in both frontend and backend development. I specialize in building efficient, user-centric solutions and enjoy transforming innovative ideas into impactful digital experiences.
+                I'm a Computer Science undergraduate with a solid technical foundation and 3 years of hands-on experience in both frontend and backend development. I specialize in building efficient, user-centric solutions and enjoy transforming innovative ideas into impactful digital experiences.
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ const About = () => {
             <div className="mt-4">
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext text-justify">
-              I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js—delivering seamless performance and cutting-edge user experiences.
+                I specialize in building robust and scalable applications using React, Next.js, Three.js, Tailwind CSS, Firebase, and Node.js—delivering seamless performance and cutting-edge user experiences.
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ const About = () => {
             <div>
               <p className="grid-headtext ">Locate me here</p>
               <p className="grid-subtext text-justify">
-              I thrive in remote, cross-time-zone environments where adaptability and clear communication are key. With a strong commitment to collaboration and problem-solving, I ensure the delivery of seamless, high-quality digital solutions. I'm always ready to connect with teams, contribute meaningfully, and drive projects forward with precision and purpose.              </p>
+                I thrive in remote, cross-time-zone environments where adaptability and clear communication are key. With a strong commitment to collaboration and problem-solving, I ensure the delivery of seamless, high-quality digital solutions. I'm always ready to connect with teams, contribute meaningfully, and drive projects forward with precision and purpose.              </p>
               <span className="font-medium text-white">Mangalore, Karnataka, India</span>.{/* Contact Button */}
               <div className="mt-8 flex justify-center"></div>
             </div>
@@ -120,7 +120,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext text-justify">
-              I’m passionate about solving real-world problems and turning ideas into impactful solutions through code. One project that truly reflects this drive is <strong>BabySphere</strong> — A smart baby monitoring system I developed to assist parents with real-time insights into their child’s well-being. Leveraging Firebase for real-time communication, health data tracking, and intelligent alerts, BabySphere offers peace of mind through seamless automation. This project pushed me to blend hardware integration with software logic, combining creativity with technical precision. It not only enhanced my skills in system design and real-time tech but also deepened my commitment to building solutions that improve everyday lives.
+                I’m passionate about solving real-world problems and turning ideas into impactful solutions through code. One project that truly reflects this drive is <strong>BabySphere</strong> — A smart baby monitoring system I developed to assist parents with real-time insights into their child’s well-being. Leveraging Firebase for real-time communication, health data tracking, and intelligent alerts, BabySphere offers peace of mind through seamless automation. This project pushed me to blend hardware integration with software logic, combining creativity with technical precision. It not only enhanced my skills in system design and real-time tech but also deepened my commitment to building solutions that improve everyday lives.
               </p>
             </div>
           </div>
@@ -186,20 +186,20 @@ const About = () => {
               <div>
                 <p className="grid-headtext">Bachelor of Engineering</p>
                 <p className="grid-subtext">St. Joseph Engineering College, Mangaluru</p>
-                <p className="grid-subtext">Computer Science and Engineering</p>
-                <p className="grid-subtext">CGPA: 8.66/10</p>
-                <p className="grid-subtext">2021 - 2025</p>
+                <p className="grid-subtext">Major: Computer Science and Engineering</p>
+                <p className="grid-subtext">CGPA: 8.66 / 10</p>
+                <p className="grid-subtext">2021 – 2025</p>
               </div>
             </div>
 
-            {/* Higher Secondary */}
+            {/* Higher Secondary Education */}
             <div className="grid-container">
               <div>
-                <p className="grid-headtext">Higher Secondary</p>
+                <p className="grid-headtext">Pre-University Education (PUC)</p>
                 <p className="grid-subtext">Boscoss PU College, Mangaluru</p>
-                <p className="grid-subtext">PCMB</p>
+                <p className="grid-subtext">Stream: PCMB (Physics, Chemistry, Mathematics, Biology)</p>
                 <p className="grid-subtext">Percentage: 95.17%</p>
-                <p className="grid-subtext">2019 - 2021</p>
+                <p className="grid-subtext">2019 – 2021</p>
               </div>
             </div>
 
@@ -208,8 +208,8 @@ const About = () => {
               <div>
                 <p className="grid-headtext">High School</p>
                 <p className="grid-subtext">Canara High School, Urwa, Mangaluru</p>
-                <p className="grid-subtext">Percentage: 87.84%</p>
-                <p className="grid-subtext">2009 - 2019</p>
+                <p className="grid-subtext">SSLC Percentage: 87.84%</p>
+                <p className="grid-subtext">2009 – 2019</p>
               </div>
             </div>
           </div>
