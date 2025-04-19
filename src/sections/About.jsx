@@ -106,9 +106,7 @@ const About = () => {
             <div>
               <p className="grid-headtext ">Locate me here</p>
               <p className="grid-subtext text-justify">
-                I work remotely across time zones, ensuring seamless digital solutions through adaptability and strong
-                communication. Always ready to connect, contribute, and deliver quality results.
-              </p>
+              I thrive in remote, cross-time-zone environments where adaptability and clear communication are key. With a strong commitment to collaboration and problem-solving, I ensure the delivery of seamless, high-quality digital solutions. I'm always ready to connect with teams, contribute meaningfully, and drive projects forward with precision and purpose.              </p>
               <span className="font-medium text-white">Mangalore, Karnataka, India</span>.{/* Contact Button */}
               <div className="mt-8 flex justify-center"></div>
             </div>
