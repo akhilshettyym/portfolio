@@ -72,8 +72,8 @@ const Contact = () => {
   return (
     <section className="c-space my-20" id="contact">
       <TitleHeader
-        title="Forge a Connection"
-        sub="Have questions or ideas? Let's talk! I'm here to help with your projects."
+        title="FORGE A CONNECTION"
+        sub="Have questions or ideas ? Let's talk ! I'm here to help with your projects."
       />
       {alert.show && <Alert {...alert} />}
 
