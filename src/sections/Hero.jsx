@@ -55,15 +55,16 @@ const Hero = () => {
 
 
           <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
-  I craft <span className="font-semibold text-white">scalable, high-performance</span> web applications using modern technologies like 
+  I specialize in developing <span className="font-semibold text-white">scalable, high-performance web applications</span> utilizing modern technologies including 
   <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>. 
-  My work is centered around building intuitive user experiences backed by clean, efficient, and maintainable code.
+  My approach emphasizes clean architecture, maintainable code, and delivering seamless, user-centric experiences.
 </p>
 
 <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
-  Fueled by a passion for <span className="font-semibold text-white">innovation</span> and a drive for <span className="font-semibold text-white">technical excellence</span>, 
-  I focus on delivering <span className="font-semibold text-white">future-ready solutions</span> that not only enhance user satisfaction but also create real impact.
+  Committed to <span className="font-semibold text-white">technical excellence</span> and continuous improvement, I aim to build 
+  <span className="font-semibold text-white">robust, future-ready solutions</span> that align with business goals and elevate the overall digital experience.
 </p>
+
 
 
             
