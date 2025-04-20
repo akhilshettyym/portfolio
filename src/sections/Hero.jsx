@@ -54,14 +54,17 @@ const Hero = () => {
           <div className="space-y-8">
 
 
-            <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
-              I specialize in building <span className="font-semibold text-white">scalable, high-performance</span> web applications using
-              <span className="font-semibold text-white">React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>. My focus is on delivering seamless user experiences and solving complex problems through clean, maintainable code.
-            </p>
+          <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
+  I craft <span className="font-semibold text-white">scalable, high-performance</span> web applications using modern technologies like 
+  <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>. 
+  My work is centered around building intuitive user experiences backed by clean, efficient, and maintainable code.
+</p>
 
-            <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
-              Driven by a passion for <span className="font-semibold text-white">innovation</span> and <span className="font-semibold text-white">technical excellence</span>, I aim to create <span className="font-semibold text-white">future-proof applications</span> that elevate user experience and drive tangible results.
-            </p>
+<p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
+  Fueled by a passion for <span className="font-semibold text-white">innovation</span> and a drive for <span className="font-semibold text-white">technical excellence</span>, 
+  I focus on delivering <span className="font-semibold text-white">future-ready solutions</span> that not only enhance user satisfaction but also create real impact.
+</p>
+
 
             
 
