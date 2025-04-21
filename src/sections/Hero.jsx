@@ -53,7 +53,6 @@ const Hero = () => {
           {/* Description Section */}
           <div className="space-y-8">
 
-
             <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
               I specialize in building <span className="font-semibold text-white">scalable and high-performing web applications</span> using
               <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>.
@@ -64,7 +63,6 @@ const Hero = () => {
               With a strong drive for <span className="font-semibold text-white">innovation</span> and <span className="font-semibold text-white">technical excellence</span>,
               I’m passionate about developing <span className="font-semibold text-white">future-ready digital solutions</span> that combine design and functionality to create real impact.
             </p>
-
 
             <p className="text-gray-400 text-xs sm:text-sm md:text-medium lg:text-medium flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
