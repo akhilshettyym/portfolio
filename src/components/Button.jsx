@@ -5,12 +5,26 @@ const Button = ({
   type = "button",
   onClick = () => {},
   icon = null,
+  disabled = false,
+  fullWidth = false,
+  ariaLabel = "",
+  title = "",
 }) => {
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`group relative inline-flex items-center justify-center gap-3 px-6 py-3 rounded-2xl font-semibold text-white bg-gradient-to-br from-[#1c1c1c] to-[#343434] backdrop-blur-md border border-white/10 shadow-md hover:shadow-xl hover:scale-[1.04] active:scale-95 transition-all duration-300 overflow-hidden ${containerClass}`}
+      disabled={disabled}
+      aria-label={ariaLabel || name}
+      title={title || name}
+      className={`group relative inline-flex items-center justify-center gap-3 px-6 py-3 rounded-2xl font-semibold text-white 
+        bg-gradient-to-br from-[#1c1c1c] to-[#343434] border border-white/10 
+        shadow-md backdrop-blur-md 
+        hover:shadow-xl hover:scale-[1.04] active:scale-95 
+        transition-all duration-300 overflow-hidden
+        ${disabled ? 'opacity-50 cursor-not-allowed' : ''} 
+        ${fullWidth ? 'w-full' : ''} 
+        ${containerClass}`}
     >
       {/* Beam pulse animation */}
       {isBeam && (
@@ -23,7 +37,8 @@ const Button = ({
       {/* Optional icon */}
       {icon && <span className="text-lg">{icon}</span>}
 
-      <span className="z-10 tracking-wide">{name}</span>
+      {/* Button text */}
+      <span className="z-10 tracking-wide whitespace-nowrap">{name}</span>
 
       {/* Subtle shimmer and glow effect */}
       <span className="absolute inset-0 rounded-2xl bg-gradient-to-br from-emerald-400 to-lime-500 opacity-0 blur-sm transition-opacity duration-500 group-hover:opacity-10 pointer-events-none" />
