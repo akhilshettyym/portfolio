@@ -61,7 +61,7 @@ const Footer = () => {
         Crafting experiences, one line of code at a time.
       </p>
       <p className="text-xs text-gray-500 max-w-xl leading-relaxed">
-      Passionate about building clean, efficient, and scalable systems, I turn ideas into user-focused solutions that drive real impact. My development approach emphasizes performance, seamless user experience, and long-term reliability.
+        Passionate about building clean, efficient, and scalable systems, I turn ideas into user-focused solutions that drive real impact. My development approach emphasizes performance, seamless user experience, and long-term reliability.
       </p>
 
       {/* Copyright */}
