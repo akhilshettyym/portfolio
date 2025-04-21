@@ -61,7 +61,7 @@ const Footer = () => {
         Crafting experiences, one line of code at a time.
       </p>
       <p className="text-xs text-gray-500 max-w-xl leading-relaxed">
-        Passionate about clean, efficient, and scalable development, I turn ideas into intuitive, high-impact solutions. Every line of code enhances user experience, boosts performance, and pushes technological boundaries.
+      Driven by a passion for clean, efficient, and scalable development, I transform ideas into impactful, user-centric solutions. I focus on writing code that enhances performance, elevates user experience, and contributes to building forward-thinking, reliable applications.
       </p>
 
       {/* Copyright */}
