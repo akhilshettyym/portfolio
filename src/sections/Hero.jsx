@@ -54,17 +54,17 @@ const Hero = () => {
           <div className="space-y-8">
 
 
-            <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
-              I specialize in developing <span className="font-semibold text-white">robust, scalable web applications</span> using
-              <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>.
-              My approach focuses on crafting intuitive interfaces, writing maintainable code, and delivering seamless user experiences across platforms.
-            </p>
+          <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
+  I specialize in building <span className="font-semibold text-white">scalable and high-performing web applications</span> using 
+  <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>. 
+  I focus on creating clean, intuitive interfaces with maintainable code that delivers seamless user experiences across platforms.
+</p>
 
-            <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
-              Passionate about <span className="font-semibold text-white">innovation, performance,</span> and
-              <span className="font-semibold text-white"> technical precision</span>, I aim to build <span className="font-semibold text-white">future-ready solutions</span>
-              that blend design with functionality to drive meaningful impact.
-            </p>
+<p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
+  With a strong drive for <span className="font-semibold text-white">innovation</span> and <span className="font-semibold text-white">technical excellence</span>, 
+  I’m passionate about developing <span className="font-semibold text-white">future-ready digital solutions</span> that combine design and functionality to create real impact.
+</p>
+
 
             <p className="text-gray-400 text-xs sm:text-sm md:text-medium lg:text-medium flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
