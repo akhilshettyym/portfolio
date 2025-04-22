@@ -121,10 +121,10 @@ const Contact = () => {
               </label>
 
               <Button name="Start Conversation" isBeam containerClass="w-fit transition-transform hover:scale-105"
-              type="submit"
-              disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
-              </Button>               
+                type="submit"
+                disabled={loading}>
+                {loading ? "Sending..." : "Send Message"}
+              </Button>
 
             </form>
           </div>
