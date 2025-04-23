@@ -10,12 +10,20 @@ import Experience from "./sections/Experience"
 import LogoSection from "./components/LogoSection"
 import FeatureCards from "./components/FeatureCards"
 
-// About section imports
-import { useState } from "react"
+// About section mports
+import { useState, useRef } from "react"
 import Globe from "react-globe.gl"
 import * as THREE from "three"
 
+// Contact Section Imports
+import emailjs from "@emailjs/browser"
+import useAlert from "./hooks/useAlert"
+import Alert from "./components/Alert"
+import TitleHeader from "./components/TitleHeader"
+import ContactExperience from "./components/ContactExperience"
+import Button from "./components/Button"
+
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
-        useState, Globe, THREE,
+        useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button
 }
 

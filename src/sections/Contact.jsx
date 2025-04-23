@@ -1,13 +1,6 @@
 "use client"
 
-import emailjs from "@emailjs/browser"
-import { useRef, useState } from "react"
-
-import useAlert from "../hooks/useAlert"
-import Alert from "../components/Alert"
-import TitleHeader from "../components/TitleHeader"
-import ContactExperience from "../components/ContactExperience"
-import Button from "../components/Button"
+import { emailjs, useRef, useState, useAlert, Alert, TitleHeader, ContactExperience, Button } from "../imports"
 
 const Contact = () => {
   const formRef = useRef()
