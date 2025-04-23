@@ -45,9 +45,14 @@ import { navLinks } from "./constants"
 // My Prefessional Journey Imports
 import { MyProfessionalJourney } from './constants/index.js';
 
-
+// Projects Section Imports
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { Center,  } from "@react-three/drei"
+import { myProjects } from "./constants/index.js"
+import DemoComputer from "./components/DemoComputer.jsx"
 
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
-        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney
+        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, DemoComputer, 
 }

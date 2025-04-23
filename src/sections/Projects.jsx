@@ -1,19 +1,10 @@
 "use client"
 
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
-import { Suspense, useState } from "react"
-import { Canvas } from "@react-three/fiber"
-import { Center, OrbitControls } from "@react-three/drei"
-
-import { myProjects } from "../constants/index.js"
-import CanvasLoader from "../components/CanvasLoader.jsx"
-import DemoComputer from "../components/DemoComputer.jsx"
-
-const projectCount = myProjects.length
+import { gsap, useGSAP, Suspense, useState, Canvas, Center, OrbitControls, myProjects, CanvasLoader, DemoComputer } from "../imports"
 
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
+  const projectCount = myProjects.length
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
@@ -26,7 +17,11 @@ const Projects = () => {
   }
 
   useGSAP(() => {
-    gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: "power2.inOut" })
+    gsap.fromTo(
+      `.animatedText`,
+      { opacity: 0 },
+      { opacity: 1, duration: 1, stagger: 0.2, ease: "power2.inOut" }
+    )
   }, [selectedProjectIndex])
 
   const currentProject = myProjects[selectedProjectIndex]
@@ -45,12 +40,21 @@ const Projects = () => {
             />
           </div>
 
-          <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg" style={currentProject.logoStyle}>
-            <img className="w-10 h-10 shadow-sm" src={currentProject.logo || "/placeholder.svg"} alt="logo" />
+          <div
+            className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
+            style={currentProject.logoStyle}
+          >
+            <img
+              className="w-10 h-10 shadow-sm"
+              src={currentProject.logo || "/placeholder.svg"}
+              alt="logo"
+            />
           </div>
 
           <div className="flex flex-col gap-5 text-white-600 my-5">
-            <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
+            <p className="text-white text-2xl font-semibold animatedText">
+              {currentProject.title}
+            </p>
 
             <p className="animatedText text-justify">{currentProject.desc}</p>
             <p className="animatedText text-justify">{currentProject.subdesc}</p>
@@ -69,7 +73,8 @@ const Projects = () => {
               className="flex items-center gap-2 cursor-pointer text-white-600"
               href={currentProject.href}
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <p>Check Live Site</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
