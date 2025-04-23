@@ -1,7 +1,6 @@
 "use client"
 
-import { useState } from "react"
-import { navLinks } from "../constants"
+import { useState, navLinks } from "../imports"
 
 const NavItems = ({ closeMenu }) => {
   return (
