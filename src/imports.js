@@ -9,4 +9,13 @@ import Experience from "./sections/Experience"
 import LogoSection from "./components/LogoSection"
 import FeatureCards from "./components/FeatureCards"
 
-export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards }
+// About section imports
+import { useState } from "react"
+import Globe from "react-globe.gl"
+import * as THREE from "three"
+
+export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
+
+        useState, Globe, THREE
+}
+

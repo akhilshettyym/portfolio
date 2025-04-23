@@ -1,8 +1,6 @@
 "use client"
 
-import { useState } from "react"
-import Globe from "react-globe.gl"
-import * as THREE from "three" // Import THREE directly
+import { useState, Globe, THREE } from "../imports"
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false)
