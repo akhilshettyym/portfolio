@@ -42,8 +42,12 @@ import Robo from "./components/Robo"
 // Navbar Imports
 import { navLinks } from "./constants"
 
+// My Prefessional Journey Imports
+import { MyProfessionalJourney } from './constants/index.js';
+
+
+
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
-        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks
+        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney
 }
-

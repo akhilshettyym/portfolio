@@ -1,4 +1,4 @@
-import { MyProfessionalJourney } from '../constants/index.js';
+import { MyProfessionalJourney } from '../imports';
 
 const ProfessionalJourney = () => {
   return (
