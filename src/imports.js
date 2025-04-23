@@ -11,7 +11,7 @@ import LogoSection from "./components/LogoSection"
 import FeatureCards from "./components/FeatureCards"
 
 // About section mports
-import { useState, useRef } from "react"
+import { useState, useRef, Suspense} from "react"
 import Globe from "react-globe.gl"
 import * as THREE from "three"
 
@@ -23,7 +23,15 @@ import TitleHeader from "./components/TitleHeader"
 import ContactExperience from "./components/ContactExperience"
 import Button from "./components/Button"
 
+// Experience Section Imports
+import { Canvas } from "@react-three/fiber"
+import { OrbitControls } from "@react-three/drei"
+import Developer from "./components/Developer.jsx"
+import CanvasLoader from "./components/CanvasLoader.jsx"
+import { workExperiences } from "./constants/index.js"
+
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
-        useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button
+        useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
+        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, 
 }
 
