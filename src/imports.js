@@ -1,3 +1,4 @@
+// imports of APP
 import Navbar from "./sections/Navbar"
 import Hero from "./sections/Hero"
 import About from "./sections/About"
@@ -15,7 +16,6 @@ import Globe from "react-globe.gl"
 import * as THREE from "three"
 
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
-
-        useState, Globe, THREE
+        useState, Globe, THREE,
 }
 
