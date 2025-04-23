@@ -1,14 +1,4 @@
-import { Canvas } from "@react-three/fiber"
-import { PerspectiveCamera } from "@react-three/drei"
-import HackerRoom from "../components/HackerRoom"
-import { Suspense } from "react"
-import CanvasLoader from "../components/CanvasLoader"
-import { useMediaQuery } from "react-responsive"
-import HeroCamera from "../components/HeroCamera"
-import Button from "../components/Button"
-import Cuby from "../components/Cuby"
-import Stars from "../components/Stars"
-import Robo from "../components/Robo"
+import { Canvas, PerspectiveCamera, HackerRoom, Suspense, CanvasLoader, useMediaQuery, Button, HeroCamera, Cuby, Stars, Robo } from "../imports"
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" })
@@ -25,8 +15,6 @@ const Hero = () => {
     <section className="min-h-screen w-full flex flex-col relative px-4 md:px-8" id="home">
       <div className="w-full h-full flex lg:flex-row flex-col items-center">
         {/* Left Side - Text Content */}
-
-
         <div
           className={`${isDesktop ? "lg:w-1/2" : "w-full"
             } flex flex-col justify-center lg:pl-0 px-6 pt-16 md:pt-24 lg:pt-0 z-10 bg-transparent`}

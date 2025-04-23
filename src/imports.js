@@ -30,8 +30,17 @@ import Developer from "./components/Developer.jsx"
 import CanvasLoader from "./components/CanvasLoader.jsx"
 import { workExperiences } from "./constants/index.js"
 
+// Hero Section Imports
+import { PerspectiveCamera } from "@react-three/drei"
+import HackerRoom from "./components/HackerRoom"
+import { useMediaQuery } from "react-responsive"
+import HeroCamera from "./components/HeroCamera"
+import Cuby from "./components/Cuby"
+import Stars from "./components/Stars"
+import Robo from "./components/Robo"
+
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
-        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, 
+        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo
 }
 
