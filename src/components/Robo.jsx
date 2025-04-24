@@ -1,9 +1,6 @@
-import React, { useRef } from 'react';
-import { useGLTF } from '@react-three/drei';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import { useRef, useGLTF, gsap, useGSAP } from "../imports";
 
-const Robo = (props) => {
+  const Robo = (props) => {
   const { nodes, materials } = useGLTF('/models/robo.glb');
   const roboRef = useRef(); 
 
@@ -15,8 +12,6 @@ const Robo = (props) => {
       ease: "linear",
     });
   });
-  
-  
 
   return (
     <group ref={roboRef} {...props} dispose={null}>
