@@ -1,7 +1,4 @@
-import { OrbitControls } from "@react-three/drei"
-import { Canvas } from "@react-three/fiber"
-
-import Computer from "./Computer"
+import { OrbitControls, Canvas, Computer } from "../imports"
 
 const ContactExperience = () => {
   return (
