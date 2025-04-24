@@ -1,4 +1,4 @@
-import { useGLTF } from "@react-three/drei"
+import { useGLTF } from "../imports"
 
 export function Computer(props) {
   const { nodes, materials } = useGLTF("/models/computer-optimized-transformed.glb")

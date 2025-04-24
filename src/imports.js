@@ -52,10 +52,11 @@ import { Center,  } from "@react-three/drei"
 import { myProjects } from "./constants/index.js"
 import DemoComputer from "./components/DemoComputer.jsx"
 
-// Canvas Loader component imports
-import { Html, useProgress } from "@react-three/drei"
+// Canvas Loader and Computer component imports
+import { Html, useProgress, useGLTF } from "@react-three/drei"
+
 
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
-        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, DemoComputer, Html, useProgress
+        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, DemoComputer, Html, useProgress, useGLTF
 }
