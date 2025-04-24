@@ -1,9 +1,6 @@
 "use client"
 
-import React, { useRef, useEffect } from 'react';
-import { useGLTF, useAnimations, useVideoTexture } from "@react-three/drei"
-import { useGSAP } from "@gsap/react"
-import gsap from 'gsap';
+import { useRef, useEffect, useGLTF, useAnimations, useVideoTexture, useGSAP, gsap } from "../imports"
 
 const DemoComputer = (props) => {
   const group = useRef()
