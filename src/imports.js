@@ -53,7 +53,7 @@ import { myProjects } from "./constants/index.js"
 import DemoComputer from "./components/DemoComputer.jsx"
 
 // Canvas Loader and Computer component imports
-import { Html, useProgress, useGLTF, useAnimations, useVideoTexture } from "@react-three/drei"
+import { Html, useProgress, useGLTF, useAnimations, useVideoTexture, useFBX } from "@react-three/drei"
 
 // Contact Experience imorts
 import Computer from "./components/Computer"
@@ -61,5 +61,5 @@ import Computer from "./components/Computer"
 
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
-        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, DemoComputer, Html, useProgress, useGLTF, Computer, useEffect, useAnimations, useVideoTexture
+        Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, DemoComputer, Html, useProgress, useGLTF, Computer, useEffect, useAnimations, useVideoTexture, useFBX
 }

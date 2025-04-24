@@ -1,7 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
-import { useAnimations, useFBX, useGLTF } from "@react-three/drei"
+import { useEffect, useRef, useAnimations, useFBX, useGLTF } from "../imports" 
 
 const Developer = ({ animationName = "idle", ...props }) => {
   const group = useRef()
