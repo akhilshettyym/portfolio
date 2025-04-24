@@ -1,7 +1,6 @@
 "use client"
 
-import { useRef } from "react"
-import { useGLTF, useTexture } from "@react-three/drei"
+import { useRef, useGLTF, useTexture } from "../imports"
 
 const HackerRoom = (props) => {
   const { nodes, materials } = useGLTF("/models/hacker-room.glb")
