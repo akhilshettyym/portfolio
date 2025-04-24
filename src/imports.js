@@ -59,6 +59,7 @@ import { Html, useProgress, useGLTF } from "@react-three/drei"
 import Computer from "./components/Computer"
 
 
+
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
         Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery, HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, DemoComputer, Html, useProgress, useGLTF, Computer
