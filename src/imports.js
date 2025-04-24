@@ -65,11 +65,13 @@ import { abilities } from "./constants/index.js";
 import { useFrame, useThree } from "@react-three/fiber"
 import { easing } from "maath"
 
+// Logo Section Imports
+import { logoIconsList } from "./constants/index.js";
 
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
         Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery,
         HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, 
         DemoComputer, Html, useProgress, useGLTF, Computer, useEffect, useAnimations, useVideoTexture, useFBX, abilities,
-        useTexture, useFrame, useThree, easing
+        useTexture, useFrame, useThree, easing, logoIconsList
 }
