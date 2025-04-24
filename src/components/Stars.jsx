@@ -1,5 +1,4 @@
-import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useRef, useGLTF, useAnimations } from "../imports"
 
 const Stars = (props) => {
   const group = useRef()
