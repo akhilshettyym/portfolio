@@ -1,4 +1,5 @@
 import { Html, useProgress } from "../imports"
+
 const CanvasLoader = () => {
   const { progress } = useProgress()
   return (
