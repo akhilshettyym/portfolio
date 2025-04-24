@@ -1,8 +1,6 @@
 "use client"
 
-import { useRef, useEffect } from "react"
-import { useFrame, useThree } from "@react-three/fiber"
-import { easing } from "maath"
+import { useRef, useEffect, useFrame, useThree, easing } from "../imports"
 
 const HeroCamera = ({ children, syncWithMouse = false }) => {
   const groupRef = useRef()

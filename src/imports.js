@@ -61,11 +61,15 @@ import Computer from "./components/Computer"
 // Feature Cards Imports
 import { abilities } from "./constants/index.js";
 
+// Hero cam Imports
+import { useFrame, useThree } from "@react-three/fiber"
+import { easing } from "maath"
+
 
 export { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards,
         useState, Globe, THREE, emailjs, useRef, useAlert, Alert, TitleHeader, ContactExperience, Button,
         Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery,
         HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center, 
         DemoComputer, Html, useProgress, useGLTF, Computer, useEffect, useAnimations, useVideoTexture, useFBX, abilities,
-        useTexture
+        useTexture, useFrame, useThree, easing
 }
