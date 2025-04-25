@@ -16,7 +16,7 @@ const Footer = () => {
 
         {/* RESUME */}
         <a
-          href="/assets/AkhilShettyM.pdf"
+          href="/assets/Resume/AkhilShettyM.pdf"
           target="_blank"
           rel="noopener noreferrer"
           download="Akhil_Shetty_M.pdf"

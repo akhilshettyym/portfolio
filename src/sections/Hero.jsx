@@ -21,7 +21,7 @@ const Hero = () => {
         >
           {/* Name Heading */}
           <a
-            href="/assets/AkhilShettyM.pdf"
+            href="/assets/Resume/AkhilShettyM.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
