@@ -193,8 +193,7 @@ const Hero = () => {
                         src={word.imgPath}
                         alt={word.text}
                         className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white"
-                      />
-                      
+                      /> 
                       <span className="text-xl sm:text-2xl md:text-3xl text-white">
                         {word.text}
                       </span>
