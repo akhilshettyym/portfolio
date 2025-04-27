@@ -282,18 +282,17 @@ const abilities = [
 ]
 
 const words = [
-{ text: "PLANS", imgPath: "/images/animate/plans.svg" },  // done 
-{ text: "SPECS", imgPath: "/images/animate/code.svg" },   // done
-{ text: "SAMPLES", imgPath: "/images/animate/samples.svg" },  // done
-{ text: "MODELS", imgPath: "/images/animate/models.svg" },  // done
-{ text: "FRAMEWORKS", imgPath: "/images/animate/frameworks.svg" },  // dobe
-{ text: "SKETCHES", imgPath: "/images/animate/sketches.svg" },  // done
-{ text: "TECHNIQUES", imgPath: "/images/animate/techniques.svg" },  // done
-{ text: "APPROACHES", imgPath: "/images/animate/approaches.svg" },  
-{ text: "TOOLKITS", imgPath: "/images/animate/toolkits.svg" },  
-{ text: "APPLICATIONS", imgPath: "/images/animate/applications.svg" },  
+{ text: "PLANS", imgPath: "/images/animate/plans.svg" },
+{ text: "SPECS", imgPath: "/images/animate/code.svg" },
+{ text: "SAMPLES", imgPath: "/images/animate/samples.svg" },
+{ text: "MODELS", imgPath: "/images/animate/models.svg" },
+{ text: "FRAMEWORKS", imgPath: "/images/animate/frameworks.svg" },
+{ text: "SKETCHES", imgPath: "/images/animate/sketches.svg" },
+{ text: "TECHNIQUES", imgPath: "/images/animate/techniques.svg" },
+{ text: "APPROACHES", imgPath: "/images/animate/approaches.svg" },
+{ text: "TOOLKITS", imgPath: "/images/animate/toolkits.svg" },
+{ text: "APPLICATIONS", imgPath: "/images/animate/applications.svg" },
 { text: "METHODOLOGIES", imgPath: "/images/animate/methodologies.svg" },  
-{ text: "VISIONS", imgPath: "/images/animate/visions.svg" },  
 { text: "FORMULAS", imgPath: "/images/animate/formulas.svg" },  
 { text: "CHARACTERISTICS", imgPath: "/images/animate/characteristics.svg" },  
 { text: "TEMPLATES", imgPath: "/images/animate/templates.svg" },
