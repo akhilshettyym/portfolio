@@ -282,10 +282,10 @@ const abilities = [
 ]
 
 const words = [
-{ text: "PLANS", imgPath: "/images/plans.svg" },  
-{ text: "SPECS", imgPath: "/images/specs.svg" },  
-{ text: "SAMPLES", imgPath: "/images/samples.svg" },  
-{ text: "MODELS", imgPath: "/images/models.svg" },  
+{ text: "PLANS", imgPath: "/images/animate/plans.svg" },  
+{ text: "SPECS", imgPath: "/images/animate/code.svg" },  
+{ text: "SAMPLES", imgPath: "/images/animate/samples.svg" },  
+{ text: "MODELS", imgPath: "/images/animate/models.svg" },  
 { text: "FRAMEWORKS", imgPath: "/images/frameworks.svg" },  
 { text: "SKETCHES", imgPath: "/images/sketches.svg" },  
 { text: "TECHNIQUES", imgPath: "/images/techniques.svg" },  

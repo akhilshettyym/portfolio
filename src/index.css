@@ -311,7 +311,7 @@ body {
 }
 
 .hero-text img {
-  @apply size-8 md:size-10 object-contain;
+  @apply size-8 md:size-12 object-contain;
 }
 
 .hero-text .slide {
