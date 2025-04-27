@@ -190,7 +190,7 @@ const Hero = () => {
                       <img
                         src={word.imgPath}
                         alt={word.text}
-                        className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white"/> 
+                        className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white" />
                       <span className="text-xl sm:text-2xl md:text-3xl text-white">
                         {word.text}
                       </span>
@@ -203,47 +203,29 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
 
-            {/* <p className="text-gray-400 text-xs sm:text-sm md:text-base flex items-center">
+            <p className="text-gray-400 text-[10px] sm:text-xs md:text-sm flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
               <a
                 href="#projects"
-                className="ml-3 text-white hover:text-gray-300 text-sm inline-flex items-center group"
+                className="ml-3 text-white hover:text-gray-300 text-[10px] sm:text-xs md:text-sm inline-flex items-center group"
               >
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"
+                  className="h-3 w-3 ml-2 transition-transform group-hover:translate-x-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
                 </svg>
               </a>
-            </p> */}
-            <p className="text-gray-400 text-[10px] sm:text-xs md:text-sm flex items-center">
-  🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
-  <a
-    href="#projects"
-    className="ml-3 text-white hover:text-gray-300 text-[10px] sm:text-xs md:text-sm inline-flex items-center group"
-  >
-    Check out what I'm working on
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-3 w-3 ml-2 transition-transform group-hover:translate-x-1"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M14 5l7 7m0 0l-7 7m7-7H3"
-      />
-    </svg>
-  </a>
-</p>
+            </p>
 
           </div>
 
