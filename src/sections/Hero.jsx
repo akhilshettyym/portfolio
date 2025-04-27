@@ -167,7 +167,7 @@ const Hero = () => {
 
           {/* Changing Title */}
           <div className="changing-title-container mb-6">
-            <p className="changing-title text-2xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-white">
+            <p className="changing-title text-xl sm:text-3xl md:text-4xl lg:text-3xl font-semibold text-white">
               {/* Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer */}
               FULL-STACK DEVELOPER | UI/UX DESIGNER | TECH ENTHUSIAST | GRAPHIC DESIGNER
               {/* Intern @ Global Industrial Private Limited || Full Stack Developer || UI/UX Designer || Graphic designer */}
@@ -182,18 +182,15 @@ const Hero = () => {
               <div className="relative h-12 overflow-hidden my-2">
                 <div
                   className="absolute flex flex-col transition-transform duration-700 ease-in-out"
-                  style={{ transform: `translateY(-${currentIndex * 3}rem)` }}
-                >
+                  style={{ transform: `translateY(-${currentIndex * 3}rem)` }}>
                   {words.map((word, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-2 md:gap-3 h-12"
-                    >
+                      className="flex items-center gap-2 md:gap-3 h-12">
                       <img
                         src={word.imgPath}
                         alt={word.text}
-                        className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white"
-                      /> 
+                        className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white"/> 
                       <span className="text-xl sm:text-2xl md:text-3xl text-white">
                         {word.text}
                       </span>

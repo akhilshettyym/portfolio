@@ -281,21 +281,14 @@ const abilities = [
   },
 ]
 
-
-
-
-
-
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "NODESURGE", imgPath: "/images/ideas.svg" },
+  { text: "PROMPTLYTIC", imgPath: "/images/concepts.svg" },
+  { text: "BABYSPHERE", imgPath: "/images/designs.svg" },
+  { text: "CODE", imgPath: "/images/code.svg" },
+  { text: "REACT", imgPath: "/images/ideas.svg" },
+  { text: "NEXT JS", imgPath: "/images/concepts.svg" },
+  { text: "DESIGNS", imgPath: "/images/designs.svg" },
 ];
-
 
 export { logoIconsList, abilities, words }
