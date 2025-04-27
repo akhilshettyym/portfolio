@@ -175,13 +175,12 @@ const Hero = () => {
           </div>
 
           {/* Animated Words Section */}
+
           <div className="flex flex-col gap-7 text-white">
             <div className="hero-text">
-              <h1>Shaping</h1>
-
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Disrupting</h1>
               <div className="relative h-12 overflow-hidden my-2">
-                <div
-                  className="absolute flex flex-col transition-transform duration-700 ease-in-out"
+                <div className="absolute flex flex-col transition-transform duration-700 ease-in-out"
                   style={{ transform: `translateY(-${currentIndex * 3}rem)` }}>
                   {words.map((word, index) => (
                     <div
@@ -198,9 +197,8 @@ const Hero = () => {
                   ))}
                 </div>
               </div>
-
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Breaking Every Norm — </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Building What's Next</h1>
             </div>
 
             <p className="text-gray-400 text-[10px] sm:text-xs md:text-sm flex items-center">

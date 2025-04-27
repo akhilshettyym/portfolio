@@ -282,10 +282,11 @@ const abilities = [
 ]
 
 const words = [
-  { text: "NODESURGE", imgPath: "/images/ideas.svg" },
-  { text: "PROMPTLYTIC", imgPath: "/images/concepts.svg" },
-  { text: "BABYSPHERE", imgPath: "/images/designs.svg" },
+  { text: "IDEAS", imgPath: "/images/ideas.svg" },
+  { text: "CONCEPTS", imgPath: "/images/concepts.svg" },
+  { text: "DESIGNS", imgPath: "/images/designs.svg" },
   { text: "CODE", imgPath: "/images/code.svg" },
+  
   { text: "REACT", imgPath: "/images/ideas.svg" },
   { text: "NEXT JS", imgPath: "/images/concepts.svg" },
   { text: "DESIGNS", imgPath: "/images/designs.svg" },
