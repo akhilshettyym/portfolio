@@ -322,33 +322,53 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+  animation: wordSlider 10s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
 
-/* Keyframe to animate word sliding up */
+/* Keyframe to animate word sliding up with scale and opacity */
 @keyframes wordSlider {
   0% {
-    transform: translateY(0.5%);
+    transform: translateY(0) scale(1);
+    opacity: 1;
   }
-  12.5% {
-    transform: translateY(-12.5%);
+
+  6% {
+    transform: translateY(-5%) scale(1.05);
+    opacity: 1;
   }
+
+  15% {
+    transform: translateY(-20%) scale(1);
+    opacity: 0;
+  }
+
   25% {
-    transform: translateY(-25%);
+    transform: translateY(-30%) scale(1);
+    opacity: 0;
   }
-  37.5% {
-    transform: translateY(-37.5%);
+
+  35% {
+    transform: translateY(-50%) scale(1.05);
+    opacity: 1;
   }
-  50% {
-    transform: translateY(-50%);
+
+  43% {
+    transform: translateY(-60%) scale(1);
+    opacity: 0;
   }
-  62.5% {
-    transform: translateY(-62.5%);
+
+  55% {
+    transform: translateY(-80%) scale(1);
+    opacity: 0;
   }
-  75% {
-    transform: translateY(-75%);
+
+  65% {
+    transform: translateY(-90%) scale(1.05);
+    opacity: 1;
   }
-  87.5% {
-    transform: translateY(-87.5%);
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
   }
 }
