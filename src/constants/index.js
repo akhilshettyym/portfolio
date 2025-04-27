@@ -282,14 +282,21 @@ const abilities = [
 ]
 
 const words = [
-  { text: "IDEAS", imgPath: "/images/ideas.svg" },
-  { text: "CONCEPTS", imgPath: "/images/concepts.svg" },
-  { text: "DESIGNS", imgPath: "/images/designs.svg" },
-  { text: "CODE", imgPath: "/images/code.svg" },
-  
-  { text: "REACT", imgPath: "/images/ideas.svg" },
-  { text: "NEXT JS", imgPath: "/images/concepts.svg" },
-  { text: "DESIGNS", imgPath: "/images/designs.svg" },
+{ text: "PLANS", imgPath: "/images/plans.svg" },  
+{ text: "SPECS", imgPath: "/images/specs.svg" },  
+{ text: "SAMPLES", imgPath: "/images/samples.svg" },  
+{ text: "MODELS", imgPath: "/images/models.svg" },  
+{ text: "FRAMEWORKS", imgPath: "/images/frameworks.svg" },  
+{ text: "SKETCHES", imgPath: "/images/sketches.svg" },  
+{ text: "TECHNIQUES", imgPath: "/images/techniques.svg" },  
+{ text: "APPROACHES", imgPath: "/images/approaches.svg" },  
+{ text: "TOOLKITS", imgPath: "/images/toolkits.svg" },  
+{ text: "APPLICATIONS", imgPath: "/images/applications.svg" },  
+{ text: "METHODOLOGIES", imgPath: "/images/methodologies.svg" },  
+{ text: "VISIONS", imgPath: "/images/visions.svg" },  
+{ text: "FORMULAS", imgPath: "/images/formulas.svg" },  
+{ text: "CHARACTERISTICS", imgPath: "/images/characteristics.svg" },  
+{ text: "TEMPLATES", imgPath: "/images/templates.svg" },
 ];
 
 export { logoIconsList, abilities, words }

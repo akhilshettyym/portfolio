@@ -167,7 +167,7 @@ const Hero = () => {
 
           {/* Changing Title */}
           <div className="changing-title-container mb-6">
-            <p className="changing-title text-xl sm:text-3xl md:text-4xl lg:text-3xl font-semibold text-white">
+            <p className="changing-title text-xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-white">
               {/* Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer */}
               FULL-STACK DEVELOPER | UI/UX DESIGNER | TECH ENTHUSIAST | GRAPHIC DESIGNER
               {/* Intern @ Global Industrial Private Limited || Full Stack Developer || UI/UX Designer || Graphic designer */}
@@ -178,7 +178,7 @@ const Hero = () => {
 
           <div className="flex flex-col gap-7 text-white">
             <div className="hero-text">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Disrupting</h1>
+              {/* <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Disrupting</h1> */}
               <div className="relative h-12 overflow-hidden my-2">
                 <div className="absolute flex flex-col transition-transform duration-700 ease-in-out"
                   style={{ transform: `translateY(-${currentIndex * 3}rem)` }}>
@@ -197,35 +197,33 @@ const Hero = () => {
                   ))}
                 </div>
               </div>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Breaking Every Norm — </h1>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Building What's Next</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Innovating</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Elevating Experience</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Building What's Next . . .</h1>
             </div>
 
             <p className="text-gray-400 text-[10px] sm:text-xs md:text-sm flex items-center">
               🚀 <span className="ml-2">Continuously innovating, endlessly evolving.</span>
               <a
                 href="#projects"
-                className="ml-3 text-white hover:text-gray-300 text-[10px] sm:text-xs md:text-sm inline-flex items-center group"
-              >
+                className="ml-3 text-white hover:text-gray-300 text-[10px] sm:text-xs md:text-sm inline-flex items-center group">
                 Check out what I'm working on
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-3 w-3 ml-2 transition-transform group-hover:translate-x-1"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                  stroke="currentColor">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
+                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
             </p>
-
           </div>
+
 
           <div className="mt-12">
             <a href="#contact">
