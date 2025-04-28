@@ -167,7 +167,7 @@ const Hero = () => {
 
           {/* Changing Title */}
           <div className="changing-title-container mb-6">
-            <p className="changing-title text-xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-white">
+            <p className="changing-title text-xl sm:text-3xl md:text-4xl lg:text-3xl font-semibold text-white">
               {/* Full-Stack Developer | UI/UX Designer | Tech Enthusiast | Graphic Designer */}
               FULL-STACK DEVELOPER | UI/UX DESIGNER | TECH ENTHUSIAST | GRAPHIC DESIGNER
               {/* Intern @ Global Industrial Private Limited || Full Stack Developer || UI/UX Designer || Graphic designer */}
@@ -179,8 +179,10 @@ const Hero = () => {
           <div className="flex flex-col gap-7 text-white">
             <div className="hero-text">
               {/* <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Disrupting</h1> */}
-              <div className="relative h-12 overflow-hidden my-2">
-                <div className="absolute flex flex-col transition-transform duration-700 ease-in-out"
+              {/* <div className="relative h-12 overflow-hidden my-2 " > */}
+              <div className="relative h-12 overflow-hidden my-2 changing-title-container mb-6" >
+                <div className="absolute flex flex-col transition-transform duration-700 ease-in-out 
+                changing-title text-xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-white"
                   style={{ transform: `translateY(-${currentIndex * 3}rem)` }}>
                   {words.map((word, index) => (
                     <div
@@ -197,9 +199,22 @@ const Hero = () => {
                   ))}
                 </div>
               </div>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Innovating</h1>
+              {/* <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Innovating</h1>
               <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Elevating Experience</h1>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Building What's Next . . .</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Building What's Next . . .</h1> */}
+              <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
+                I craft <span className="font-semibold text-white">structured, high-efficiency solutions</span> using
+                <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>,
+                with a focus on precision, scalability, and seamless experiences.
+              </p>
+
+              <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
+                Driven by <span className="font-semibold text-white">technical mastery</span> and <span className="font-semibold text-white">creative strategy</span>,
+                I engineer <span className="font-semibold text-white">future-focused digital systems</span> that blend innovation with functional excellence.
+              </p>
+
+
+
             </div>
 
             <p className="text-gray-400 text-[10px] sm:text-xs md:text-sm flex items-center">
