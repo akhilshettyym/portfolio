@@ -311,11 +311,13 @@ body {
 }
 
 .hero-text img {
-  @apply w-10 h-10 md:w-10 md:h-10 object-contain bg-black; /* made bigger */
-  border-radius: 2; /* remove circle shape */
-  padding: 0.01rem; /* add padding */
+  @apply w-10 h-10 md:w-10 md:h-10 object-contain bg-black;
+  /* made bigger */
+  border-radius: 2;
+  /* remove circle shape */
+  padding: 0.01rem;
+  /* add padding */
 }
-
 
 .hero-text .slide {
   @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
@@ -324,54 +326,39 @@ body {
 /* Animation wrapper (if needed for word/image sliding) */
 .wrapper {
   display: flex;
-  flex-direction: column;
-  animation: wordSlider 10s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  animation: wordSlider 15s infinite linear;
+  /* Added linear timing for smooth looping */
+  overflow: hidden;
 }
 
-/* Keyframe to animate word sliding up with scale and opacity */
+/* Slide container to hold all words */
+.slide-container {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+/* Keyframe to animate word sliding from right to left (horizontal scroll) */
 @keyframes wordSlider {
   0% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-
-  6% {
-    transform: translateY(-5%) scale(1.05);
-    opacity: 1;
-  }
-
-  15% {
-    transform: translateY(-20%) scale(1);
-    opacity: 0;
-  }
-
-  25% {
-    transform: translateY(-30%) scale(1);
-    opacity: 0;
-  }
-
-  35% {
-    transform: translateY(-50%) scale(1.05);
-    opacity: 1;
-  }
-
-  43% {
-    transform: translateY(-60%) scale(1);
-    opacity: 0;
-  }
-
-  55% {
-    transform: translateY(-80%) scale(1);
-    opacity: 0;
-  }
-
-  65% {
-    transform: translateY(-90%) scale(1.05);
-    opacity: 1;
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
+    transform: translateX(-100%);
   }
+}
+
+.word {
+  padding: 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.wrapper .slide-container {
+  display: flex;
 }
