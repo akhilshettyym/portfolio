@@ -171,6 +171,7 @@ export const abilities = [
 // Animated Words
 export const words = [
   { text: "PLANS", imgPath: "/images/animate/plans.svg" },
+  { text: "PLANS", imgPath: "/images/animate/star.png" },
   { text: "SPECS", imgPath: "/images/animate/code.svg" },
   { text: "SAMPLES", imgPath: "/images/animate/samples.svg" },
   { text: "MODELS", imgPath: "/images/animate/models.svg" },
