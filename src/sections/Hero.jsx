@@ -199,21 +199,17 @@ const Hero = () => {
                   ))}
                 </div>
               </div>
-              {/* <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Innovating</h1>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Elevating Experience</h1>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl p-1">Building What's Next . . .</h1> */}
+
               <p className="text-gray-300 text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-justify">
-                I craft <span className="font-semibold text-white">structured, high-efficiency solutions</span> using
-                <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>,
-                with a focus on precision, scalability, and seamless experiences.
+                I specialize in building <span className="font-semibold text-white">scalable and high-performing web applications</span> using
+                <span className="font-semibold text-white"> React, Next.js, Three.js, Firebase,</span> and <span className="font-semibold text-white">Node.js</span>.
+                I focus on creating clean, intuitive interfaces with maintainable code that delivers seamless user experiences across platforms.
               </p>
 
               <p className="text-gray-300 text-sm sm:text-lg md:text-xl lg:text-xl leading-relaxed text-justify mt-4">
-                Driven by <span className="font-semibold text-white">technical mastery</span> and <span className="font-semibold text-white">creative strategy</span>,
-                I engineer <span className="font-semibold text-white">future-focused digital systems</span> that blend innovation with functional excellence.
+                With a strong drive for <span className="font-semibold text-white">innovation</span> and <span className="font-semibold text-white">technical excellence</span>,
+                I’m passionate about developing <span className="font-semibold text-white">future-ready digital solutions</span> that combine design and functionality to create real impact.
               </p>
-
-
 
             </div>
 
