@@ -172,7 +172,9 @@ export const abilities = [
 export const words = [
   { text: "PLANS", imgPath: "/images/animate/plans.svg" },
   { text: "PLANS", imgPath: "/images/animate/star.png" },
-  { text: "SPECS", imgPath: "/images/animate/code.svg" },
+  { text: "PLANS", imgPath: "/images/animate/1.png" },
+  { text: "PLANS", imgPath: "/images/animate/2.png" },
+  { text: "SPECS", imgPath: "/images/animate/3.png" },
   { text: "SAMPLES", imgPath: "/images/animate/samples.svg" },
   { text: "MODELS", imgPath: "/images/animate/models.svg" },
   { text: "FRAMEWORKS", imgPath: "/images/animate/frameworks.svg" },
