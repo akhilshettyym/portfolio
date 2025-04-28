@@ -170,18 +170,14 @@ export const abilities = [
 
 // Animated Words
 export const words = [
-  { text: "PLANS", imgPath: "/images/animate/plans.svg" },
-  { text: "SPECS", imgPath: "/images/animate/3.png" },
-  { text: "SAMPLES", imgPath: "/images/animate/samples.svg" },
-  { text: "MODELS", imgPath: "/images/animate/models.svg" },
-  { text: "FRAMEWORKS", imgPath: "/images/animate/frameworks.svg" },
-  { text: "SKETCHES", imgPath: "/images/animate/sketches.svg" },
-  { text: "TECHNIQUES", imgPath: "/images/animate/techniques.svg" },
-  { text: "APPROACHES", imgPath: "/images/animate/approaches.svg" },
-  { text: "TOOLKITS", imgPath: "/images/animate/toolkits.svg" },
-  { text: "APPLICATIONS", imgPath: "/images/animate/applications.svg" },
-  { text: "METHODOLOGIES", imgPath: "/images/animate/methodologies.svg" },
-  { text: "FORMULAS", imgPath: "/images/animate/formulas.svg" },
-  { text: "CHARACTERISTICS", imgPath: "/images/animate/characteristics.svg" },
-  { text: "TEMPLATES", imgPath: "/images/animate/templates.svg" },
+  { text: "FRAMEWORKS", imgPath: "/images/animate/1.png" },
+  { text: "ALGORITHMS", imgPath: "/images/animate/2.png" },
+  { text: "API INTEGRATIONS", imgPath: "/images/animate/3.png" },
+  { text: "TOOLKITS", imgPath: "/images/animate/4.png" },
+  { text: "VERSION CONTROL", imgPath: "/images/animate/5.png" },
+  { text: "CI/CD", imgPath: "/images/animate/6.png" },
+  { text: "ARCHITECTURES", imgPath: "/images/animate/7.png" },
+  { text: "TEMPLATES", imgPath: "/images/animate/8.png" },
+  { text: "DEPLOYMENT", imgPath: "/images/animate/9.png" },
+  { text: "MICROSERVICES", imgPath: "/images/animate/10.png" },
 ];
