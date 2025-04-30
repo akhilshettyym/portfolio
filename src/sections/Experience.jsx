@@ -32,8 +32,7 @@ const WorkExperience = () => {
                   onClick={() => setAnimationName(item.animation.toLowerCase())}
                   onPointerOver={() => setAnimationName(item.animation.toLowerCase())}
                   onPointerOut={() => setAnimationName("idle")}
-                  className="work-content_container group text-justify"
-                >
+                  className="work-content_container group text-justify" >
                   <div className="flex flex-col h-full justify-start items-center py-2">
                     <div className="work-content_logo">
                       <img className="w-full h-full" src={item.icon || "/placeholder.svg"} alt="" />
