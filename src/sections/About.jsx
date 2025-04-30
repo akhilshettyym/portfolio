@@ -141,8 +141,7 @@ const About = () => {
                   href="https://linkedin.com/in/akhilshettym"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-all"
-                >
+                  className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-all">
                   <img src="assets/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
                   <span className="text-sm sm:text-base font-medium">akhilshettym</span>
                 </a>
@@ -152,8 +151,7 @@ const About = () => {
                   href="https://github.com/akhilshettyym"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-gray-400 transition-all"
-                >
+                  className="flex items-center gap-3 text-gray-300 hover:text-gray-400 transition-all" >
                   <img src="assets/github.svg" alt="GitHub" className="w-5 h-5" />
                   <span className="text-sm sm:text-base font-medium">akhilshettyym</span>
                 </a>
@@ -161,8 +159,7 @@ const About = () => {
                 {/* Email Section */}
                 <div
                   className="copy-container flex items-center justify-center gap-3 cursor-pointer"
-                  onClick={handleCopy}
-                >
+                  onClick={handleCopy}>
                   <img src="assets/mail.png" alt="Email Icon" className="w-5 h-5" />
                   <p className="text-sm sm:text-base font-medium text-white">akhilshettym2003@gmail.com</p>
                   <img src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"} alt="Copy Icon" className="w-4 h-4" />
