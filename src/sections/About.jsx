@@ -95,8 +95,7 @@ const About = () => {
                     new THREE.MeshBasicMaterial({ color: d.color }),
                   )
                   return marker
-                }}
-              />
+                }}/>
             </div>
 
             {/* Globe Text Content */}
@@ -129,8 +128,7 @@ const About = () => {
             <img
               src="assets/grids/grid3.png"
               alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top rounded-lg"
-            />
+              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top rounded-lg" />
 
             {/* Contact Info */}
             <div className="space-y-4 text-center mt-4">
