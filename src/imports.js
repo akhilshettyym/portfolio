@@ -66,7 +66,7 @@ import { useFrame, useThree } from "@react-three/fiber"
 import { easing } from "maath"
 
 // Logo Section Imports
-import { logoIconsList } from "./constants/index.js";
+import { logoIconsList, words } from "./constants/index.js";
 
 
 export {
@@ -75,5 +75,5 @@ export {
   Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, Suspense, PerspectiveCamera, useMediaQuery,
   HackerRoom, HeroCamera, Cuby, Stars, Robo, navLinks, MyProfessionalJourney, gsap, useGSAP, myProjects, Center,
   DemoComputer, Html, useProgress, useGLTF, Computer, useEffect, useAnimations, useVideoTexture, useFBX, abilities,
-  useTexture, useFrame, useThree, easing, logoIconsList
+  useTexture, useFrame, useThree, easing, logoIconsList, words
 }

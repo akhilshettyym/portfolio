@@ -1,19 +1,4 @@
-import {
-  Canvas,
-  PerspectiveCamera,
-  HackerRoom,
-  Suspense,
-  CanvasLoader,
-  useMediaQuery,
-  Button,
-  HeroCamera,
-  Cuby,
-  Stars,
-  Robo,
-  useEffect,
-  useState
-} from "../imports";
-import { words } from "../constants";
+import { Canvas, PerspectiveCamera, HackerRoom, Suspense, CanvasLoader, useMediaQuery, Button, HeroCamera, Cuby, Stars, Robo, useEffect, useState, words } from "../imports";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
