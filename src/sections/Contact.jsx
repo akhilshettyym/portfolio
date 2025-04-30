@@ -66,8 +66,7 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       <TitleHeader
         title="FORGE A CONNECTION"
-        sub="Have questions or ideas ? Let's talk ! I'm here to help with your projects."
-      />
+        sub="Have questions or ideas ? Let's talk ! I'm here to help with your projects."/>
       {alert.show && <Alert {...alert} />}
 
       <div className="mt-12 grid lg:grid-cols-12 gap-8">
@@ -83,8 +82,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="field-input"
-                  placeholder="ex., Akhil Shetty M"
-                />
+                  placeholder="ex., Akhil Shetty M" />
               </label>
 
               <label className="space-y-3">
@@ -96,8 +94,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="field-input"
-                  placeholder="ex., akhilshettym2003@gmail.com"
-                />
+                  placeholder="EX., akhilshettym2003@gmail.com" />
               </label>
 
               <label className="space-y-3">
@@ -109,8 +106,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="field-input"
-                  placeholder="Share your thoughts or inquiries..."
-                />
+                  placeholder="Share your thoughts or inquiries..." />
               </label>
 
               <Button name="Start Conversation" isBeam containerClass="w-fit transition-transform hover:scale-105"
