@@ -1,4 +1,5 @@
 const Alert = ({ type, text }) => {
+  
     return (
       <div className="fixed bottom-5 right-5 flex justify-center items-center z-50">
         <div
@@ -18,4 +19,4 @@ const Alert = ({ type, text }) => {
     );
   };
   
-  export default Alert;
+export default Alert;

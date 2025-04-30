@@ -10,8 +10,7 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
-      className={`group relative inline-flex items-center justify-center gap-3 px-6 py-3 rounded-2xl font-semibold text-white bg-gradient-to-br from-[#1c1c1c] to-[#343434] backdrop-blur-md border border-white/10 shadow-md hover:shadow-xl hover:scale-[1.04] active:scale-95 transition-all duration-300 overflow-hidden ${containerClass}`}
-    >
+      className={`group relative inline-flex items-center justify-center gap-3 px-6 py-3 rounded-2xl font-semibold text-white bg-gradient-to-br from-[#1c1c1c] to-[#343434] backdrop-blur-md border border-white/10 shadow-md hover:shadow-xl hover:scale-[1.04] active:scale-95 transition-all duration-300 overflow-hidden ${containerClass}`} >
       {/* Beam pulse animation */}
       {isBeam && (
         <span className="relative flex h-3 w-4">

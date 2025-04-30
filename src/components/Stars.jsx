@@ -54,5 +54,4 @@ const Stars = (props) => {
 }
 
 useGLTF.preload('/models/stars.glb')
-
 export default Stars;

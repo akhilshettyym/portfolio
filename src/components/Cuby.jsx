@@ -39,5 +39,4 @@ const Cuby = (props) => {
 };
 
 useGLTF.preload('/models/cuby.glb');
-
 export default Cuby;

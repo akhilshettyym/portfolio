@@ -26,5 +26,4 @@ import { useRef, useGLTF, gsap, useGSAP } from "../imports";
 };
 
 useGLTF.preload('/models/robo.glb');
-
 export default Robo;
