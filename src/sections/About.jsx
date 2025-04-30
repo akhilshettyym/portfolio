@@ -26,8 +26,7 @@ const About = () => {
             <img
               src="./assets/grids/grid1.png"
               alt="grid-1"
-              className="w-full sm:h-[276px] h-fit object-contain transition-all duration-500 filter grayscale hover:grayscale-0"
-            />
+              className="w-full sm:h-[276px] h-fit object-contain transition-all duration-500 filter grayscale hover:grayscale-0"/>
             <div>
               <p className="grid-headtext">Hi, I'm Akhil</p>
               <p className="grid-subtext text-justify">
