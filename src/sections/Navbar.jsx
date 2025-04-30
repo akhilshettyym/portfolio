@@ -31,21 +31,18 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a
             href="/"
-            className="hover:opacity-80 transition-opacity"
-          >
+            className="hover:opacity-80 transition-opacity" >
             <img
               src="/assets/logo.png"
               alt="Akhil Shetty M Logo"
-              className="h-4 md:h-5 w-auto transition-all duration-500 ease-in-out filter hover:brightness-150 hover:contrast-125 hover:saturate-200"
-            />
+              className="h-4 md:h-5 w-auto transition-all duration-500 ease-in-out filter hover:brightness-150 hover:contrast-125 hover:saturate-200" />
           </a>
 
           {/* Button for responsive hamburger menu */}
           <button
             onClick={toggleMenu}
             className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
-            aria-label="Toggle menu"
-          >
+            aria-label="Toggle menu" >
             <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle menu" className="w-6 h-6" />
           </button>
 
@@ -58,8 +55,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`fixed top-0 right-0 w-full h-screen bg-black/90 transition-all duration-300 ease-in-out ${isOpen ? "opacity-100 translate-x-0 z-50" : "opacity-0 translate-x-full -z-10"} overflow-hidden sm:hidden`}
-      >
+        className={`fixed top-0 right-0 w-full h-screen bg-black/90 transition-all duration-300 ease-in-out ${isOpen ? "opacity-100 translate-x-0 z-50" : "opacity-0 translate-x-full -z-10"} overflow-hidden sm:hidden`} >
         <div className="flex justify-end p-5">
           <button
             onClick={() => setIsOpen(false)}
