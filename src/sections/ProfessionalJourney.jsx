@@ -12,8 +12,7 @@ const ProfessionalJourney = () => {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="client-review block transform transition-all duration-300 hover:scale-[1.02] hover:bg-[#29292a] hover:shadow-md rounded-xl p-4"
-          >
+            className="client-review block transform transition-all duration-300 hover:scale-[1.02] hover:bg-[#29292a] hover:shadow-md rounded-xl p-4" >
             <div>
               <p className="text-white-800 font-light text-justify">{item.review}</p>
 
