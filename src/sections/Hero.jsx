@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {
   Canvas,
   PerspectiveCamera,
@@ -11,6 +10,8 @@ import {
   Cuby,
   Stars,
   Robo,
+  useEffect,
+  useState
 } from "../imports";
 import { words } from "../constants";
 
@@ -33,20 +34,17 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen w-full flex flex-col relative px-4 md:px-8 bg-black"
-    >
+      className="min-h-screen w-full flex flex-col relative px-4 md:px-8 bg-black" >
       <div className="flex flex-col lg:flex-row items-center w-full h-full">
         {/* Left Content */}
         <div
           className={`${isDesktop ? "lg:w-1/2" : "w-full"
-            } flex flex-col justify-center px-6 pt-16 md:pt-24 lg:pt-0 z-10`}
-        >
+            } flex flex-col justify-center px-6 pt-16 md:pt-24 lg:pt-0 z-10`} >
           <a
             href="/assets/Resume/AkhilShettyM.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="mb-4 text-[0.55rem] font-light text-gray-500 hover:underline"
-          >
+            className="mb-4 text-[0.55rem] font-light text-gray-500 hover:underline" >
             AKHIL SHETTY M - RESUME
           </a>
 
@@ -120,14 +118,12 @@ const Hero = () => {
             </p>
           </div>
 
-
           <div className="mt-12">
             <a href="#contact">
               <Button
                 name="Let's work together"
                 isBeam
-                containerClass="w-fit transition-transform hover:scale-105"
-              />
+                containerClass="w-fit transition-transform hover:scale-105" />
             </a>
           </div>
         </div>
