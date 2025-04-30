@@ -36,19 +36,16 @@ const Projects = () => {
             <img
               src={currentProject.spotlight || "/placeholder.svg"}
               alt="spotlight"
-              className="w-full h-96 object-cover rounded-xl"
-            />
+              className="w-full h-96 object-cover rounded-xl" />
           </div>
 
           <div
             className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
-            style={currentProject.logoStyle}
-          >
+            style={currentProject.logoStyle} >
             <img
               className="w-10 h-10 shadow-sm"
               src={currentProject.logo || "/placeholder.svg"}
-              alt="logo"
-            />
+              alt="logo" />
           </div>
 
           <div className="flex flex-col gap-5 text-white-600 my-5">
@@ -73,8 +70,7 @@ const Projects = () => {
               className="flex items-center gap-2 cursor-pointer text-white-600"
               href={currentProject.href}
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer" >
               <p>Check Live Site</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
