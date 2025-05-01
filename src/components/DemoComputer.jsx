@@ -711,74 +711,62 @@ const DemoComputer = (props) => {
             name="Screen112"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen113"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen114"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen115"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen116"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen117"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen118"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen119"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen120"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen121"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen122"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen123"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen124"
             position={[5.658, 1.644, 0.812]}
@@ -789,32 +777,27 @@ const DemoComputer = (props) => {
             name="Screen125"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen126"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen127"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen128"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen129"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen130"
             position={[5.658, 1.644, 0.812]}
