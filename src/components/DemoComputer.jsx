@@ -939,71 +939,61 @@ const DemoComputer = (props) => {
             name="Tower-light-008"
             position={[15.155, -3.47, -14.495]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={0.963}
-          />
+            scale={0.963} />
         </group>
         <group
           name="Monitor-B-_computer_0"
           position={[0.266, 1.132, 0.051]}
           rotation={[0, -0.033, 0]}
-          scale={[0.042, 0.045, 0.045]}
-        >
+          scale={[0.042, 0.045, 0.045]} >
           <mesh
             name="Monitor-B-_computer_0_1"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_1"].geometry}
-            material={materials.computer}
-          />
+            material={materials.computer} />
           <mesh
             name="Monitor-B-_computer_0_2"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_2"].geometry}
-            material={materials.base__0}
-          />
+            material={materials.base__0} />
           <mesh
             name="Monitor-B-_computer_0_3"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_3"].geometry}
-            material={materials.Material_36}
-          />
+            material={materials.Material_36} />
           <mesh
             name="Monitor-B-_computer_0_4"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_4"].geometry}
-            material={materials.Material_35}
-          />
+            material={materials.Material_35} />
           <mesh
             name="Monitor-B-_computer_0_5"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_5"].geometry}
-            material={materials.Material_34}
-          />
+            material={materials.Material_34} />
           <mesh
             name="Monitor-B-_computer_0_6"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_6"].geometry}
-            material={materials.keys}
-          />
+            material={materials.keys} />
           <mesh
             name="Monitor-B-_computer_0_7"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_7"].geometry}
-            material={materials.keys2}
-          />
+            material={materials.keys2} />
           <mesh
             name="Monitor-B-_computer_0_8"
             // castShadow
             // receiveShadow
             geometry={nodes["Monitor-B-_computer_0_8"].geometry}
-            material={materials.Material_37}
-          />
+            material={materials.Material_37} />
         </group>
       </group>
     </group>
