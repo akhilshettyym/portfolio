@@ -520,8 +520,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[157.664, -20.88, 102.49]}
           rotation={[-Math.PI / 2, Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -529,8 +528,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[157.664, -36.589, 102.49]}
           rotation={[-Math.PI / 2, Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -538,8 +536,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[157.664, -52.298, 102.49]}
           rotation={[-Math.PI / 2, Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -547,8 +544,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[-9.669, -37.15, 124.45]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -556,8 +552,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[221.141, -324.394, 63.328]}
           rotation={[-Math.PI / 2, -Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -565,8 +560,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[221.141, -347.125, 63.328]}
           rotation={[-Math.PI / 2, -Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -574,8 +568,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[221.141, -370.037, 63.328]}
           rotation={[-Math.PI / 2, -Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -583,8 +576,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[297.801, -380.477, 63.552]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -592,8 +584,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[297.801, -351.638, 63.552]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -601,8 +592,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[297.801, -322.799, 63.552]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -610,8 +600,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[297.801, -293.96, 63.552]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -619,8 +608,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[297.801, -265.121, 63.552]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -628,8 +616,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[297.801, -236.282, 63.552]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -637,8 +624,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[297.801, -207.443, 63.552]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -646,8 +632,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[53.029, -125.992, 56.163]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -655,8 +640,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[-18.095, -144.377, 191.44]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -664,8 +648,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[28.411, -149.278, 158.522]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -673,8 +656,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[28.411, -149.278, -48.755]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -682,8 +664,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[53.042, -153.821, 42.273]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -691,8 +672,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[94.11, -361.79, 52.962]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -700,8 +680,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[-14.545, -151.076, -3.144]}
           rotation={[-Math.PI / 2, Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -709,8 +688,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[-14.545, -151.076, 15.482]}
           rotation={[-Math.PI / 2, Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -718,8 +696,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[-14.545, -151.076, 34.108]}
           rotation={[-Math.PI / 2, Math.PI / 2, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -727,8 +704,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[-9.865, -151.81, 82.792]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -736,8 +712,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[185.855, -95.942, 84.452]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -745,8 +720,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[187.66, -92.566, 75.111]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -754,8 +728,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[187.075, -77.608, 71.589]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -763,8 +736,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[186.419, -108.391, 89.16]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
