@@ -16,15 +16,13 @@ const HackerRoom = (props) => {
             receiveShadow
             geometry={nodes.Cylinder138_Main_0.geometry}
             material={materials.Main}
-            position={[-0.484, -0.221, -0.2]}
-          />
+            position={[-0.484, -0.221, -0.2]} />
           <mesh
             castShadow
             receiveShadow
             geometry={nodes.Cylinder140_Main_0.geometry}
             material={materials.Main}
-            position={[-0.12, -0.268, -0.013]}
-          />
+            position={[-0.12, -0.268, -0.013]} />
         </group>
         <group position={[-28.715, -139.589, 196.853]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <mesh castShadow receiveShadow geometry={nodes.cable024_Main_0.geometry} material={materials.Main} />
@@ -33,8 +31,7 @@ const HackerRoom = (props) => {
             receiveShadow
             geometry={nodes.Cylinder137_Main_0.geometry}
             material={materials.Main}
-            position={[-0.155, -0.279, -0.066]}
-          />
+            position={[-0.155, -0.279, -0.066]} />
         </group>
         <group position={[260.734, -411.677, 165.877]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <mesh castShadow receiveShadow geometry={nodes.cable037_Main_0.geometry} material={materials.Main} />
@@ -43,8 +40,7 @@ const HackerRoom = (props) => {
             receiveShadow
             geometry={nodes.Cylinder135_Main_0.geometry}
             material={materials.Main}
-            position={[0.097, -0.097, 0.004]}
-          />
+            position={[0.097, -0.097, 0.004]} />
         </group>
         <group position={[257.548, -428.844, -50.57]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <mesh castShadow receiveShadow geometry={nodes.cable040_Main_0.geometry} material={materials.Main} />
@@ -53,8 +49,7 @@ const HackerRoom = (props) => {
             receiveShadow
             geometry={nodes.Cylinder136_Main_0.geometry}
             material={materials.Main}
-            position={[-0.086, 0.076, 0.028]}
-          />
+            position={[-0.086, 0.076, 0.028]} />
         </group>
         <group position={[272.945, -404.957, -59.792]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <mesh castShadow receiveShadow geometry={nodes.cable041_Main_0.geometry} material={materials.Main} />
@@ -63,8 +58,7 @@ const HackerRoom = (props) => {
             receiveShadow
             geometry={nodes.Cylinder141_Main_0.geometry}
             material={materials.Main}
-            position={[-0.486, 0.138, 0.102]}
-          />
+            position={[-0.486, 0.138, 0.102]} />
           <mesh
             castShadow
             receiveShadow
@@ -77,8 +71,7 @@ const HackerRoom = (props) => {
             receiveShadow
             geometry={nodes.Cylinder143_Main_0.geometry}
             material={materials.Main}
-            position={[0.436, 0.013, -0.07]}
-          />
+            position={[0.436, 0.013, -0.07]} />
         </group>
         <group position={[61.725, -139.153, -61.001]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <mesh castShadow receiveShadow geometry={nodes.Cable_Mass014_Main_0.geometry} material={materials.Main} />
@@ -1249,8 +1242,7 @@ const HackerRoom = (props) => {
           material={materials.glass}
           position={[297.782, -292.606, 61.633]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
         <mesh
           castShadow
           receiveShadow
@@ -1258,8 +1250,7 @@ const HackerRoom = (props) => {
           material={materials.Main}
           position={[-30.676, -173.038, -98.032]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={100}
-        />
+          scale={100} />
       </group>
     </group>
   )
