@@ -36,8 +36,7 @@ const DemoComputer = (props) => {
           material={nodes["monitor-screen"].material}
           position={[0.127, 1.831, 0.511]}
           rotation={[1.571, -0.005, 0.031]}
-          scale={[0.661, 0.608, 0.401]}
-        >
+          scale={[0.661, 0.608, 0.401]} >
           <meshBasicMaterial map={txt} toneMapped={false} />
         </mesh>
         <group name="RootNode" position={[0, 1.093, 0]} rotation={[-Math.PI / 2, 0, -0.033]} scale={0.045}>
@@ -45,20 +44,17 @@ const DemoComputer = (props) => {
             name="Screen001"
             position={[5.658, 1.643, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen002"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen003"
             position={[5.658, 1.644, 0.812]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={[0.923, 0.855, 0.855]}
-          />
+            scale={[0.923, 0.855, 0.855]} />
           <group
             name="Screen004"
             position={[5.658, 1.644, 0.812]}
