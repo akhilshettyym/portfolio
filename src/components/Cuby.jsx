@@ -31,8 +31,7 @@ const Cuby = (props) => {
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}
           onPointerEnter={() => setHovered(true)}
-          onPointerLeave={() => setHovered(false)}
-        />
+          onPointerLeave={() => setHovered(false)} />
       </group>
     </group>
   );
