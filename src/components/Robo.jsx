@@ -15,7 +15,7 @@ import { useRef, useGLTF, gsap, useGSAP } from "../imports";
 
   return (
     <group ref={roboRef} {...props} dispose={null} >
-      <group rotation={[-Math.PI / 2, 0, 0]}>
+      <group rotation={[-Math.PI / 2, 0, 0]} >
         <mesh castShadow receiveShadow geometry={nodes.Object_2.geometry} material={materials.material} />
         <mesh castShadow receiveShadow geometry={nodes.Object_3.geometry} material={materials.material_1} />
         <mesh castShadow receiveShadow geometry={nodes.Object_4.geometry} material={materials.material_2} />
