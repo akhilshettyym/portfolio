@@ -1,39 +1,45 @@
-"use client"
+"use client";
 
-import { useEffect, useRef, useAnimations, useFBX, useGLTF } from "../imports" 
+import { useEffect, useRef, useAnimations, useFBX, useGLTF } from "../imports";
 
 const Developer = ({ animationName = "idle", ...props }) => {
-  const group = useRef()
-  const { nodes, materials } = useGLTF("/models/animations/developer.glb")
+  const group = useRef();
+  const { nodes, materials } = useGLTF("/models/animations/developer.glb");
 
-  const { animations: idleAnimation } = useFBX("/models/animations/idle.fbx")
-  const { animations: saluteAnimation } = useFBX("/models/animations/salute.fbx")
-  const { animations: victoryAnimation } = useFBX("/models/animations/victory.fbx")
-  const { animations: clappingAnimation } = useFBX("/models/animations/clapping.fbx")
+  const { animations: idleAnimation } = useFBX("/models/animations/idle.fbx");
+  const { animations: saluteAnimation } = useFBX(
+    "/models/animations/salute.fbx"
+  );
+  const { animations: victoryAnimation } = useFBX(
+    "/models/animations/victory.fbx"
+  );
+  const { animations: clappingAnimation } = useFBX(
+    "/models/animations/clapping.fbx"
+  );
 
-  if (idleAnimation?.length) idleAnimation[0].name = "idle"
-  if (saluteAnimation?.length) saluteAnimation[0].name = "salute"
-  if (victoryAnimation?.length) victoryAnimation[0].name = "victory"
-  if (clappingAnimation?.length) clappingAnimation[0].name = "clapping"
+  if (idleAnimation?.length) idleAnimation[0].name = "idle";
+  if (saluteAnimation?.length) saluteAnimation[0].name = "salute";
+  if (victoryAnimation?.length) victoryAnimation[0].name = "victory";
+  if (clappingAnimation?.length) clappingAnimation[0].name = "clapping";
 
   const allAnimations = [
     idleAnimation?.[0],
     saluteAnimation?.[0],
     victoryAnimation?.[0],
     clappingAnimation?.[0],
-  ].filter(Boolean)
+  ].filter(Boolean);
 
-  const { actions } = useAnimations(allAnimations, group)
+  const { actions } = useAnimations(allAnimations, group);
 
   useEffect(() => {
-    if (!actions || !actions[animationName]) return
+    if (!actions || !actions[animationName]) return;
 
-    actions[animationName].reset().fadeIn(1).play()
+    actions[animationName].reset().fadeIn(1).play();
 
     return () => {
-      if (actions[animationName]) actions[animationName].fadeOut(1)
-    }
-  }, [animationName, actions])
+      if (actions[animationName]) actions[animationName].fadeOut(1);
+    };
+  }, [animationName, actions]);
 
   return (
     <group {...props} dispose={null} ref={group}>
@@ -96,8 +102,8 @@ const Developer = ({ animationName = "idle", ...props }) => {
         skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
       />
     </group>
-  )
-}
+  );
+};
 
-useGLTF.preload("/models/animations/developer.glb")
+useGLTF.preload("/models/animations/developer.glb");
 export default Developer;
