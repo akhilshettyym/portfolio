@@ -21,7 +21,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen w-full flex flex-col relative px-4 md:px-8 bg-black" >
       <div className="flex flex-col lg:flex-row items-center w-full h-full">
-        {/* Left Content */}
+
         <div
           className={`${isDesktop ? "lg:w-1/2" : "w-full"
             } flex flex-col justify-center px-6 pt-16 md:pt-24 lg:pt-0 z-10`} >
