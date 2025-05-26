@@ -131,6 +131,24 @@ export const myProjects = [
     ],
   },
   // ToDoManager
+  {
+    title: "ToDoManager: A sleek and responsive To-Do Manager",
+    desc: "A sleek and responsive To-Do Manager built using React. This app helps you organize your tasks efficiently with features like real-time updates, task prioritization, and seamless user experience.",
+    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    href: "https://akhilshettyym.github.io/PassKey/",
+    texture: "/textures/project/project2.mp4",
+    logo: "/assets/projects/project-logo/project-logo5.png",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "/assets/spotlight/spotlight5.png",
+    tags: [
+      { id: 1, name: "React.js", path: "/assets/projects/project-stack/react.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
+    ],
+  },
   // Weathery
   // Weathery
   // ProReact
