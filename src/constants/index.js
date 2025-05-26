@@ -95,7 +95,7 @@ export const myProjects = [
     desc: "An intuitive currency converter delivering real-time exchange rates and fast performance—ideal for travel, trading, budgeting, and seamless global financial transactions.",
     subdesc: "Lightweight, responsive, and highly accurate—designed to simplify international currency conversions on any device.",
     href: "https://akhilshettyym.github.io/Currex/",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/project/project3.mp4",
     logo: "/assets/projects/project-logo/project-logo3.png",
     logoStyle: {
       backgroundColor: "#6E6E38",
@@ -113,7 +113,7 @@ export const myProjects = [
     desc: "Generate strong, customizable passwords instantly with control over character types and length—built for both simplicity and top-tier security in a clean UI.",
     subdesc: "Created for users who value security and speed, leveraging modern UI frameworks for maximum usability.",
     href: "https://akhilshettyym.github.io/PassKey/",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/project/project4.mp4",
     logo: "/assets/projects/project-logo/project-logo4.png",
     logoStyle: {
       backgroundColor: "#D8BFD8",
@@ -131,7 +131,7 @@ export const myProjects = [
     desc: "Organize tasks with a smooth, intuitive UI that supports real-time updates, priority tagging, and efficient task tracking—perfect for daily planning.",
     subdesc: "Focused on productivity with a modern design system and a minimal learning curve for users on the go.",
     href: "https://akhilshettyym.github.io/ToDoManager/",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/project/project5.mp4",
     logo: "/assets/projects/project-logo/project-logo5.png",
     logoStyle: {
       backgroundColor: "#FFE5B4",
@@ -149,7 +149,7 @@ export const myProjects = [
     desc: "Stay ahead of the forecast with real-time temperature, wind, and humidity updates in a sleek and responsive weather app built for precision.",
     subdesc: "Built to be lightweight and informative, delivering accurate climate insights with a clean user experience.",
     href: "https://akhilshettyym.github.io/Weathery/",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/project/project6.mp4",
     logo: "/assets/projects/project-logo/project-logo6.png",
     logoStyle: {
       backgroundColor: "#E6E6FA",
@@ -167,7 +167,7 @@ export const myProjects = [
     desc: "Enhance your writing workflow with a real-time text utility app offering smart case converters, counters, and formatting tools in a distraction-free UI.",
     subdesc: "Fast, focused, and accessible—built for users needing accurate and quick text processing features on the web.",
     href: "https://akhilshettyym.github.io/Proreact/",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/project/project7.mp4",
     logo: "/assets/projects/project-logo/project-logo7.png",
     logoStyle: {
       backgroundColor: "#F8F8F0",
