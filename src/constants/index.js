@@ -99,7 +99,7 @@ export const myProjects = [
     subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
     href: "https://akhilshettyym.github.io/Currex/",
     texture: "/textures/project/project2.mp4",
-    logo: "/assets/projects/project-logo/project-logo1.svg",
+    logo: "/assets/projects/project-logo/project-logo3.png",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -168,8 +168,25 @@ export const myProjects = [
       { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
     ],
   },
-  // Weathery
   // ProReact
+  {
+    title: "ProReact: Accurate text Utility app",
+    desc: "Weathery is a modern weather forecasting app that provides real-time and precise weather updates. Stay ahead with live temperature, humidity, wind speed, and climate conditions in a sleek and user-friendly interface.",
+    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    href: "https://akhilshettyym.github.io/Proreact/",
+    texture: "/textures/project/project2.mp4",
+    logo: "/assets/projects/project-logo/project-logo7.png",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "/assets/spotlight/spotlight5.png",
+    tags: [
+      { id: 1, name: "React.js", path: "/assets/projects/project-stack/react.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
+    ],
+  },
 ];
 
 // Dynamic Sizes (based on device size)
