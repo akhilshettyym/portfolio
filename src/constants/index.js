@@ -50,6 +50,7 @@ export const MyProfessionalJourney = [
 // My Projects
 export const myProjects = [
   {
+    // NodeSurge
     title: "NodeSurge: A Multi-Utility Platform",
     desc: "Maximize productivity with NodeSurge — your all-in-one platform for advanced text tools, real-time currency conversion, smart to-do lists, live weather updates, password generation, and an AI chatbot.",
     subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
@@ -69,6 +70,7 @@ export const myProjects = [
       { id: 4, name: "Firebase", path: "/assets/projects/project-stack/firebase.svg" },
     ],
   },
+  // Promtlytic
   {
     title: "Promptlytic: An Open-Source AI Prompting Platform",
     desc: "Discover, create, and share AI prompts for content creation, coding, and creativity. Promptlytic fosters a vibrant community for AI enthusiasts to collaborate and inspire.",
@@ -90,6 +92,30 @@ export const myProjects = [
       { id: 5, name: "Vercel", path: "/assets/projects/project-stack/vercel.svg" },
     ],
   },
+  // Currex
+  {
+    title: "Currex: Smart & Fast Currency Converter",
+    desc: "Currex is a sleek and efficient currency converter web application designed to provide real-time exchange rates with a user-friendly interface. Built with React and optimized for performance, Currex allows users to quickly convert currencies with up-to-date rates from trusted sources.",
+    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    href: "https://akhilshettyym.github.io/Currex/",
+    texture: "/textures/project/project2.mp4",
+    logo: "/assets/projects/project-logo/project-logo1.svg",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "/assets/spotlight/spotlight3.png",
+    tags: [
+      { id: 1, name: "React.js", path: "/assets/projects/project-stack/react.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
+    ],
+  },
+  // PassKey
+  // ToDoManager
+  // Weathery
+  // Weathery
+  // ProReact
 ];
 
 // Dynamic Sizes (based on device size)
