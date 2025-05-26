@@ -58,9 +58,9 @@ export const myProjects = [
     texture: "/textures/project/project1.mp4",
     logo: "/assets/projects/project-logo/project-logo1.svg",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#A9A9A9",
+      border: "0.2px solid #808080",
+      boxShadow: "0px 0px 60px 0px #80808033",
     },
     spotlight: "/assets/spotlight/spotlight1.png",
     tags: [
@@ -79,9 +79,9 @@ export const myProjects = [
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo2.svg",
     logoStyle: {
-      backgroundColor: "#f5faff",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C302D",
+      backgroundColor: "#696969",
+      border: "0.2px solid #505050",
+      boxShadow: "0px 0px 60px 0px #50505033",
     },
     spotlight: "/assets/spotlight/spotlight2.png",
     tags: [
@@ -101,9 +101,9 @@ export const myProjects = [
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo3.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#6E6E38",
+      border: "0.2px solid #515124",
+      boxShadow: "0px 0px 60px 0px #51512433",
     },
     spotlight: "/assets/spotlight/spotlight3.png",
     tags: [
@@ -120,9 +120,9 @@ export const myProjects = [
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo4.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#D8BFD8",
+      border: "0.2px solid #C71585",
+      boxShadow: "0px 0px 60px 0px #C7158533",
     },
     spotlight: "/assets/spotlight/spotlight4.png",
     tags: [
@@ -139,9 +139,9 @@ export const myProjects = [
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo5.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#FFE5B4",
+      border: "0.2px solid #FFB347",
+      boxShadow: "0px 0px 60px 0px #FFA50033",
     },
     spotlight: "/assets/spotlight/spotlight5.png",
     tags: [
@@ -158,9 +158,9 @@ export const myProjects = [
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo6.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#E6E6FA",
+      border: "0.2px solid #D8BFD8",
+      boxShadow: "0px 0px 60px 0px #80008033",
     },
     spotlight: "/assets/spotlight/spotlight5.png",
     tags: [
@@ -177,9 +177,9 @@ export const myProjects = [
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo7.png",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "#F8F8F0",
+      border: "0.2px solid #D3D3D3",
+      boxShadow: "0px 0px 60px 0px #F8F8F033",
     },
     spotlight: "/assets/spotlight/spotlight5.png",
     tags: [
