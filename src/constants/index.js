@@ -112,6 +112,24 @@ export const myProjects = [
     ],
   },
   // PassKey
+  {
+    title: "PassKey: Secure Password Generator",
+    desc: "PassKey is a free and easy-to-use password generator that creates strong, secure, and random passwords instantly. Customize password length, numbers, and special characters to enhance security. Built with React & Tailwind CSS for a sleek and responsive design.",
+    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    href: "https://akhilshettyym.github.io/PassKey/",
+    texture: "/textures/project/project2.mp4",
+    logo: "/assets/projects/project-logo/project-logo4.png",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "/assets/spotlight/spotlight4.png",
+    tags: [
+      { id: 1, name: "React.js", path: "/assets/projects/project-stack/react.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
+    ],
+  },
   // ToDoManager
   // Weathery
   // Weathery
