@@ -50,10 +50,9 @@ export const MyProfessionalJourney = [
 // My Projects
 export const myProjects = [
   {
-    // NodeSurge
     title: "NodeSurge: A Multi-Utility Platform",
-    desc: "Maximize productivity with NodeSurge — your all-in-one platform for advanced text tools, real-time currency conversion, smart to-do lists, live weather updates, password generation, and an AI chatbot.",
-    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    desc: "A powerful all-in-one platform featuring an AI chatbot, advanced text utilities, live weather, currency converter, password generator, and a smart to-do list—engineered for everyday productivity.",
+    subdesc: "Built with cutting-edge web technologies to unify essential utilities into a seamless, user-friendly experience.",
     href: "https://akhilshettyym.github.io/NodeSurge/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/projects/project-logo/project-logo1.svg",
@@ -70,11 +69,10 @@ export const myProjects = [
       { id: 4, name: "Firebase", path: "/assets/projects/project-stack/firebase.svg" },
     ],
   },
-  // Promtlytic
   {
     title: "Promptlytic: An Open-Source AI Prompting Platform",
-    desc: "Discover, create, and share AI prompts for content creation, coding, and creativity. Promptlytic fosters a vibrant community for AI enthusiasts to collaborate and inspire.",
-    subdesc: "Fuel your imagination with curated prompts, real-time sharing, and community-driven innovation.",
+    desc: "A collaborative platform to discover, craft, and share AI prompts for writing, coding, design, and content creation—empowering users through smart workflows and community-driven insight.",
+    subdesc: "Designed to inspire creativity and innovation through prompt sharing, powered by modern frameworks and a vibrant community.",
     href: "https://promptlytic.vercel.app/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo2.svg",
@@ -92,11 +90,10 @@ export const myProjects = [
       { id: 5, name: "Vercel", path: "/assets/projects/project-stack/vercel.svg" },
     ],
   },
-  // Currex
   {
     title: "Currex: Smart & Fast Currency Converter",
-    desc: "Currex is a sleek, high-performance web app for fast, accurate currency conversions with real-time exchange rates, offering a user-friendly experience for seamless international transactions and financial planning.",
-    subdesc: "Modern tech for seamless experience and productivity.",
+    desc: "An intuitive currency converter delivering real-time exchange rates and fast performance—ideal for travel, trading, budgeting, and seamless global financial transactions.",
+    subdesc: "Lightweight, responsive, and highly accurate—designed to simplify international currency conversions on any device.",
     href: "https://akhilshettyym.github.io/Currex/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo3.png",
@@ -111,11 +108,10 @@ export const myProjects = [
       { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
     ],
   },
-  // PassKey
   {
     title: "PassKey: Secure Password Generator",
-    desc: "PassKey is a free and easy-to-use password generator that creates strong, secure, and random passwords instantly. Customize password length, numbers, and special characters to enhance security. Built with React & Tailwind CSS for a sleek and responsive design.",
-    subdesc: "Designed with cutting-edge web technologies for a smooth, efficient, and secure user experience.",
+    desc: "Generate strong, customizable passwords instantly with control over character types and length—built for both simplicity and top-tier security in a clean UI.",
+    subdesc: "Created for users who value security and speed, leveraging modern UI frameworks for maximum usability.",
     href: "https://akhilshettyym.github.io/PassKey/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo4.png",
@@ -130,11 +126,10 @@ export const myProjects = [
       { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
     ],
   },
-  // ToDoManager
   {
-    title: "ToDoManager: A sleek and responsive To-Do Manager",
-    desc: "A sleek and responsive To-Do Manager built using React. This app helps you organize your tasks efficiently with features like real-time updates, task prioritization, and seamless user experience.",
-    subdesc: "Engineered with the latest web technologies to ensure a smooth, intuitive, and productive task management experience.",
+    title: "ToDoManager: A Sleek and Responsive To-Do Manager",
+    desc: "Organize tasks with a smooth, intuitive UI that supports real-time updates, priority tagging, and efficient task tracking—perfect for daily planning.",
+    subdesc: "Focused on productivity with a modern design system and a minimal learning curve for users on the go.",
     href: "https://akhilshettyym.github.io/ToDoManager/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo5.png",
@@ -149,11 +144,10 @@ export const myProjects = [
       { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
     ],
   },
-  // Weathery
   {
-    title: "Weathery: Accurate & Real-time Weather Forecast",
-    desc: "Weathery is a modern weather forecasting app that provides real-time and precise weather updates. Stay ahead with live temperature, humidity, wind speed, and climate conditions in a sleek and user-friendly interface.",
-    subdesc: "Created with modern tools to deliver a fast, reliable, and user-friendly way to stay organized and boost your productivity.",
+    title: "Weathery: Accurate & Real-Time Weather Forecast",
+    desc: "Stay ahead of the forecast with real-time temperature, wind, and humidity updates in a sleek and responsive weather app built for precision.",
+    subdesc: "Built to be lightweight and informative, delivering accurate climate insights with a clean user experience.",
     href: "https://akhilshettyym.github.io/Weathery/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo6.png",
@@ -168,11 +162,10 @@ export const myProjects = [
       { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
     ],
   },
-  // ProReact
   {
-    title: "ProReact: Accurate text Utility app",
-    desc: "Weathery is a modern weather forecasting app that provides real-time and precise weather updates. Stay ahead with live temperature, humidity, wind speed, and climate conditions in a sleek and user-friendly interface.",
-    subdesc: "Developed with cutting-edge web tech for a sleek, responsive interface that makes managing tasks effortless.",
+    title: "ProReact: Accurate Text Utility App",
+    desc: "Enhance your writing workflow with a real-time text utility app offering smart case converters, counters, and formatting tools in a distraction-free UI.",
+    subdesc: "Fast, focused, and accessible—built for users needing accurate and quick text processing features on the web.",
     href: "https://akhilshettyym.github.io/Proreact/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo7.png",
@@ -188,6 +181,7 @@ export const myProjects = [
     ],
   },
 ];
+
 
 // Dynamic Sizes (based on device size)
 export const calculateSizes = (isSmall, isMobile, isTablet) => ({
