@@ -95,8 +95,8 @@ export const myProjects = [
   // Currex
   {
     title: "Currex: Smart & Fast Currency Converter",
-    desc: "Currex is a sleek and efficient currency converter web application designed to provide real-time exchange rates with a user-friendly interface. Built with React and optimized for performance, Currex allows users to quickly convert currencies with up-to-date rates from trusted sources.",
-    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    desc: "Currex is a sleek, high-performance web app for fast, accurate currency conversions with real-time exchange rates, offering a user-friendly experience for seamless international transactions and financial planning.",
+    subdesc: "Modern tech for seamless experience and productivity.",
     href: "https://akhilshettyym.github.io/Currex/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo3.png",
@@ -115,7 +115,7 @@ export const myProjects = [
   {
     title: "PassKey: Secure Password Generator",
     desc: "PassKey is a free and easy-to-use password generator that creates strong, secure, and random passwords instantly. Customize password length, numbers, and special characters to enhance security. Built with React & Tailwind CSS for a sleek and responsive design.",
-    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    subdesc: "Designed with cutting-edge web technologies for a smooth, efficient, and secure user experience.",
     href: "https://akhilshettyym.github.io/PassKey/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo4.png",
@@ -134,7 +134,7 @@ export const myProjects = [
   {
     title: "ToDoManager: A sleek and responsive To-Do Manager",
     desc: "A sleek and responsive To-Do Manager built using React. This app helps you organize your tasks efficiently with features like real-time updates, task prioritization, and seamless user experience.",
-    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    subdesc: "Engineered with the latest web technologies to ensure a smooth, intuitive, and productive task management experience.",
     href: "https://akhilshettyym.github.io/ToDoManager/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo5.png",
@@ -153,7 +153,7 @@ export const myProjects = [
   {
     title: "Weathery: Accurate & Real-time Weather Forecast",
     desc: "Weathery is a modern weather forecasting app that provides real-time and precise weather updates. Stay ahead with live temperature, humidity, wind speed, and climate conditions in a sleek and user-friendly interface.",
-    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    subdesc: "Created with modern tools to deliver a fast, reliable, and user-friendly way to stay organized and boost your productivity.",
     href: "https://akhilshettyym.github.io/Weathery/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo6.png",
@@ -162,7 +162,7 @@ export const myProjects = [
       border: "0.2px solid #D8BFD8",
       boxShadow: "0px 0px 60px 0px #80008033",
     },
-    spotlight: "/assets/spotlight/spotlight5.png",
+    spotlight: "/assets/spotlight/spotlight1.png",
     tags: [
       { id: 1, name: "React.js", path: "/assets/projects/project-stack/react.svg" },
       { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
@@ -172,7 +172,7 @@ export const myProjects = [
   {
     title: "ProReact: Accurate text Utility app",
     desc: "Weathery is a modern weather forecasting app that provides real-time and precise weather updates. Stay ahead with live temperature, humidity, wind speed, and climate conditions in a sleek and user-friendly interface.",
-    subdesc: "Built with modern web technologies for seamless user experience and enhanced productivity.",
+    subdesc: "Developed with cutting-edge web tech for a sleek, responsive interface that makes managing tasks effortless.",
     href: "https://akhilshettyym.github.io/Proreact/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo7.png",
@@ -181,7 +181,7 @@ export const myProjects = [
       border: "0.2px solid #D3D3D3",
       boxShadow: "0px 0px 60px 0px #F8F8F033",
     },
-    spotlight: "/assets/spotlight/spotlight5.png",
+    spotlight: "/assets/spotlight/spotlight2.png",
     tags: [
       { id: 1, name: "React.js", path: "/assets/projects/project-stack/react.svg" },
       { id: 3, name: "JavaScript", path: "/assets/projects/project-stack/javascript.svg" },
