@@ -3,7 +3,7 @@ const Button = ({
   isBeam = false,
   containerClass = "",
   type = "button",
-  onClick = () => {},
+  onClick = () => { },
   icon = null,
 }) => {
   return (

@@ -1,8 +1,8 @@
 import { useRef, useGLTF, gsap, useGSAP } from "../imports";
 
-  const Robo = (props) => {
+const Robo = (props) => {
   const { nodes, materials } = useGLTF('/models/robo.glb');
-  const roboRef = useRef(); 
+  const roboRef = useRef();
 
   useGSAP(() => {
     gsap.to(roboRef.current.rotation, {
