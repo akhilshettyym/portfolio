@@ -198,14 +198,23 @@ export const workExperiences = [
   {
     id: 1,
     name: "Global Industrial Pvt. Ltd.",
-    pos: "Full Stack Developer (Intern)",
+    pos: "Information Technology (Trainee)",
     duration: "2025 - Present",
-    title: "Excited to join GIC Global Industrial Pvt. Ltd. as an IT Intern! Ready to contribute to impactful projects and grow in a dynamic environment.",
+    // title: "Excited to join GIC Global Industrial Pvt. Ltd. as an IT Intern! Ready to contribute to impactful projects and grow in a dynamic environment.",
     icon: "/assets/experience/gic.svg",
     animation: "victory",
   },
   {
     id: 2,
+    name: "Global Industrial Pvt. Ltd.",
+    pos: "Information Technology (Intern)",
+    duration: "2025 (3rd Feb - 16th June)",
+    title: "Excited to join GIC Global Industrial Pvt. Ltd. as an IT Intern! Ready to contribute to impactful projects and grow in a dynamic environment.",
+    icon: "/assets/experience/gic.svg",
+    animation: "victory",
+  },
+  {
+    id: 3,
     name: "IUCEE Annual Student Expo 2025",
     pos: "Web Developer",
     duration: "7th - 8th Jan 2025",
@@ -214,7 +223,7 @@ export const workExperiences = [
     animation: "clapping",
   },
   {
-    id: 3,
+    id: 4,
     name: "TEDx SJEC",
     pos: "Stage and Venue Committee Head",
     duration: "Dec 14th, 2024",
@@ -223,7 +232,7 @@ export const workExperiences = [
     animation: "salute",
   },
   {
-    id: 4,
+    id: 5,
     name: "Karanji Infotech Pvt. Ltd.",
     pos: "Junior Graphic Designer Intern",
     duration: "6th Nov - 5th Dec 2023",
