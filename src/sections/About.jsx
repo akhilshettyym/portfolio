@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, Globe, THREE } from "../imports"
 
 const About = () => {
@@ -26,11 +25,11 @@ const About = () => {
             <img
               src="./assets/grids/grid1.png"
               alt="grid-1"
-              className="w-full sm:h-[276px] h-fit object-contain transition-all duration-500 filter grayscale hover:grayscale-0"/>
+              className="w-full sm:h-[276px] h-fit object-contain transition-all duration-500 filter grayscale hover:grayscale-0" />
             <div>
               <p className="grid-headtext">Hi, I'm Akhil</p>
               <p className="grid-subtext text-justify">
-                I'm a Computer Science undergraduate with a solid technical foundation and 3 years of hands-on experience in both frontend and backend development. I specialize in building efficient, user-centric solutions and enjoy transforming innovative ideas into impactful digital experiences.
+                I'm a Computer Science graduate with a solid technical foundation and 3 years of hands-on experience in both frontend and backend development. I specialize in building efficient, user-centric solutions and enjoy transforming innovative ideas into impactful digital experiences.
               </p>
             </div>
           </div>
@@ -39,7 +38,7 @@ const About = () => {
         {/* Tech Stack */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container flex flex-col items-center">
-            {/* Tech Logos git */}
+            {/* Tech Logos */}
             <div className="grid grid-cols-4 sm:grid-cols-4 gap-4 p-4">
               <img src="./assets/techstack/react.svg" alt="React" className="w-10 h-10 object-contain" />
               <img src="./assets/techstack/figma.svg" alt="Figma" className="w-10 h-10 object-contain" />
@@ -89,21 +88,20 @@ const About = () => {
                 objectsData={[{ lat: 12.9141, lng: 74.856, size: 10, color: "red" }]}
                 objectLabel={() => "Location: Mangalore, India"}
                 objectThreeObject={(d) => {
-                  // Use imported THREE directly
                   const marker = new THREE.Mesh(
                     new THREE.SphereGeometry(0.5, 10, 10),
                     new THREE.MeshBasicMaterial({ color: d.color }),
                   )
                   return marker
-                }}/>
+                }} />
             </div>
 
             {/* Globe Text Content */}
             <div>
               <p className="grid-headtext ">Locate me here</p>
               <p className="grid-subtext text-justify">
-                I thrive in remote, cross-time-zone environments where adaptability and clear communication are key. With a strong commitment to collaboration and problem-solving, I ensure the delivery of seamless, high-quality digital solutions. I'm always ready to connect with teams, contribute meaningfully, and drive projects forward with precision and purpose.              </p>
-              <span className="font-medium text-white">Mangalore, Karnataka, India</span>.{/* Contact Button */}
+                I thrive in remote, cross-time-zone environments where adaptability and clear communication are key. With a strong commitment to collaboration and problem-solving, I ensure the delivery of seamless, high-quality digital solutions. I'm always ready to connect with teams, contribute meaningfully, and drive projects forward with precision and purpose.</p>
+              <span className="font-medium text-white">Mangalore, Karnataka, India</span>.
               <div className="mt-8 flex justify-center"></div>
             </div>
           </div>
