@@ -179,7 +179,7 @@ const About = () => {
                 <p className="grid-headtext">Bachelor of Engineering</p>
                 <p className="grid-subtext">St. Joseph Engineering College, Mangaluru</p>
                 <p className="grid-subtext">Major: Computer Science and Engineering</p>
-                <p className="grid-subtext">CGPA: 8.66 / 10</p>
+                <p className="grid-subtext">CGPA: 8.76 / 10</p>
                 <p className="grid-subtext">2021 – 2025</p>
               </div>
             </div>
