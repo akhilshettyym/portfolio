@@ -3,7 +3,6 @@ import { emailjs, useRef, useState, useAlert, Alert, TitleHeader, ContactExperie
 
 const Contact = () => {
   const formRef = useRef()
-
   const { alert, showAlert, hideAlert } = useAlert()
   const [loading, setLoading] = useState(false)
   const [form, setForm] = useState({ name: "", email: "", message: "" })

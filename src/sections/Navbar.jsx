@@ -20,7 +20,6 @@ const NavItems = ({ closeMenu }) => {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen)
 
   return (

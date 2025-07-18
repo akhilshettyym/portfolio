@@ -5,7 +5,6 @@ const Hero = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
   const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
-
   const scale = isSmall ? 0.27 : isMobile ? 0.33 : isTablet ? 0.375 : 0.45;
   const [currentIndex, setCurrentIndex] = useState(0);
 

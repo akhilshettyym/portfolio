@@ -1,5 +1,4 @@
 "use client"
-
 import { useEffect, useState } from "../imports"
 
 export function useMobile() {

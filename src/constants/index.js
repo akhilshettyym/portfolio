@@ -182,7 +182,6 @@ export const myProjects = [
   },
 ];
 
-
 // Dynamic Sizes (based on device size)
 export const calculateSizes = (isSmall, isMobile, isTablet) => ({
   deskScale: isSmall ? 0.27 : isMobile ? 0.33 : isTablet ? 0.375 : 0.45,
@@ -200,7 +199,6 @@ export const workExperiences = [
     name: "Global Industrial Pvt. Ltd.",
     pos: "Information Technology (Trainee)",
     duration: "2025 - Present",
-    // title: "Excited to join GIC Global Industrial Pvt. Ltd. as an IT Intern! Ready to contribute to impactful projects and grow in a dynamic environment.",
     icon: "/assets/experience/gic.svg",
     animation: "victory",
   },
