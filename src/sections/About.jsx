@@ -40,7 +40,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container flex flex-col items-center">
             {/* Tech Logos git */}
-            <div className="grid grid-cols-5 sm:grid-cols-4 gap-4 p-4">
+            <div className="grid grid-cols-4 sm:grid-cols-4 gap-4 p-4">
               <img src="./assets/techstack/react.svg" alt="React" className="w-10 h-10 object-contain" />
               <img src="./assets/techstack/figma.svg" alt="Figma" className="w-10 h-10 object-contain" />
               <img src="./assets/techstack/firebase.svg" alt="Firebase" className="w-10 h-10 object-contain" />
