@@ -1,5 +1,4 @@
 "use client"
-
 import { emailjs, useRef, useState, useAlert, Alert, TitleHeader, ContactExperience, Button } from "../imports"
 
 const Contact = () => {
@@ -7,7 +6,6 @@ const Contact = () => {
 
   const { alert, showAlert, hideAlert } = useAlert()
   const [loading, setLoading] = useState(false)
-
   const [form, setForm] = useState({ name: "", email: "", message: "" })
 
   const handleChange = ({ target: { name, value } }) => {
@@ -55,7 +53,7 @@ const Contact = () => {
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
+            text: "SORRY, I didn't receive your message. Please try again...",
             type: "danger",
           })
         },
@@ -66,7 +64,7 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       <TitleHeader
         title="FORGE A CONNECTION"
-        sub="Have questions or ideas ? Let's talk ! I'm here to help with your projects."/>
+        sub="Have questions or ideas ? Let's talk ! I'm here to help with your projects." />
       {alert.show && <Alert {...alert} />}
 
       <div className="mt-12 grid lg:grid-cols-12 gap-8">
