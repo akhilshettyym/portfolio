@@ -1,12 +1,10 @@
 "use client"
-
 import { useRef, useEffect, useGLTF, useAnimations, useVideoTexture, useGSAP, gsap } from "../imports"
 
 const DemoComputer = (props) => {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF("/models/computer.glb")
   const { actions } = useAnimations(animations, group)
-
   const txt = useVideoTexture(props.texture ? props.texture : "/textures/project/project1.mp4")
 
   useEffect(() => {

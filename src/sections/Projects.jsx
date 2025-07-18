@@ -1,5 +1,4 @@
 "use client"
-
 import { gsap, useGSAP, Suspense, useState, Canvas, Center, OrbitControls, myProjects, CanvasLoader, DemoComputer } from "../imports"
 
 const Projects = () => {

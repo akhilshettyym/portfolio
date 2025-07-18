@@ -5,7 +5,6 @@ import { useEffect, useRef, useAnimations, useFBX, useGLTF } from "../imports";
 const Developer = ({ animationName = "idle", ...props }) => {
   const group = useRef();
   const { nodes, materials } = useGLTF("/models/animations/developer.glb");
-
   const { animations: idleAnimation } = useFBX("/models/animations/idle.fbx");
   const { animations: saluteAnimation } = useFBX(
     "/models/animations/salute.fbx"

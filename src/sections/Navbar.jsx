@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, navLinks } from "../imports"
 
 const NavItems = ({ closeMenu }) => {

@@ -1,5 +1,4 @@
-import { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards } 
-from "./imports"
+import { Navbar, Hero, About, Projects, ProfessionalJourney, Contact, Footer, Experience, LogoSection, FeatureCards } from "./imports"
 
 const App = () => {
   return (

@@ -1,5 +1,4 @@
 "use client"
-
 import { useRef, useGLTF, useTexture } from "../imports"
 
 const HackerRoom = (props) => {

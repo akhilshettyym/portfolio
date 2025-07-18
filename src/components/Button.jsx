@@ -18,15 +18,12 @@ const Button = ({
         </span>
       )}
 
-      {/* Optional icon */}
       {icon && <span className="text-lg">{icon}</span>}
 
       <span className="z-10 tracking-wide">{name}</span>
 
-      {/* Subtle shimmer and glow effect */}
       <span className="absolute inset-0 rounded-2xl bg-gradient-to-br from-emerald-400 to-lime-500 opacity-0 blur-sm transition-opacity duration-500 group-hover:opacity-10 pointer-events-none" />
 
-      {/* Shimmer animation line */}
       <span className="absolute top-0 left-[-75%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transform skew-x-[-20deg] group-hover:left-[125%] transition-all duration-[1200ms] ease-in-out pointer-events-none" />
     </button>
   );

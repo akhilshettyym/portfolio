@@ -1,5 +1,4 @@
 "use client"
-
 import { Suspense, Canvas, OrbitControls, Developer, CanvasLoader, workExperiences, useState } from "../imports"
 
 const WorkExperience = () => {

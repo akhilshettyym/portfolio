@@ -1,5 +1,4 @@
 "use client"
-
 import { useRef, useEffect, useFrame, useThree, easing } from "../imports"
 
 const HeroCamera = ({ children, syncWithMouse = false }) => {
