@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useRef, useAnimations, useFBX, useGLTF } from "../imports";
 
 const Developer = ({ animationName = "idle", ...props }) => {

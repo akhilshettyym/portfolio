@@ -6,7 +6,6 @@ const HeroCamera = ({ children, syncWithMouse = false }) => {
   const { pointer, viewport } = useThree()
   const mouseRef = useRef({ x: 0, y: 0 })
 
-
   useEffect(() => {
     const handleMouseMove = (event) => {
       mouseRef.current.x = (event.clientX / window.innerWidth) * 2 - 1
@@ -40,7 +39,6 @@ const HeroCamera = ({ children, syncWithMouse = false }) => {
       easing.dampE(groupRef.current.rotation, [-mouseY * 0.3, -mouseX * 0.5, 0], 0.25, delta)
     }
   })
-
   return <group ref={groupRef}>{children}</group>
 }
 
