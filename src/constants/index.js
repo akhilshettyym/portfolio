@@ -50,7 +50,7 @@ export const MyProfessionalJourney = [
 // My Projects
 export const myProjects = [
   {
-    title: "NodeSurge: A Multi-Utility Platform",
+    title: "NodeSurge: A Multi-Utility Platform diverse (functionalities under one umbrella)",
     desc: "A powerful all-in-one platform featuring an AI chatbot, advanced text utilities, live weather, currency converter, password generator, and a smart to-do list—engineered for everyday productivity.",
     subdesc: "Built with cutting-edge web technologies to unify essential utilities into a seamless, user-friendly experience.",
     href: "https://akhilshettyym.github.io/NodeSurge/",
@@ -91,7 +91,7 @@ export const myProjects = [
     ],
   },
   {
-    title: "Currex: Smart & Fast Currency Converter",
+    title: "Currex: Smart & Nimble Currency rate Converter",
     desc: "An intuitive currency converter delivering real-time exchange rates and fast performance—ideal for travel, trading, budgeting, and seamless global financial transactions.",
     subdesc: "Lightweight, responsive, and highly accurate—designed to simplify international currency conversions on any device.",
     href: "https://akhilshettyym.github.io/Currex/",
@@ -109,7 +109,7 @@ export const myProjects = [
     ],
   },
   {
-    title: "PassKey: Secure Password Generator",
+    title: "PassKey: Secure and random Password Generator",
     desc: "Generate strong, customizable passwords instantly with control over character types and length—built for both simplicity and top-tier security in a clean UI.",
     subdesc: "Created for users who value security and speed, leveraging modern UI frameworks for maximum usability.",
     href: "https://akhilshettyym.github.io/PassKey/",
@@ -163,7 +163,7 @@ export const myProjects = [
     ],
   },
   {
-    title: "ProReact: Accurate Text Utility App",
+    title: "ProReact: Reliable, Accurate and feature-rich Text Utility App",
     desc: "Enhance your writing workflow with a real-time text utility app offering smart case converters, counters, and formatting tools in a distraction-free UI.",
     subdesc: "Fast, focused, and accessible—built for users needing accurate and quick text processing features on the web.",
     href: "https://akhilshettyym.github.io/Proreact/",
