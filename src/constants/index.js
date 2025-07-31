@@ -51,7 +51,7 @@ export const MyProfessionalJourney = [
 export const myProjects = [
   {
     title: "NodeSurge: A Multi-Utility Platform diverse (functionalities under one umbrella)",
-    desc: "A powerful all-in-one platform featuring an AI chatbot, advanced text utilities, live weather, currency converter, password generator, and a smart to-do list—engineered for everyday productivity.",
+    desc: "A powerful all-in-one platform featuring an AI chatbot, text utilities, live weather, currency converter, password generator, and a to-do list—engineered for everyday productivity.",
     subdesc: "Built with cutting-edge web technologies to unify essential utilities into a seamless, user-friendly experience.",
     href: "https://akhilshettyym.github.io/NodeSurge/",
     texture: "/textures/project/project1.mp4",
@@ -72,7 +72,7 @@ export const myProjects = [
   {
     title: "Promptlytic: An Open-Source AI Prompting Platform",
     desc: "A collaborative platform to discover, craft, and share AI prompts for writing, coding, design, and content creation—empowering users through smart workflows and community-driven insight.",
-    subdesc: "Designed to inspire creativity and innovation through prompt sharing, powered by modern frameworks and a vibrant community.",
+    subdesc: "Designed to inspire creativity and innovation through prompt sharing, powered by modern frameworks.",
     href: "https://promptlytic.vercel.app/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/projects/project-logo/project-logo2.svg",
@@ -92,8 +92,8 @@ export const myProjects = [
   },
   {
     title: "Currex: Smart & Nimble Currency rate Converter",
-    desc: "An intuitive currency converter delivering real-time exchange rates and fast performance—ideal for travel, trading, budgeting, and seamless global financial transactions.",
-    subdesc: "Lightweight, responsive, and highly accurate—designed to simplify international currency conversions on any device.",
+    desc: "An intuitive currency converter delivering real-time exchange rates and fast performance—ideal for travel, trading, and seamless financial transactions.",
+    subdesc: "Lightweight, responsive, and accurately—designed to simplify international currency conversions on any device.",
     href: "https://akhilshettyym.github.io/Currex/",
     texture: "/textures/project/project3.mp4",
     logo: "/assets/projects/project-logo/project-logo3.png",
