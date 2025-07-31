@@ -2,7 +2,8 @@ import { abilities } from "../imports"
 
 const FeatureCards = () => (
   <div className="w-full padding-x-lg">
-    <div className="mx-auto grid-4-cols">
+    {/* <div className="mx-auto grid-4-cols"> */}
+      <div className="mx-auto grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 h-full">
       {abilities.map(({ imgPath, title, desc }) => (
         <div
           key={title}
