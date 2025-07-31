@@ -273,9 +273,9 @@ export const words = [
   { text: "API INTEGRATIONS", imgPath: "/images/animate/3.png" },
   { text: "TOOLKITS", imgPath: "/images/animate/4.png" },
   { text: "VERSION CONTROL", imgPath: "/images/animate/5.png" },
-  // { text: "CI/CD", imgPath: "/images/animate/6.png" },
+  { text: "SALESFORCE", imgPath: "/images/animate/6.png" },
   { text: "ARCHITECTURES", imgPath: "/images/animate/7.png" },
   { text: "TEMPLATES", imgPath: "/images/animate/8.png" },
   { text: "DEPLOYMENT", imgPath: "/images/animate/9.png" },
-  { text: "MICROSERVICES", imgPath: "/images/animate/10.png" },
+  // { text: "MICROSERVICES", imgPath: "/images/animate/10.png" },
 ];
