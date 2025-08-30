@@ -14,6 +14,16 @@ const Footer = () => {
           GITHUB
         </a>
 
+        {/* LEET CODE */}
+        <a
+          href="https://leetcode.com/u/akhil_shetty_m"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:text-white transition">
+          <img src="/assets/leet.png" alt="LEET CODE" className="w-4 h-4 hover:scale-110 transition-transform" />
+          LEET CODE
+        </a>
+
         {/* RESUME */}
         <a
           href="/assets/Resume/AkhilShettyM.pdf"
