@@ -268,14 +268,14 @@ export const abilities = [
 
 // Animated Words
 export const words = [
-  { text: "FRAMEWORKS", imgPath: "/images/animate/1.png" },
-  { text: "ALGORITHMS", imgPath: "/images/animate/2.png" },
-  { text: "API INTEGRATIONS", imgPath: "/images/animate/3.png" },
-  { text: "TOOLKITS", imgPath: "/images/animate/4.png" },
-  { text: "VERSION CONTROL", imgPath: "/images/animate/5.png" },
-  { text: "SALESFORCE", imgPath: "/images/animate/6.png" },
-  { text: "ARCHITECTURES", imgPath: "/images/animate/7.png" },
-  { text: "TEMPLATES", imgPath: "/images/animate/8.png" },
-  { text: "DEPLOYMENT", imgPath: "/images/animate/9.png" },
-  // { text: "MICROSERVICES", imgPath: "/images/animate/10.png" },
+  { text: "JAVA", imgPath: "/images/animate/1.png" },
+  { text: "DATA STRUCTURES", imgPath: "/images/animate/2.png" },
+  { text: "ALGORITHMS", imgPath: "/images/animate/3.png" },
+  { text: "VERSION CONTROL", imgPath: "/images/animate/4.png" },
+  { text: "SALESFORCE", imgPath: "/images/animate/5.png" },
+  { text: "API INTEGRATIONS", imgPath: "/images/animate/6.png" },
+  { text: "FRAMEWORKS", imgPath: "/images/animate/7.png" },
+  { text: "ARCHITECTURES", imgPath: "/images/animate/8.png" },
+  { text: "TEMPLATES", imgPath: "/images/animate/9.png" },
+  { text: "DEPLOYMENT", imgPath: "/images/animate/10.png" },
 ];
